@@ -1,10 +1,12 @@
+import React from 'react'
+// style
 import "./footer.scss"
 
 
 export default function Footer() {
 	return (
-	    <h1>
-            Footer
-        </h1>
+	    <section className="footer">
+            Footer___________________________________________________________
+        </section>
 	)
 }

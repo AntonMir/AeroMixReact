@@ -1,0 +1,64 @@
+.header {
+    background: url(../../assets/img/headerWave.svg)top no-repeat ;
+    background-size: cover;
+    z-index: 999;
+    // position: sticky;
+    // top: 0;
+    min-height: 130px;
+    padding: 30px 0 0 0;
+    // text-align: center;
+    // border: #000 dashed 3px;
+}
+
+.header-content {
+    flex-basis: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: normal;
+    // border: rgb(170, 26, 26) dashed 3px;
+
+}
+
+
+.header-addres, .header-phone {
+    white-space: nowrap;
+    user-select: text;
+    text-align: center;
+}
+
+
+.header .icon {
+    position: absolute;
+    left: -18px;
+    bottom: -4px;
+    user-select: none;
+}
+
+.header-phone .icon {
+    left: -22px;
+}
+
+.header-logo {
+    padding: 15px 0 0 0;
+}
+
+.header-logo .icon {
+    width: 130%;
+}
+
+.header-menu {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.header-menu-el {
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    margin: 0 10px;
+}

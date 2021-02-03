@@ -1,31 +1,34 @@
+import React from 'react'
 //styles
 import "./content.scss"
 //redux
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 
 
-function Content(props) {
+export default function Content(props) {
 	console.log(props)
 	return (
 		<>
-			<h1>
-				Content
-			</h1>
-			<div>
+			
+				Content__________________________________________________________
+				
+			{/* <img src={img} alt="" srcset=""/> */}
+			
+			{/* <div>PRОPS:
 				{
 					props.status.map(item => {
 						return <p>{item}</p>
 					})
 				}
-			</div>
+			</div> */}
 		</>
 	)
 }
 
-const mapContent = state => {
-    return {
-        status: state.status
-    }
-}
+// const mapContent = state => {
+//     return {
+//         status: state.status
+//     }
+// }
 
-export default connect(mapContent)(Content)
+// export default connect(mapContent)(Content)
