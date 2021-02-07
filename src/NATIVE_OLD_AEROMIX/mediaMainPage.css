@@ -1,0 +1,147 @@
+/* ---------------- NAVBAR ---------------- */
+@media screen and (min-width: 1920px) {
+
+  .nav__bar__el {
+    padding: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+
+  .nav__bar, .nav__bar__section p:nth-of-type(1) {
+    display: none;
+  }
+
+  .nav__bar__section p:nth-of-type(2) {
+    grid-column: 5 / 8;
+  }
+  
+ }
+
+ @media screen and (max-width: 900px) {
+
+  .nav__bar__logo {
+    grid-column: 12 / 20;
+  }
+
+ }
+
+ @media screen and (max-width: 700px) {
+
+  .nav__bar__section p:nth-of-type(2) {
+    display: none;
+  }  
+
+  .nav__bar__logo {
+    grid-column: 2 / 17;
+  }
+
+ }
+
+ /* ------------ Mobile Menu ------------ */
+ @media screen and (min-width: 1500px) {
+
+  .mobile-menu__container, .mobile-menu__btn {
+    display: none;
+  }
+
+ }
+
+ @media screen and (max-width: 1200px) {
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 220px;
+  }
+
+ }
+
+ @media screen and (max-width: 920px) {
+
+  .mobile-menu__item {
+    font-size: 18px;
+    padding: 0 9px 30px;
+  }
+
+  .mobile-menu__container {
+    left: 34%;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 220px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .mobile-menu__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .mobile-menu__container {
+    left: 65%;
+  }
+
+  .mobile-menu__item {
+    font-size: 26px;
+    padding: 0 25px 40px 0;
+  }
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 400px;
+  }
+
+}
+
+/* ---------------- HEADER ---------------- */
+@media screen and (min-width: 1920px) {
+
+  .header-left__block h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .header-left__block p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .header__btn {
+    padding: 19.2px 38.4px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.1) 47.92%, rgba(0, 0, 0, 0.08) 100%), #F9CB3A;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    width: 148px;
+    font-size: 24px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .header__socials p {
+    color: #fff;
+    font-size: 17px;
+  }
+
+}
+
+/* ---------------- АКЦИИ ---------------- */
+@media screen and (min-width: 1920px) {
+
+  .shares__item div:nth-of-type(2) {
+    position: absolute;
+    top: 30%;
+    max-width: 85%;
+    background: rgb(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 1vw;
+  }
+
+}

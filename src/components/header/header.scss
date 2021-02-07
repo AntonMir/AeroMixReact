@@ -1,51 +1,52 @@
 .header {
-    background: url(../../assets/img/headerWave.svg)top no-repeat ;
-    background-size: cover;
-    z-index: 999;
-    // position: sticky;
-    // top: 0;
-    min-height: 130px;
-    padding: 30px 0 0 0;
-    // text-align: center;
-    // border: #000 dashed 3px;
-}
-
-.header-content {
-    flex-basis: auto;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
+    min-height: 160px;
+    flex-basis: auto;   
     font-size: 20px;
     font-weight: normal;
-    // border: rgb(170, 26, 26) dashed 3px;
+    margin: auto;
+    max-width: 1920px;
+}
 
+.header div, .header ul {
+    margin: 0 0 40px 0;
+}
+
+.header-background {
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/img/headerWave.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 
 .header-addres, .header-phone {
     white-space: nowrap;
     user-select: text;
-    text-align: center;
+    display: flex;
 }
 
-
-.header .icon {
-    position: absolute;
-    left: -18px;
-    bottom: -4px;
-    user-select: none;
-}
-
-.header-phone .icon {
-    left: -22px;
+.header-addres img, .header-phone img {
+    padding: 0 10px 0 0;
 }
 
 .header-logo {
-    padding: 15px 0 0 0;
+    padding: 15px 0 30px 0;
 }
 
-.header-logo .icon {
-    width: 130%;
+.header-logo img {
+    min-width: 50%;
+    height: auto;
 }
 
 .header-menu {
@@ -59,6 +60,27 @@
 .header-menu-el {
     text-decoration: none;
     color: #000;
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+
+
+/* ------------ Mobile Menu ------------ */
+
+.burger-menu-btn {
+    display: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.burger-menu-btn div {
+    background-color: #000;
+    height: 3px;
+    margin: 15px 5px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
 }
