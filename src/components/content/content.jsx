@@ -6,11 +6,11 @@ import "./content.scss"
 
 
 export default function Content(props) {
-	console.log(props)
+	// console.log(props)
 	return (
 		<>
 			
-				Content__________________________________________________________
+				Content
 				
 			{/* <img src={img} alt="" srcset=""/> */}
 			

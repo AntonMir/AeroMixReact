@@ -1,5 +1,5 @@
 // react
-import React, { Component } from 'react'
+import React from 'react'
 
 // route
 import { BrowserRouter as Router, Route } from "react-router-dom"

@@ -6,7 +6,7 @@ import "./footer.scss"
 export default function Footer() {
 	return (
 	    <section className="footer">
-            Footer___________________________________________________________
+            Footer
         </section>
 	)
 }

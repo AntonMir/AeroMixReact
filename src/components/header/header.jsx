@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 // img
 import phone from '@assets/img/phone.svg'
@@ -8,46 +8,59 @@ import addres from '@assets/img/addres.svg'
 import "./header.scss"
 
 
-export default function Header(props) {
-
-	function showHeaderMenu() {
-		// показывает меню навигации
+export default class Header extends Component {
+	constructor(props) {
+		super(props)
+		this.state= {
+			headerMenu: false,
+		}
+		this.showHeaderMenu = this.showHeaderMenu.bind(this);
 	}
 
-	return (
-		<header className='header' id="header">
+	
 
-			<span className="header-background"></span>
+	showHeaderMenu() {
+		this.setState({ headerMenu: !this.state.headerMenu })
+	}
 
-			<div className="header-addres">
-				<img src={addres} alt='addres'/>
-				г. Химки, ул. Академика Грушина, 8
-			</div>
+	
 
-			<div className="header-phone">
-				<img src={phone} alt='phone'/>
-				+7-985-001-75-05
-			</div>
+	render() {
+		return (
+			<header className='header' id="header">
 
-			<Link className="header-logo"to="/">
-				<img src={logo}  alt='logo'/>
-			</Link>
+				<span className="header-background"></span>
+
+				<div className="header-addres">
+					<img src={addres} alt='addres'/>
+					г. Химки, ул. Академика Грушина, 8
+				</div>
+
+				<div className="header-phone">
+					<img src={phone} alt='phone'/>
+					+7-985-001-75-05
+				</div>
+
+				<Link className="header-logo"to="/">
+					<img src={logo}  alt='logo'/>
+				</Link>
 
 
-			<ul className="header-menu">
-				<li><Link className="header-menu-el" to="/">О клубе</Link></li>
-				<li><Link className="header-menu-el" to="/">Услуги</Link></li>
-				<li><Link className="header-menu-el" to="/">Цены</Link></li>
-				<li><Link className="header-menu-el" to="/">Расписание</Link></li>
-				<li><Link className="header-menu-el" to="/">Контакты</Link></li>
-			</ul>
+				<ul className={`${!this.state.headerMenu ? "header-menu" : "header-menu visible"}`}>
+				{/* <ul className="header-menu visible"> */}
+					<li><Link className="header-menu-el" to="/">О клубе</Link></li>
+					<li><Link className="header-menu-el" to="/">Услуги</Link></li>
+					<li><Link className="header-menu-el" to="/">Цены</Link></li>
+					<li><Link className="header-menu-el" to="/">Расписание</Link></li>
+					<li><Link className="header-menu-el" to="/">Контакты</Link></li>
+				</ul>
 
-			<div className="burger-menu-btn" onClick={showHeaderMenu()}>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-
-		</header>
-	)
+				<div className="burger-menu-btn" onClick={this.showHeaderMenu}>
+					<div className={`${!this.state.headerMenu ? "" : "burger-menu-btn-top"}`}></div>
+					<div className={`${!this.state.headerMenu ? "" : "burger-menu-btn-centr"}`}></div>
+					<div className={`${!this.state.headerMenu ? "" : "burger-menu-btn-bot"}`}></div>
+				</div>
+			</header>
+		)
+	}
 }
