@@ -1,0 +1,111 @@
+.footer {
+    position: relative;
+    display: flex;
+    color: #fff;
+    background: linear-gradient(92.75deg, rgba(0, 0, 0, 0.32) 1.14%, rgba(255, 255, 255, 0) 66.85%), linear-gradient(272.78deg, rgba(255, 255, 255, 0.13) -2.12%, rgba(255, 255, 255, 0) 51.96%), #0F4686;
+    max-width: 1920px;
+    font-size: 23px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    height: 300px;
+}
+
+.footer-logo {
+    height: 40%;
+    width: auto;
+    margin: 10px 0 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+// Footer Nav Bar
+.footer-nav-first, .footer-nav-second, .footer-nav-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 140px; 
+    font-size: 15px;
+    margin: 20px 0;
+}   
+
+.footer-nav-third {
+    height: 100px;
+}
+
+.foonter-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 53%;
+}
+
+.footer-nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+// Contacts
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.footer-contacts span {
+    margin: 10px 0 0 0;
+}
+
+.footer-addres, .footer-phone {
+    white-space: nowrap;
+    user-select: text;
+    display: flex;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.footer-addres img, .footer-phone img {
+    padding: 0 10px 0 5px;
+}
+
+.footer-socials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 140px;
+    margin: 20% 0 0 0;
+}
+
+.footer-socials p {
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    justify-self: center;
+    margin: 0 6px 13px 5px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+}
+
+.footer-socials-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+// Все права защищены
+.footer-end-info {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 222px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 444px;
+    height: 40px;
+    font-size: 13px;
+}
