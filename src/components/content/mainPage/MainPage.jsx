@@ -10,7 +10,7 @@ export default function MainPage(props) {
 	// console.log(props)
 	return (
 		<section className="mainPage">
-			<p>Main Page</p>
+			{/* <p>Main Page</p> */}
 
 			<Main />
 			{/* <News /> */}
