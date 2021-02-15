@@ -1,17 +1,25 @@
 import React from 'react'
 //styles
-import "./content.scss"
+import "./mainPage.scss"
 //redux
 // import { connect } from 'react-redux'
+// components
+import Main from '@mainPage/main/Main.jsx'
 
-
-export default function Content(props) {
+export default function MainPage(props) {
 	// console.log(props)
 	return (
-		<>
-			
-				Content
-				
+		<section className="mainPage">
+			<p>Main Page</p>
+
+			<Main />
+			{/* <News /> */}
+			{/* <Promotions /> */}
+			{/* <Services /> */}
+			{/* <Treiners /> */}
+			{/* <Halls /> */}
+			{/* <Contacts /> */}
+
 			{/* <img src={img} alt="" srcset=""/> */}
 			
 			{/* <div>PRОPS:
@@ -21,7 +29,8 @@ export default function Content(props) {
 					})
 				}
 			</div> */}
-		</>
+
+		</section>
 	)
 }
 

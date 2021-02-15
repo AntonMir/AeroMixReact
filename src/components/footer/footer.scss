@@ -93,6 +93,9 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    & a:nth-child(2) img {
+        height: 24px;
+    }
 }
 
 // Все права защищены

@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 
 // components
 import Header from '@components/header/Header.jsx'
-import Footer from "@components/footer/Footer.jsx"
-import Content from '@components/content/Content.jsx'
+import Footer from '@components/footer/Footer.jsx'
+import MainPage from '@components/content/mainPage/MainPage.jsx'
 // import Content from './content/Content.jsx'
 
 // styles
@@ -25,10 +25,11 @@ export default function App() {
         <Router>
             <Provider store={store}>
                 <Header />
-                <div className='content'>
-                     <Route exact path='/' component={Content}/>
-                     <Route exact path='/test' component={Content}/>
-                </div>
+                <section className="content">
+                    <p>Content</p>
+                    <Route exact path='/' component={MainPage}/>
+                    <Route exact path='/test' component={MainPage}/>
+                </section>
                 <Footer />
             </Provider>
         </Router>
