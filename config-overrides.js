@@ -6,6 +6,6 @@ module.exports = function override(config) {
     '@assets': './src/assets',
     '@store': './src/store',
     '@content': './src/components/content',
-    '@mainPage': './src/components/content/mainPage'
+    '@mainPage': './src/components/content/mainPage',
   })(config)
 }

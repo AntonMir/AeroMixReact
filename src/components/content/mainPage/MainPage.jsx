@@ -5,16 +5,17 @@ import "./mainPage.scss"
 // import { connect } from 'react-redux'
 // components
 import Main from '@mainPage/main/Main.jsx'
+import Promotions from '@mainPage/promotions/Promotions.jsx'
 
 export default function MainPage(props) {
 	// console.log(props)
 	return (
 		<section className="mainPage">
-			{/* <p>Main Page</p> */}
+			<p>Main Page</p>
 
 			<Main />
 			{/* <News /> */}
-			{/* <Promotions /> */}
+			<Promotions />
 			{/* <Services /> */}
 			{/* <Treiners /> */}
 			{/* <Halls /> */}

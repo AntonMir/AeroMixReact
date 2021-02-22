@@ -26,7 +26,7 @@ export default function App() {
             <Provider store={store}>
                 <Header />
                 <section className="content">
-                    {/* <p>Content</p> */}
+                    <p>Content</p>
                     <Route exact path='/' component={MainPage}/>
                     <Route exact path='/test' component={MainPage}/>
                 </section>

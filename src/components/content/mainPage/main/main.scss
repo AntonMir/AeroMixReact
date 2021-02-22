@@ -4,6 +4,7 @@
     justify-content: space-around;
     max-width: 1920px;
     margin: 0 auto;
+    border: dashed 3px #50F;
 }
     
 .main-text {
@@ -17,8 +18,9 @@
 }
   
 .main-text h1 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
     line-height: 50px;
 }
   
@@ -29,14 +31,14 @@
 }
 
 .main-btn {
-    padding: 18px 37px;
+    padding: 18px 34px 18px 39px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.1) 47.92%, rgba(0, 0, 0, 0.08) 100%), #F9CB3A;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
     color: #000;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     width: 140px;
-    font-size: 24px;
+    font-size: 21px;
 
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -149,7 +151,7 @@
     top: 55%;
     width: 99.1vw;
     max-width: 1920px;
-    height: auto;
+    height: 120%;
     z-index: -1;
 }
 
@@ -167,6 +169,7 @@
     }
     
     .main-btn {
+        padding: 18px 39px 18px 32px;
         width: 125px;
         font-size: 21px;
     }
@@ -208,6 +211,11 @@
         display: none;
     }
 
+    .main-blue-wave {
+        top: 48%;
+        max-width: 1440px;
+    }
+
 }
 
 
@@ -218,22 +226,24 @@
     }
     
     .main-text {
+        width: 80%;
         margin: 20px auto;
-        align-items: center;
     }
 
     .main-text h1 {
-        text-align: center;
         font-size: 42px;
         line-height: 40px;
         margin: 0 20px;
     }
 
     .main-text p {
-        text-align: center;
         font-size: 24px;
         line-height: 32px;
         margin: 20px;
+    }
+
+    .main-btn {
+        align-self: center;
     }
 
     .main-imgs {
@@ -257,11 +267,12 @@
 @media screen and (max-width: 668px) {
 
     .main-text {
-        margin: 10px 0;
+        width: 90%;
+        margin: 10px auto;
     }
 
     .main-text h1 {
-        font-size: 35px;
+        font-size: 32px;
         line-height: 35px;
     }
 
@@ -291,11 +302,11 @@
     }
 
     .main-text h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .main-text p {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 32px;
         margin: 15px;
     }
@@ -308,9 +319,13 @@
 }
 
 @media screen and (max-width: 322px) {
+
+    .main-text h1 {
+        font-size: 23px;
+    }
     
     .main-text p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 32px;
         margin: 15px;
     }

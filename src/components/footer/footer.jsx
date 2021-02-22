@@ -94,8 +94,8 @@ export default function Footer() {
 			{/* ./footer-content */}
 
 			<div className="footer-end-info">
-				<p >Все права защищены. 2018-2021 г</p>
-				<p >Сайт разработан: ООО "Ахуенчик"</p>
+				<p>Все права защищены. 2018-2021 г</p>
+				<p>Сайт разработан:</p>
 			</div>
 
         </section>
