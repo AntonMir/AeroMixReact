@@ -7,5 +7,8 @@ module.exports = function override(config) {
     '@store': './src/store',
     '@content': './src/components/content',
     '@mainPage': './src/components/content/mainPage',
+    '@contacts': './src/components/content/mainPage/contacts',
+    '@footer': './src/components/footer',
+    '@header': './src/components/header',
   })(config)
 }

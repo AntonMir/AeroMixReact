@@ -1,0 +1,51 @@
+.google-map {
+    border: none;
+    width: 700px; 
+	height: 600px; 
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .google-map {
+        width: 450px; 
+        height: 460px; 
+        margin: 0 0 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .google-map {
+        width: 450px; 
+        height: 420px; 
+        margin: 70px 0 90px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .google-map {
+        width: inherit; 
+        height: 420px; 
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .google-map {
+        width: inherit; 
+        height: 320px; 
+        margin: 0;
+    }
+    
+}

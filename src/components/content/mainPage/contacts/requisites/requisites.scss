@@ -1,0 +1,68 @@
+// requisites
+.requisites {
+    position: absolute;
+    top: 65%;
+}
+
+.requisites summary {
+    margin: 0 0 14px 0;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.requisites p {
+    margin: 7px 0;
+}
+
+.requisites summary {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+// Default settings for <details>, dont change!
+// Chrome, Opera, Safari 
+details summary::-webkit-details-marker {
+    display: none;
+}
+details:focus {
+      outline: 0;
+}
+// Firefox 
+details, summary {
+    display: block;
+}
+summary:focus {
+    outline: 0;
+}
+details summary::after {
+    content: " ▼";
+}
+details[open] summary::after {
+    content: " ▲";
+}
+
+@media screen and (max-width: 1440px) {
+
+    .requisites summary {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .requisites {
+        top: 67%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .requisites {
+        position: static;
+        order: 1;
+        margin: 30px 0 0 20px;
+    }
+
+}

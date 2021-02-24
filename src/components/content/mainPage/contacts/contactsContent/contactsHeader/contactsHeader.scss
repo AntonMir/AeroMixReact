@@ -1,0 +1,45 @@
+// header
+.contacts-header {
+    margin: 0 0 70px 0;
+}
+
+.contacts-header h1 {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+
+.contacts-header p {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+    
+    // header
+    .contacts-header {
+        margin: 0 0 50px 0;
+    }
+    
+    .contacts-header h1 {
+        font-size: 31px;
+        margin: 0 0 20px 0;
+    }
+    
+    .contacts-header p {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    // header
+    .contacts-header {
+        margin: 0 0 30px 0;
+    }
+    
+    .contacts-header h1 {
+        font-size: 30px;
+        margin: 0 0 15px 0;
+    }
+
+}

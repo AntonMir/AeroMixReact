@@ -1,0 +1,23 @@
+.header-addres {
+    margin: 0 0 50px 0;
+}
+
+.header-addres {
+    white-space: nowrap;
+    user-select: text;
+    display: flex;
+    margin-right: 15px !important;
+    margin-left: 10px !important;
+}
+
+.header-addres img {
+    padding: 0 10px 0 0;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .header-addres {
+        display: none;
+    }
+    
+}

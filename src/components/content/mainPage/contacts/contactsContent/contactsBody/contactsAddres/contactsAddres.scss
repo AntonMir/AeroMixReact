@@ -1,0 +1,36 @@
+// info
+.contacts-addres p {
+    margin: 12px 0 6px;
+}
+
+.contacts-addres {
+    margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contacts-addres {
+        position: absolute;
+        top: 9%;
+        left: 46%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contacts-addres {
+        position: inherit;
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .contacts-addres {
+        order: 1;
+        margin: 20px 0 0 0;
+    }
+
+}
