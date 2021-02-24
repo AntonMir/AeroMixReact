@@ -6,7 +6,7 @@ import "./mainPage.scss"
 // components
 import Main from '@mainPage/main/Main.jsx'
 import Promotions from '@mainPage/promotions/Promotions.jsx'
-
+import Contacts from '@mainPage/contacts/Contacts.jsx'
 export default function MainPage(props) {
 	// console.log(props)
 	return (
@@ -19,7 +19,7 @@ export default function MainPage(props) {
 			{/* <Services /> */}
 			{/* <Treiners /> */}
 			{/* <Halls /> */}
-			{/* <Contacts /> */}
+			<Contacts />
 
 			{/* <img src={img} alt="" srcset=""/> */}
 			

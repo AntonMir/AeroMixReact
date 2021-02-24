@@ -1,0 +1,341 @@
+.contacts {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 80px 9% 120px;
+    background-color: #FCFCFC;
+}
+
+.contacts p {
+    font-size: 24px;
+}
+
+.contacts h2, summary {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+// header
+.contacts-header {
+    margin: 0 0 70px 0;
+}
+
+.contacts-header h1 {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+
+.contacts-header p {
+    font-size: 30px;
+}
+
+// info
+.contactsInfo {
+    display: flex;
+}
+
+.contacts-attr-socials-wrapper {
+    margin: 0 100px 40px 0;
+}
+
+.contacts-attr {
+    margin: 0 0 30px 0;
+}
+
+.contacts-attr p {
+    display: flex;
+}
+
+.contacts-attr p img {
+    margin: 0 10px 0 0;
+}
+
+.contacts-email {
+    white-space: nowrap;
+}
+
+.contacts-number,
+.contacts-socials-items,
+.contacts-addres p {
+    margin: 12px 0 6px;
+}
+
+// socials
+.contacts-socials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+}
+
+.contacts-socials h2 {
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    justify-self: center;
+}
+
+.contacts-socials-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    & a img {
+        height: 40px;
+        margin-top: 2px;
+    }
+
+    & a:nth-child(2) img {
+        height: 35px;
+        margin-top: 7px;
+    }
+    
+}
+
+.contacts-addres {
+    margin: 0 0 30px 0;
+}
+
+.contacts-worktime p:nth-of-type(1) {
+    margin: 12px 0 6px 0;
+}
+
+// requisites
+.contacts-requisites {
+    position: absolute;
+    top: 63%;
+}
+
+.contacts-requisites summary {
+    margin: 0 0 14px 0;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.contacts-requisites p {
+    margin: 7px 0;
+}
+
+// Default settings for <details>, dont change!
+// Chrome, Opera, Safari 
+details summary::-webkit-details-marker {
+    display: none;
+}
+details:focus {
+      outline: 0;
+}
+// Firefox 
+details, summary {
+    display: block;
+}
+summary:focus {
+    outline: 0;
+}
+details summary::after {
+    content: " ▼";
+}
+details[open] summary::after {
+    content: " ▲";
+}
+
+// map
+.google-map {
+    border: none;
+    width: 700px; 
+	height: 600px; 
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .contacts {
+        padding: 50px 9% 100px;
+    }
+
+    .contacts h2, summary {
+        font-size: 20px;
+    }
+
+    .contacts p {
+        font-size: 15px;
+    }
+    
+    // header
+    .contacts-header {
+        margin: 0 0 50px 0;
+    }
+    
+    .contacts-header h1 {
+        font-size: 31px;
+        margin: 0 0 20px 0;
+    }
+    
+    .contacts-header p {
+        font-size: 20px;
+    }
+
+    //contactsInfo
+    .contacts-attr-socials-wrapper {
+        margin: 0 70px 40px 0;
+    }
+
+    //socials
+    .contacts-socials {
+        max-width: 130px;
+    }
+
+    .contacts-socials-items {
+        & a img {
+            height: 30px;
+            margin-top: 2px;
+        }
+    
+        & a:nth-child(2) img {
+            height: 25px;
+            margin-top: 4px;
+        }
+        
+    }
+
+    // google-map
+    .google-map {
+        width: 450px; 
+        height: 460px; 
+        margin: 0 0 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contacts {
+        // height: 560px;
+        padding: 54px 9%;
+    }
+
+    // header
+    .contacts-header {
+        margin: 0 0 30px 0;
+    }
+    
+    .contacts-header h1 {
+        font-size: 30px;
+        margin: 0 0 15px 0;
+    }
+
+    //contactsInfo
+    .contactsInfo {
+        flex-direction: column;
+    }
+
+    .contacts-attr-socials-wrapper {
+        margin: 0 70px 10px 0;
+    }
+
+    .contacts-attr {
+        margin: 0 0 20px 0;
+    }
+
+    .contacts-addres {
+        position: absolute;
+        top: 9%;
+        left: 46%;
+    }
+
+    // requisites
+    .contacts-requisites {
+        top: 67%;
+    }
+
+    // google-map
+    .google-map {
+        width: 450px; 
+        height: 420px; 
+        margin: 70px 0 90px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contacts {
+        flex-direction: column;
+        // min-height: 800px;
+        padding: 44px 60px 20px;
+    }
+
+    .contacts-content {
+        margin-left: 20px;
+    }
+
+    // contactsInfo
+    .contactsInfo {
+        flex-direction: row;
+    }
+
+    .contacts-addres-worktime-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-addres {
+        position: inherit;
+        margin: 0 0 20px 0;
+    }
+
+    // requisites
+    .contacts-requisites {
+        position: static;
+        order: 1;
+        margin: 30px 0 0 20px;
+    }
+
+    // google-map
+    .google-map {
+        width: inherit; 
+        height: 420px; 
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .contacts {
+        flex-direction: column;
+        padding: 40px 20px 20px;
+    }
+
+    .contacts-attr-socials-wrapper {
+        margin: 0 30px 10px 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .contacts {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .contactsInfo {
+        flex-direction: column;
+    }
+
+    .contacts-addres {
+        order: 1;
+        margin: 20px 0 0 0;
+    }
+
+     // google-map
+     .google-map {
+        width: inherit; 
+        height: 320px; 
+        margin: 0;
+    }
+}

@@ -1,5 +1,7 @@
 .header {
-    position: sticky;
+    // position: sticky;
+    position: relative; //заменить на sticky
+
     position: -webkit-sticky; /* Safari */
     top: 0;
     display: flex;
