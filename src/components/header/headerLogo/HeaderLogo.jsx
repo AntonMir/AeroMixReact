@@ -1,12 +1,13 @@
-import React from 'react'
-// Link
-import { Link } from 'react-router-dom'
+import React from 'react';
+// <a> = <Link>
+import { Link } from 'react-router-dom';
 // img
-import logo from '@assets/img/logo.png'
+import logo from '@img/header/logo.png';
 // styles
-import "./headerLogo.scss"
+import "./headerLogo.scss";
 
-export default function HeaderLogo(props) {
+
+function HeaderLogo(props) {
 	
     return (
         <Link className="header-logo"to="/">
@@ -15,3 +16,5 @@ export default function HeaderLogo(props) {
     )
 	
 }
+
+export default HeaderLogo;

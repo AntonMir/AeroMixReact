@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 // style
 import "./footerNav.scss";
 
-export default function FooterNav() {
+
+function FooterNav() {
+
 	return (
         <div className="foonter-nav">
             <ul className="footer-nav-first">
@@ -49,3 +51,5 @@ export default function FooterNav() {
         </div>
 	)
 }
+
+export default FooterNav;

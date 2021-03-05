@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 // styles
-import "./contactsHeader.scss"
+import "./contactsHeader.scss";
 
-export default function ContactsHeader(props) {
+function ContactsHeader() {
 
     return (
         <div className="contacts-header">
@@ -12,4 +12,4 @@ export default function ContactsHeader(props) {
 	)
 }
 
-
+export default ContactsHeader;

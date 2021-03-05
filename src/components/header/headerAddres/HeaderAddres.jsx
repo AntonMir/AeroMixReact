@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 // img
-import addres from '@assets/img/addres.svg'
+import addres from '@img/header/addres.svg';
 // styles
-import "./headerAddres.scss"
+import "./headerAddres.scss";
 
-export default function HeaderAddres(props) {
+function HeaderAddres(props) {
 	
     return (
         <div className="header-addres">
@@ -14,3 +14,5 @@ export default function HeaderAddres(props) {
     )
 	
 }
+
+export default HeaderAddres;

@@ -1,13 +1,15 @@
 import React from 'react';
 // img
-import footerLogo from '@assets/img/footerLogo.png';
+import footerLogo from '@img/footer/footerLogo.png';
 // components
-import FooterNav from '@footer/footerNav/FooterNav.jsx'
-import FooterContacts from '@footer/footerContacts/FooterContacts.jsx'
+import FooterNav from '@footer/footerNav/FooterNav.jsx';
+import FooterContacts from '@footer/footerContacts/FooterContacts.jsx';
 // style
 import "./footer.scss";
 
-export default function Footer() {
+
+function Footer() {
+	
 	return (
 	    <section className="footer">
 
@@ -26,3 +28,5 @@ export default function Footer() {
         </section>
 	)
 }
+
+export default Footer;

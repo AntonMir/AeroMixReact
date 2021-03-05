@@ -1,0 +1,163 @@
+/* ---------------- УСЛУГИ ---------------- */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 200px 0;
+    border: #FFC328 dashed 3px;
+}
+
+.services__title {
+    margin: 0 0 65px 200px;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.services__navbar {
+    margin: 0 0 80px 200px;
+}
+
+.services__navbar a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px 0 0;
+    padding: 6px 22px;
+    border-radius: 100px;
+    border: 3px solid #FFC328;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.services__navbar a:nth-of-type(1) {
+    background-color: #FFC328;
+}
+
+.services__wrapper {
+    max-width: 1920px;
+}
+
+.services__items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 430px));
+    grid-gap: 3vw;
+    margin:  0 10%;
+}
+
+.services__item {
+    position: relative;
+    background: no-repeat center;
+    background-size: cover;
+    height: 290px;
+    max-width: 476px;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.services__item:hover {
+    transition: all 1s linear;
+}
+
+.services__item div {
+    position: absolute;
+
+    height: 10%;
+    top: 40%;
+    overflow: hidden;
+    background-color: #285075;
+    opacity: 0.85;
+    padding: 20px 30px;  
+    transition: all 0.3s linear;
+}
+
+.services__item div h2 {
+    font-size: 30px;
+}
+
+.services__item2 div, .services__item3 div {
+    height: 20%;
+    top: 35%;
+}
+
+.services__item div p {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.services__item div a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.services__item div a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.services__item1 {
+    background-image: url(../../../../assets/img/services__item1.JPG);
+}
+
+.services__item2 {
+    background-image: url(../../../../assets/img/services__item2.JPG);
+}
+
+.services__item3 {
+    background-image: url(../../../../assets/img/services__item3.jpg);
+}
+
+.services__item4 {
+    background-image: url(../../../../assets/img/services__item4.jpg);
+}
+
+.services__item5 {
+    background-image: url(../../../../assets/img/services__item5&13.jpg);
+}
+
+.services__item6 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item6.jpg);
+}
+
+.services__item7 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item7.jpg);
+}
+
+.services__item8 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item8.jpg);
+}
+
+.services__item9 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item9.jpg);
+}
+
+.services__item10 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item10.JPG);
+}
+
+.services__item11 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item11.jpg);
+}
+
+.services__item12 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item12.jpg);
+}
+
+.services__item13 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item5&13.jpg);
+}
+
+.services__item14 {
+    display: none;
+    background-image: url(../../../../assets/img/services__item14.jpg);
+}

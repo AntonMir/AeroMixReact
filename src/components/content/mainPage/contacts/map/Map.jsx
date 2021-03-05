@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 // styles
-import "./map.scss"
+import "./map.scss";
 
-export default function Map(props) {
+
+function Map() {
 
     return (
         <iframe 
@@ -13,3 +14,5 @@ export default function Map(props) {
         />
 	)
 }
+
+export default Map;

@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
 // styles
-import "./contactsWorkTime.scss"
+import "./contactsWorkTime.scss";
 
-export default function ContactsWorkTime(props) {
+
+function ContactsWorkTime() {
 
     return (
         <div className="contacts-worktime">
             <h2>Режим работы</h2>
-            <p>пн.- сб. 09.00 - 21.00</p>
-            <p>вс. -выходной</p>
+            <p>пн. - сб. 09.00 - 21.00</p>
+            <p>вс. - выходной</p>
         </div>
 	)
 }
 
-
+export default  ContactsWorkTime;

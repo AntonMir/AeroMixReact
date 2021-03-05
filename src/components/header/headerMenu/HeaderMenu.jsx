@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 // Link
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 // img
-import arrowBot from '@assets/img/arrowBot.svg'
-import arrowTop from '@assets/img/arrowTop.svg'
-import aboutClubArrow from '@assets/img/aboutClubArrow.png'
+import arrowBot from '@img/header/arrowBot.svg';
+import arrowTop from '@img/header/arrowTop.svg';
+import aboutClubArrow from '@img/header/aboutClubArrow.png';
 // styles
-import "./headerMenu.scss"
+import "./headerMenu.scss";
 
-export default class HeaderMenu extends Component {
+class HeaderMenu extends Component {
 	constructor(props) {
 		super(props)
 		this.state= {
@@ -91,3 +91,5 @@ export default class HeaderMenu extends Component {
 		)
 	}
 }
+
+export default HeaderMenu;

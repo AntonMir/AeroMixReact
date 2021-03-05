@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 // styles
-import "./requisites.scss"
+import "./requisites.scss";
 
-export default function Requisites(props) {
+
+function Requisites() {
 
     return (
         <details className="requisites">
@@ -16,3 +17,5 @@ export default function Requisites(props) {
         </details>
 	)
 }
+
+export default Requisites;

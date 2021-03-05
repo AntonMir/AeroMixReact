@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 // styles
-import "./contactsAddres.scss"
+import "./contactsAddres.scss";
 
-export default function ContactsAddres(props) {
+
+function ContactsAddres(props) {
 
     return (
         <div className="contacts-addres">
@@ -12,4 +13,4 @@ export default function ContactsAddres(props) {
 	)
 }
 
-
+export default ContactsAddres;

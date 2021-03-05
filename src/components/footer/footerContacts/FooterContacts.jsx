@@ -2,16 +2,18 @@ import React from 'react';
 // link
 import { Link } from 'react-router-dom';
 // img
-import phone from '@assets/img/footerPhone.svg'
-import addres from '@assets/img/footerAddres.svg'
-import insta from '@assets/img/insta.svg'
-import vk from '@assets/img/vk.svg'
-import facebook from '@assets/img/facebook.svg'
-import odnoklasniki from '@assets/img/odnoklasniki.svg'
+import phone from '@img/footer/footerPhone.svg';
+import addres from '@img/footer/footerAddres.svg';
+import insta from '@img/footer/insta.svg';
+import vk from '@img/footer/vk.svg';
+import facebook from '@img/footer/facebook.svg';
+import odnoklasniki from '@img/footer/odnoklasniki.svg';
 // style
 import "./footerContacts.scss";
 
-export default function FooterContacts() {
+
+function FooterContacts() {
+
 	return (
         <div className="footer-contacts">
 
@@ -40,3 +42,5 @@ export default function FooterContacts() {
         </div>
 	)
 }
+
+export default FooterContacts;

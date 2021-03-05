@@ -1,29 +1,30 @@
-import React from 'react'
+import React from 'react';
 // components
-import ContactsDetails from '@contacts/contactsContent/contactsBody/contactsDetails/ContactsDetails.jsx'
-import ContactsSocials from '@contacts/contactsContent/contactsBody/contactsSocials/ContactsSocials.jsx'
-import ContactsAddres from '@contacts/contactsContent/contactsBody/contactsAddres/ContactsAddres.jsx'
-import ContactsWorkTime from '@contacts/contactsContent/contactsBody/contactsWorkTime/ContactsWorkTime.jsx'
+import ContactsDetails from '@contactsBody/contactsDetails/ContactsDetails.jsx';
+import ContactsSocials from '@contactsBody/contactsSocials/ContactsSocials.jsx';
+import ContactsAddres from '@contactsBody/contactsAddres/ContactsAddres.jsx';
+import ContactsWorkTime from '@contactsBody/contactsWorkTime/ContactsWorkTime.jsx';
 // styles
-import "./contactsBody.scss"
+import "./contactsBody.scss";
 
-export default function ContactsBody(props) {
+
+function ContactsBody() {
 
     return (
-            <div className="contactsBody">
+        <div className="contactsBody">
 
-                <div className="contacts-details-socials-wrapper">
-                   <ContactsDetails />
-                   <ContactsSocials />
-                </div>
-
-                <div className="contacts-addres-worktime-wrapper">
-                    <ContactsAddres />
-                    <ContactsWorkTime />
-                </div>
-
+            <div className="contacts-details-socials-wrapper">
+                <ContactsDetails />
+                <ContactsSocials />
             </div>
+
+            <div className="contacts-addres-worktime-wrapper">
+                <ContactsAddres />
+                <ContactsWorkTime />
+            </div>
+
+        </div>
 	)
 }
 
-
+export default ContactsBody;

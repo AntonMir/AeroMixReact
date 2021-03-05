@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 // Link
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 // img
-import trainingHallBall from '@assets/img/main_trainingHallBall.jpg'
-import childrensPerformance from '@assets/img/main_childrensPerformance.jpg'
-import tableTennis from '@assets/img/main_tableTennis.jpg'
-import insta from '@assets/img/insta.svg'
-import vk from '@assets/img/vk.svg'
-import facebook from '@assets/img/facebook.svg'
-import odnoklasniki from '@assets/img/odnoklasniki.svg'
+import trainingHallBall from '@img/mainPage/main/trainingHallBall.jpg';
+import childrensPerformance from '@img/mainPage/main/childrensPerformance.jpg';
+import tableTennis from '@img/mainPage/main/tableTennis.jpg';
+import insta from '@img/mainPage/main/insta.svg';
+import vk from '@img/mainPage/main/vk.svg';
+import facebook from '@img/mainPage/main/facebook.svg';
+import odnoklasniki from '@img/mainPage/main/odnoklasniki.svg';
 // styles
-import "./main.scss"
+import "./main.scss";
 
 
-export default function Main(props) {
+function Main() {
 
     return (
 		<section className="main">
@@ -35,20 +35,35 @@ export default function Main(props) {
             </div>
             
             <div className="main-imgs">
-                <div className="main-img-wrapper"><img className="main-img main_img1" src={trainingHallBall} alt="img"/></div>
-                <div className="main-img-wrapper"><img className="main-img main_img2" src={childrensPerformance} alt="img"/></div>
-                <div className="main-img-wrapper"><img className="main-img main_img3" src={tableTennis} alt="img"/></div>
+                <div className="main-img-wrapper">
+                    <img className="main-img main_img1" src={trainingHallBall} alt="img"/>
+                </div>
+                <div className="main-img-wrapper">
+                    <img className="main-img main_img2" src={childrensPerformance} alt="img"/>
+                </div>
+                <div className="main-img-wrapper">
+                    <img className="main-img main_img3" src={tableTennis} alt="img"/>
+                </div>
             </div>
 
             <svg width={`${window.outerWidth}`} className="main-blue-wave">
                 <path 
                     id="wave"
                     fill="url(#waveColor)" 
-                />               
-                <linearGradient id="waveColor" x1="1438.01" y1="-229.269" x2="-1.46196" y2="193.022" gradientUnits="userSpaceOnUse">
+                /> 
+
+                <linearGradient 
+                    id="waveColor" 
+                    x1="1438.01" 
+                    y1="-229.269" 
+                    x2="-1.46196" 
+                    y2="193.022" 
+                    gradientUnits="userSpaceOnUse"
+                >
                     <stop offset="0.1" stopColor="#00f0e4"/>
                     <stop offset="1" stopColor="#1059ad"/>
                 </linearGradient>
+
                 <animate 
                     xlinkHref="#wave"
                     attributeName="d"
@@ -69,3 +84,5 @@ export default function Main(props) {
 		</section>
 	)
 }
+
+export default Main;

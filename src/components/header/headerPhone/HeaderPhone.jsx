@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 // img
-import phone from '@assets/img/phone.svg'
+import phone from '@img/header/phone.svg';
 // styles
-import "./headerPhone.scss"
+import "./headerPhone.scss";
 
-export default function HeaderPhone(props) {
-	
+
+function HeaderPhone(props) {
+
     return (
         <div className="header-phone">
             <img src={phone} alt='phone'/>
@@ -14,3 +15,5 @@ export default function HeaderPhone(props) {
     )
 	
 }
+
+export default HeaderPhone;

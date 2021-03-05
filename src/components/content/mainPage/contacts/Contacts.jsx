@@ -1,23 +1,23 @@
-import React from 'react'
+import React from 'react';
 // components
-import ContactsContent from '@mainPage/contacts/contactsContent/ContactsContent.jsx'
-import Requisites from '@mainPage/contacts/requisites/Requisites.jsx'
-import Map from '@mainPage/contacts/map/Map.jsx'
+import ContactsContent from '@contacts/contactsContent/ContactsContent.jsx';
+import Requisites from '@contacts/requisites/Requisites.jsx';
+import Map from '@contacts/map/Map.jsx';
 // styles
-import "./contacts.scss"
+import "./contacts.scss";
 
 
-export default function Contacts(props) {
+function Contacts() {
 
     return (
 		<section className="contacts">
 
 			<ContactsContent />
-
 			<Requisites />
-
 			<Map />
 
 		</section>
 	)
 }
+
+export default Contacts;

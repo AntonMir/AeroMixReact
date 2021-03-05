@@ -1,22 +1,22 @@
-import React from 'react'
-//styles
-import "./mainPage.scss"
-//redux
-// import { connect } from 'react-redux'
+import React from 'react';
 // components
-import Main from '@mainPage/main/Main.jsx'
-import Promotions from '@mainPage/promotions/Promotions.jsx'
-import Contacts from '@mainPage/contacts/Contacts.jsx'
-export default function MainPage(props) {
-	// console.log(props)
+import Main from '@mainPage/main/Main.jsx';
+import Promotions from '@mainPage/promotions/Promotions.jsx';
+import Contacts from '@mainPage/contacts/Contacts.jsx';
+import Services from '@mainPage/services/Services.jsx';
+//styles
+import "./mainPage.scss";
+
+
+function MainPage() {
+
 	return (
 		<section className="mainPage">
-			{/* <p>Main Page</p> */}
 
 			<Main />
 			{/* <News /> */}
 			<Promotions />
-			{/* <Services /> */}
+			<Services />
 			{/* <Treiners /> */}
 			{/* <Halls /> */}
 			<Contacts />
@@ -40,5 +40,6 @@ export default function MainPage(props) {
 //         status: state.status
 //     }
 // }
-
 // export default connect(mapContent)(Content)
+
+export default  MainPage;
