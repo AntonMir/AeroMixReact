@@ -13,5 +13,6 @@ module.exports = function override(config) {
     '@contactsBody': './src/components/content/mainPage/contacts/contactsContent/contactsBody',
     '@footer': './src/components/footer',
     '@header': './src/components/header',
+    '@data': './src/data',    
   })(config)
 }

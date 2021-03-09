@@ -1,0 +1,136 @@
+.promotion-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    width: 480px;
+    max-width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.promotion-indicator {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    padding: 5px 10px 7px 30px;
+    color: #FFF;
+    background:linear-gradient(45deg, transparent 22px, #FF0000 0);
+    z-index: 1;
+}
+
+.promotion-background {
+    position: absolute;
+    left: -10%;
+    width: 125%;
+    height: auto;
+}
+
+.promotion-info {
+    position: absolute;
+    top: 30%;
+    max-width: 85%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 18px;
+}
+
+.promotion-info h1 {
+    margin: 0 0 3% 0;
+    font-size: 23px;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .promotion-item {
+        height: 220px;
+    }
+
+    .promotion-info {
+        top: 25%;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .promotion-info h1 {
+        margin: 0 0 3% 0;
+        font-size: 19px;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .promotion-indicator {
+        top: 5%;
+        padding: 3px 8px 4px 30px;
+        font-size: 12px;
+    }
+
+    .promotion-item {
+        height: 165px;
+        margin: 15px 7px;
+    }
+
+    .promotion-info {
+        top: 20%;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .promotion-info h1 {
+        margin: 0 0 3% 0;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .promotion-item {
+        height: 195px;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .promotion-info {
+        max-width: 85%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .promotion-info h1 {
+        margin: 0 0 2% 0;
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .promotion-item {
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    .promotion-info {
+        top: 15%;
+        padding: 15px ;
+        font-size: 14px;
+    }
+
+    .promotion-info h1 {
+        margin: 0 0 2% 0;
+        font-size: 18px;
+    }
+
+}
+

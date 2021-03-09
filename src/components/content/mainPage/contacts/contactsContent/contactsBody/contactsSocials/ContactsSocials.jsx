@@ -2,10 +2,10 @@ import React from 'react';
 // Link
 import { Link } from 'react-router-dom';
 // img
-import insta from '@img/contacts/insta.svg';
-import vk from '@img/contacts/vk.svg';
-import facebook from '@img/contacts/facebook.svg';
-import odnoklasniki from '@img/contacts/odnoklasniki.svg';
+import insta from '@img/mainPage/contacts/insta.svg';
+import vk from '@img/mainPage/contacts/vk.svg';
+import facebook from '@img/mainPage/contacts/facebook.svg';
+import odnoklasniki from '@img/mainPage/contacts/odnoklasniki.svg';
 // styles
 import "./contactsSocials.scss";
 

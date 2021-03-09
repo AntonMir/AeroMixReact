@@ -1,7 +1,7 @@
 import React from 'react';
 // img
-import contactsNumber from '@img/contacts/contacts-number.svg';
-import contactsEmail from '@img/contacts/contacts-email.svg';
+import contactsNumber from '@img/mainPage/contacts/contacts-number.svg';
+import contactsEmail from '@img/mainPage/contacts/contacts-email.svg';
 // styles
 import "./contactsDetails.scss";
 

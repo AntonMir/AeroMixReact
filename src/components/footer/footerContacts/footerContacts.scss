@@ -24,7 +24,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 140px;
+    max-width: 200px;
     margin: 35px 0 0 0;
 }
 
@@ -33,17 +33,17 @@
     font-size: 15px;
     white-space: nowrap;
     justify-self: center;
-    margin: 0 6px 13px 10px;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+    text-align: center;
+    margin: 0 6px 20px 0;
 }
 
 .footer-socials-items {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 100%;
     & a:nth-child(2) img {
-        height: 24px;
+        height: 16px;
+        margin-bottom: 2px;
     }
 }
 
@@ -54,6 +54,7 @@
     }
 
     .footer-socials {
+        width: 200px;
         margin-top: 25px;
     }
 

@@ -1,44 +1,21 @@
 import React from 'react';
-// img
-
+// components
+import PromoLine from './promoLine/PromoLine.jsx';
+// Список акций
+// ./src/data - там можно удалять и добавлять акций, инструкция в promo.js
+import promotionList from '@data/promo.js'
 // styles
 import "./promotions.scss";
 
 
 function Promotions() {
-  
+
     return (
 		<section className="promotions">
             
-            <h1 className="promotion-header">Акции</h1>
+            <h1 className="promotions-header">Акции</h1>
 
-            <div className="promotion-item-wrapper">
-
-                <div className="promotion-item">
-                    <div className="promotion-indicator">Акция</div>
-                    <div className="promotion-info">
-                        <h1>С друзьями выгоднее</h1>
-                        <p>Приведи друга получи скидку 1000 рублей на стоимость ежемесячного абонемента</p>
-                    </div>
-                </div>
-
-                <div className="promotion-item">
-                    <div className="promotion-indicator">Акция</div>
-                    <div className="promotion-info">
-                        <h1>С друзьями выгоднее</h1>
-                        <p>Приведи друга получи скидку 1000 рублей на стоимость ежемесячного абонемента</p>
-                    </div>
-                </div>
-
-                <div className="promotion-item">
-                    <div className="promotion-indicator">Акция</div>
-                    <div className="promotion-info">
-                        <h1>С друзьями выгоднее</h1>
-                        <p>Приведи друга получи скидку 500 рублей на стоимость ежемесячного абонемента</p>
-                    </div>
-                </div>
-
-            </div>
+            {promotionList.map((promoLine, index) => { return <PromoLine key={index} promoList={promoLine} />})}
 
 		</section>
 	)

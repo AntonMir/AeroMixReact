@@ -1,0 +1,31 @@
+.promotions-line {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 4%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .promotions-line {
+        margin: 0 6%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .promotions-line {
+        flex-direction: column;
+        margin: 0 20%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .promotions-line {
+        margin: 0 5%;
+    }
+
+}
+

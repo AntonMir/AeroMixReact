@@ -6,19 +6,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 180px;
+    max-width: 280px;
 }
 
 .contacts-socials h2 {
     color: rgb(0, 0, 0);
     white-space: nowrap;
     justify-self: center;
+    align-self: center;
 }
 
 .contacts-socials-items {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 
     & a img {
@@ -27,7 +28,7 @@
     }
 
     & a:nth-child(2) img {
-        height: 35px;
+        height: 25px;
         margin-top: 7px;
     }
     
@@ -36,7 +37,7 @@
 @media screen and (max-width: 1440px) {
    
     .contacts-socials {
-        max-width: 130px;
+        max-width: 230px;
     }
 
     .contacts-socials-items {

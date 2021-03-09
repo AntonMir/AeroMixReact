@@ -1,6 +1,7 @@
 /* ---------------- УСЛУГИ ---------------- */
 .services {
-    display: flex;
+    // display: flex;
+    display: none; // замени потом на flex
     flex-direction: column;
     justify-content: start;
     margin: 200px 0;
