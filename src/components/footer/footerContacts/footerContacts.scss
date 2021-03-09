@@ -30,16 +30,15 @@
 
 .footer-socials p {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     white-space: nowrap;
     justify-self: center;
-    text-align: center;
     margin: 0 6px 20px 0;
 }
 
 .footer-socials-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     & a:nth-child(2) img {
         height: 16px;

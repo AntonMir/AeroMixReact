@@ -6,14 +6,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 280px;
+    max-width: 230px;
 }
 
 .contacts-socials h2 {
     color: rgb(0, 0, 0);
     white-space: nowrap;
     justify-self: center;
-    align-self: center;
 }
 
 .contacts-socials-items {
@@ -23,13 +22,13 @@
     width: 100%;
 
     & a img {
-        height: 40px;
+        height: 30px;
         margin-top: 2px;
     }
 
     & a:nth-child(2) img {
-        height: 25px;
-        margin-top: 7px;
+        height: 21px;
+        margin-top: 5px;
     }
     
 }
