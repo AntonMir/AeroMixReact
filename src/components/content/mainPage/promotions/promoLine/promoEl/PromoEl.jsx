@@ -5,7 +5,7 @@ import "./promoEl.scss";
 
 function PromoEl(props) {
 
-    const { title, text, background, id } = props.promo;
+    const { title, text, background } = props.promo;
 
     return (
 		

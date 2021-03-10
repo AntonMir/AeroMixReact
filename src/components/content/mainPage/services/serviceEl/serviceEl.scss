@@ -1,0 +1,81 @@
+.service {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center;
+    background-size: cover;
+    height: 310px;
+    max-width: 476px;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.service:hover {
+
+    & .service-content p {
+        display: block;
+    }
+
+    & .service-content a {
+        display: inline;
+    }
+    
+}
+
+.service-background {
+    position: absolute;
+    height: auto;
+    width: 105%;
+}
+
+.service-content {
+    position: absolute;
+    height: auto;
+    width: 89%;
+    // top: 40%;
+    overflow: hidden;
+    background-color: #285075;
+    opacity: 0.85;
+    padding: 20px 30px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.service-content h2 {
+    font-size: 28px;
+}
+
+.service-content p {
+    display: none;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.service-content a {
+    display: none;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.service-content a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+// children
+// .service-gimnastika .service-content {
+//     height: 20%;
+//     top: 35%;
+// }
+
+// .service-ofp .service-content {
+//     height: 20%;
+//     top: 35%;
+// }

@@ -1,144 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
+// data
+import servicesList from '@data/services.js'
 // components
-    // import Main from '@mainPage/main/Main.jsx'
+import ServiceEl from '@mainPage/services/serviceEl/ServiceEl.jsx'
 //styles
 import "./services.scss"
 
-export default function Services(props) {
-	
+function Services() {
+
+    const [servicesSection, setServicesSection] = useState('children');
+
+    let chosenSection = servicesSection === 'children' ? servicesList.children : servicesList.adults;
+   
     return (
         <section className="services">
-            <h1 className="services__title">Услуги</h1>
-            <div className="services__navbar">
-                <a href="/services__btn__target">Дети</a>
-                <a href="/services__btn__target">Взрослые</a>
+
+            <h1 className="services-title">Услуги</h1>
+
+            <div className="services-navbar">
+                <button 
+                    onClick={() => setServicesSection('children')} 
+                    className={servicesSection === 'children' ? "chosen" : ""}>
+                    Дети
+                </button>
+
+                <button 
+                    onClick={() => setServicesSection('adults')} 
+                    className={servicesSection === 'adults' ? "chosen" : ""}>
+                    Взрослые
+                </button>
             </div>
 
-            <div className="services__wrapper">
-                <div className="services__items">
+            <div className="services-wrapper">
 
-                    <div className="services__item services__item1">
-                        <div>
-                            <h2>Спортивная аэробика</h2>
-                            <p>Cложный и эмоциональный вид спорта, в котором спортсмены выполняют под музыку комплекс 
-                                упражнений с высокой интенсивностью и сложно координированными элементами</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
+                <div className="services-items">
 
-                    <div className="services__item services__item2">
-                        <div>
-                            <h2>Развивающая гимнастика для малышей</h2>
-                            <p>Развивающая гимнастика несет исключительно оздоровительную функцию, направлена на укрепление 
-                                здоровья детей, доступна для детей любого телосложения и физического подготовки, и дарит радость и удовольствие от занятий спортом.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item3">
-                        <div>
-                            <h2>Общефизическая подготовка (ОФП)</h2>
-                            <p>ОФП включает несложные, но эффективные, упражнения на развитие координации, баланса, силы, гибкости и ловкости.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item4">
-                        <div>
-                            <h2>Джаз-фанк (JUZZ FUNK)</h2>
-                            <p>Cовременный танцевальный стиль, включающий элементы джазовой хореографии, хип-хопа, стрип-пластики, эстрадной хореографии и вакинга.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item5">
-                        <div>
-                            <h2>Дэнсхолл</h2>
-                            <p>Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item6">
-                        <div>
-                            <h2>Стретчинг</h2>
-                            <p>Комплекс упражнений на растяжку мышц тела, развитие гибкости и эластичности связок и суставов.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item7">
-                        <div>
-                            <h2>Силовая тренировка</h2>
-                            <p>Комплексное занятие, направленное на развитие различных групп мышц.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item8">
-                        <div>
-                            <h2>Пилатес</h2>
-                            <p>Система физических упражнений в медленном темпе, которые задействуют глубоко лежащие мышцы и требуют значительных усилий.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item9">
-                        <div>
-                            <h2>Йога Айенгара</h2>
-                            <p>Наш малоподвижный образ жизни не способствует поддержанию хорошей физической формы, делая тело зажатым и слабым. Регулярные занятия йогой Айенгара обеспечивают практикующим улучшение здоровья и внешности.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item10">
-                        <div>
-                            <h2>Настольный теннис</h2>
-                            <p>Олимпийский вид спорта, спортивная игра с мячом, в которой используют специальные ракетки и игровой стол, разграниченный сеткой пополам.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item11">
-                        <div>
-                            <h2>Бачата</h2>
-                            <p>Один из самых простых по хореографии латиноамериканский танец. 
-                                <br/>Главная особенность стиля — чувственный романтизм, пластика, гармония и импровизация!</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item12">
-                        <div>
-                            <h2>Зумба</h2>
-                            <p>Зумба - это фитнес-вечеринка, где зажигательные латиноамериканские ритмы сочетаются с простой хореографией, что позволяет обеспечить эффективную тренировку всего тела.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item13">
-                        <div>
-                            <h2>Дэнсхолл</h2>
-                            <p>Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
-
-                    <div className="services__item services__item14">
-                        <div>
-                            <h2>Тай бо (tae bo)</h2>
-                            <p>Разновидность аэробики, в основе которой лежат боевые элементы тайского бокса, тхэквондо, бокса, каратэ в совокупности с базовыми шагами аэробики, собранными в связки.</p>
-                            <a href="/">подробнее</a>
-                        </div>
-                    </div>
+                    {chosenSection.map(service => { 
+                        return <ServiceEl service={service} key={service.id}/>}
+                    )}
 
                 </div>
-                {/* ./services__items */}
 
             </div>
-            {/* ./services__wrapper */}
 
         </section>
     )
 
 }
+
+export default Services;
