@@ -31,15 +31,11 @@ function Services() {
                 </button>
             </div>
 
-            <div className="services-wrapper">
+            <div className="services-items">
 
-                <div className="services-items">
-
-                    {chosenSection.map(service => { 
-                        return <ServiceEl service={service} key={service.id}/>}
-                    )}
-
-                </div>
+                {chosenSection.map(service => { 
+                    return <ServiceEl service={service} key={service.id}/>}
+                )}
 
             </div>
 

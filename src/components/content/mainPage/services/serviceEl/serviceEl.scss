@@ -6,7 +6,7 @@
     background: no-repeat center;
     background-size: cover;
     height: 310px;
-    max-width: 476px;
+    // width: 480px;
     border-radius: 10px;
     color: #fff;
     overflow: hidden;
@@ -18,13 +18,22 @@
     & .service-content {
         max-height: 300px;
     }
+
+    & .service-content p {
+        opacity: 1;
+    }
+    
+    & .service-content a {
+        opacity: 1;
+    }
     
 }
 
 .service-background {
     position: absolute;
-    height: 120%;
-    width: auto;
+    // top: -30%;
+    height: 110%;
+    width: 100%;
 }
 
 .service-content {
@@ -32,6 +41,7 @@
     width: 92%;
     max-height: 10%;
     overflow: hidden;
+    line-height: 25px;
     background-color: #285075;
     opacity: 0.85;
     padding: 20px 30px;
@@ -44,32 +54,44 @@
 }
 
 .service-content h2 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 // custom setings - children
 .service-gimnastika .service-content h2 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
 }
 
 .service-ofp .service-content h2 {
-    font-size: 23px;
-    line-height: 33px;
+    font-size: 21px;
 }
 // ./custom setings
 
 .service-content p {
-    margin: 15px 0;
+    opacity: 0;
+    margin: 18px 0;
     font-size: 18px;
-    font-weight: 300;
+    line-height: 18px;
+
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 
 .service-content a {
+    opacity: 0;
     color: #FFF;
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
+
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 
 .service-content a:hover {

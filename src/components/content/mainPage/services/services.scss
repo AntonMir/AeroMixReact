@@ -4,17 +4,17 @@
     justify-content: start;
     margin: 100px auto;
     max-width: 1920px;
-    border: #FFC328 dashed 3px;
+    border: #FFC328 3px dashed;
 }
 
 .services-title {
-    margin: 0 0 65px 9%;
+    margin: 0 0 40px 9%;
     font-weight: 600;
     font-size: 42px;
 }
 
 .services-navbar {
-    margin: 0 0 80px 9%;
+    margin: 0 0 50px 9%;
 }
 
 .services-navbar button {
@@ -33,15 +33,11 @@
     background-color: #FFC328;
 }
 
-.services-wrapper {
-    max-width: 1920px;
-}
 
 .services-items {
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 480px));
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     grid-row-gap: 55px;
     grid-column-gap: 3vw;
-    margin:  0 20px;
+    margin:  0 8%;
 }
