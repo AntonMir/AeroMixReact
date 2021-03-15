@@ -19,29 +19,29 @@
         max-height: 300px;
     }
 
-    & .service-content p {
-        opacity: 1;
-    }
+    & .service-content {
+        & p {
+            opacity: 1;
+        }
     
-    & .service-content a {
-        opacity: 1;
+        & a {
+            opacity: 1;
+        }
     }
-    
 }
 
 .service-background {
     position: absolute;
-    // top: -30%;
     height: 110%;
     width: 100%;
 }
 
 .service-content {
     position: absolute;
-    width: 92%;
+    width: 93%;
     max-height: 10%;
     overflow: hidden;
-    line-height: 25px;
+    // line-height: 25px;
     background-color: #285075;
     opacity: 0.85;
     padding: 20px 30px;
@@ -51,10 +51,41 @@
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
-}
 
-.service-content h2 {
-    font-size: 26px;
+    & h2 {
+        font-size: 26px;
+    }
+    
+    & p {
+        opacity: 0;
+        margin: 18px 0;
+        font-size: 18px;
+        line-height: 18px;
+
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+    }
+
+    & a {
+        opacity: 0;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+    
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+    }
+
+    & a:hover {
+        border-bottom: 1px solid #fff;
+    }
 }
 
 // custom setings - children
@@ -67,62 +98,70 @@
 }
 // ./custom setings
 
-.service-content p {
-    opacity: 0;
-    margin: 18px 0;
-    font-size: 18px;
-    line-height: 18px;
+@media screen and (max-width: 1044px) {
 
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
+    .service {
+        height: 220px;
+    }
+
+    .service-content{
+
+        & h2 {
+            font-size: 15.8px !important;
+        }
+
+        & p {
+            font-size: 11px;
+            margin: 12px 0;
+            line-height: 14px;
+        }
+
+        & a {
+            font-size: 15px;
+        }
+    }
+
 }
 
-.service-content a {
-    opacity: 0;
-    color: #FFF;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
+@media screen and (max-width: 550px) {
+  
+    .service-content{
 
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-}
+        & h2 {
+            font-size: 14.7px !important;
+        }
 
-.service-content a:hover {
-    border-bottom: 1px solid #fff;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
 
     .service {
-        height: 210px;
+        height: 180px;
     }
 
     .service-content {
         max-height: 5%;
-        padding: 10px 15px;
+        padding: 15px 20px;
     }
+  
+    .service-content{
 
-    .service-content h2,
-    .service-content p,
-    .service-content a {
-        font-size: 80% !important;
-    }
+        & h2 {
+            font-size: 14px !important;
+            line-height: 12px !important;
+        }
 
-    // custom setings - children
-    .service-gimnastika .service-content h2 {
-        line-height: 12px;
-    }
+        & p {
+            font-size: 10px;
+            margin: 12px 0 10px;
+            line-height: 14px;
+        }
 
-    .service-ofp .service-content h2 {
-        line-height: 13px;
+        & a {
+            font-size: 12px;
+        }
     }
-    // ./custom setings
 
 }
