@@ -5,8 +5,7 @@
     align-items: center;
     background: no-repeat center;
     background-size: cover;
-    height: 310px;
-    // width: 480px;
+    height: 280px;
     border-radius: 10px;
     color: #fff;
     overflow: hidden;
@@ -32,8 +31,8 @@
 
 .service-background {
     position: absolute;
-    height: 110%;
-    width: 100%;
+    height: auto;
+    width: 110%;
 }
 
 .service-content {
@@ -41,7 +40,6 @@
     width: 93%;
     max-height: 10%;
     overflow: hidden;
-    // line-height: 25px;
     background-color: #285075;
     opacity: 0.85;
     padding: 20px 30px;
@@ -88,49 +86,43 @@
     }
 }
 
-// custom setings - children
-.service-gimnastika .service-content h2 {
-    font-size: 22px;
-}
 
-.service-ofp .service-content h2 {
-    font-size: 21px;
-}
-// ./custom setings
-
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 1600px) {
 
     .service {
-        height: 220px;
+        height: 265px;      
+    }
+    
+    // custom setings - children
+    .service-ofp .service-content h2 {
+        font-size: 23px;
+    }
+    // ./custom setings
+
+}
+
+
+@media screen and (max-width: 931px) {
+
+    .service {
+        height: 225px;      
     }
 
     .service-content{
 
         & h2 {
-            font-size: 15.8px !important;
+            font-size: 20px !important;
         }
 
         & p {
-            font-size: 11px;
+            font-size: 14px;
             margin: 12px 0;
-            line-height: 14px;
+            line-height: 17px;
         }
 
         & a {
             font-size: 15px;
         }
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-  
-    .service-content{
-
-        & h2 {
-            font-size: 14.7px !important;
-        }
-
     }
 
 }
@@ -149,18 +141,18 @@
     .service-content{
 
         & h2 {
-            font-size: 14px !important;
+            font-size: 18px !important;
             line-height: 12px !important;
         }
 
         & p {
-            font-size: 10px;
+            font-size: 13px;
             margin: 12px 0 10px;
             line-height: 14px;
         }
 
         & a {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 

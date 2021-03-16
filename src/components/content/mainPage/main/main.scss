@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-around;
     max-width: 1920px;
-    margin: 0 auto;
 }
     
 .main-text {
@@ -30,14 +29,14 @@
 }
 
 .main-btn {
-    padding: 18px 34px 18px 39px;
+    padding: 18px 34px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.1) 47.92%, rgba(0, 0, 0, 0.08) 100%), #F9CB3A;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
     color: #000;
     text-decoration: none;
     font-weight: 600;
-    width: 140px;
     font-size: 21px;
+    align-self: center;
 
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -81,14 +80,13 @@
     height: 664px;
     width: 75%;
     max-width: 1045px;
-    margin: 0 2% 0 0;
 }
 
 .main-img-wrapper {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 30%;
+    width: 32.5%;
     height: 75%;
     transform: skewX(-10deg);
     overflow: hidden;
@@ -102,7 +100,7 @@
     
     &:nth-of-type(1) {
         top: 12%;
-        left: 11%;
+        left: 7%;
     }
 
     &:nth-of-type(2) {
@@ -113,7 +111,7 @@
 
     &:nth-of-type(3) {
         top: 12%;
-        left: 55%;
+        left: 60%;
     }
 }
 
@@ -133,15 +131,15 @@
     width: 35%;
 
     &:nth-of-type(1) {
-        left: 8.5%;
+        left: 5.8%;
     }
 
     &:nth-of-type(2) {
-        left: 31.5%;
+        left: 32.7%;
     }
 
     &:nth-of-type(3) {
-        left: 52.5%;
+        left: 58.8%;
     }
 }
   
@@ -168,11 +166,17 @@
     }
     
     .main-btn {
-        padding: 18px 39px 18px 32px;
-        width: 125px;
+        padding: 18px 32px;
         font-size: 21px;
     }
 
+    .main-img-wrapper {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
 
 }
 
@@ -195,7 +199,6 @@
     }
     
     .main-btn {
-        width: 125px;
         font-size: 21px;
     }
 
@@ -203,11 +206,15 @@
         height: 450px;
         width: 70%;
         max-width: 1045px;
-        margin: 0 2% 0 0;
     }
 
     .main-socials p {
         display: none;
+    }
+
+    .main-socials {
+        width: 200px;
+        max-width: 200px;
     }
 
     .main-blue-wave {
@@ -222,7 +229,34 @@
 
     .main {
         flex-direction: column-reverse;
+        margin-top: 30px;
     }
+
+    .main-img-wrapper {
+        width: 30%;
+        height: 90%;
+
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
+    }
+
+    .main-img-wrapper:hover {
+        &:nth-of-type(1) {
+            left: 4.5%;
+        }
+    
+        &:nth-of-type(2) {
+            left: 31.5%;
+        }
+    
+        &:nth-of-type(3) {
+            left: 57.5%;
+        }
+    }
+
     
     .main-text {
         width: 80%;
@@ -232,17 +266,17 @@
     .main-text h1 {
         font-size: 42px;
         line-height: 40px;
-        margin: 0 20px;
+        margin: 40px 20px 0;
     }
 
     .main-text p {
         font-size: 24px;
         line-height: 32px;
-        margin: 20px;
+        margin: 30px 20px 20px;
     }
 
     .main-btn {
-        align-self: center;
+        margin-top: 20px;
     }
 
     .main-imgs {
@@ -265,6 +299,18 @@
 
 @media screen and (max-width: 668px) {
 
+    .main {
+        margin-top: 40px;
+    }
+
+    .main-img-wrapper {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
     .main-text {
         width: 90%;
         margin: 10px auto;
@@ -278,12 +324,10 @@
     .main-text p {
         font-size: 20px;
         line-height: 32px;
-        margin: 20px;
     }
 
     .main-btn {
         padding: 15px 30px;
-        width: 115px;
         font-size: 19px;
     }
 
@@ -296,6 +340,35 @@
 
 @media screen and (max-width: 444px) {
 
+    .main {
+        margin-top: 50px;
+    }
+
+    .main-img-wrapper {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .main-img-wrapper:hover {
+        z-index: 2;
+        width: 35%;
+    
+        &:nth-of-type(1) {
+            left: 4.5%;
+        }
+    
+        &:nth-of-type(2) {
+            left: 31.3%;
+        }
+    
+        &:nth-of-type(3) {
+            left: 57.7%;
+        }
+    }
+
     .main-imgs {
         height: 220px;
     }
@@ -307,13 +380,12 @@
     .main-text p {
         font-size: 17px;
         line-height: 32px;
-        margin: 15px;
+        margin: 20px 15px 15px;
     }
 
     .main-btn {
         padding: 12px 26px;
         font-size: 15px;
-        width: 90px;
     }
 }
 

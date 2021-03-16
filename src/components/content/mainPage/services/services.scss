@@ -35,15 +35,20 @@
 
 .services-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
     grid-row-gap: 55px;
-    grid-column-gap: 3vw;
+    grid-column-gap: 50px;
     margin: 0 8%;
 }
 
 @media screen and (max-width: 1044px) {
+
+    .services-navbar button {
+        font-size: 17px;
+    }
     
     .services-items {
+        margin: 0 20%;
         grid-template-columns: repeat(auto-fill, minmax(308.6px, 1fr));
         grid-row-gap: 45px;
     }
@@ -53,8 +58,12 @@
 
 @media screen and (max-width: 768px) {
 
+    .services-navbar button {
+        font-size: 15px;
+    }
+
     .services-items {
-        margin: 0 20%;
+        margin: 0 10%;
         grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
         grid-row-gap: 35px;
     }
@@ -62,6 +71,10 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .services-navbar button {
+        font-size: 10px;
+    }
 
     .services-title {
         font-size: 35px;
