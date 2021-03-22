@@ -4,6 +4,8 @@ import Main from '@mainPage/main/Main.jsx';
 import Promotions from '@mainPage/promotions/Promotions.jsx';
 import Contacts from '@mainPage/contacts/Contacts.jsx';
 import Services from '@mainPage/services/Services.jsx';
+import Treiners from '@mainPage/treiners/Treiners.jsx';
+import Halls from '@mainPage/halls/Halls.jsx';
 //styles
 import "./mainPage.scss";
 
@@ -17,8 +19,8 @@ function MainPage() {
 			{/* <News /> */}
 			<Promotions />
 			<Services />
-			{/* <Treiners /> */}
-			{/* <Halls /> */}
+			<Treiners />
+			<Halls />
 			<Contacts />
 
 			{/* <img src={img} alt="" srcset=""/> */}

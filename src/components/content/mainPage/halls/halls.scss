@@ -1,0 +1,335 @@
+.h-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 10% 0 9%;
+    font-weight: 600;
+}
+
+.h-carousel-header h1 {
+    align-self: center;
+    font-size: 42px;
+}
+
+.h-carousel-wrapper {
+    margin: 30px 5%;
+}
+
+// стилизация каждого слайда
+.h-car-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 350px;
+    height: 500px;
+    color: #000;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+// стили при нажатии на слайд
+.h-car-el:focus {
+    outline: none;
+}
+
+// стилизация частей слайда---------------
+.h-logo {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.h-car-el h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+
+.h-car-el p {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+}
+
+.h-car-el a {
+    align-self: flex-start;
+    justify-self: flex-end;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin: 15px 0 0 0;
+}
+
+.h-car-el a:hover {
+    text-decoration: underline;
+}
+//------------------------------------------
+
+// стилизация стрелок
+.h-pointer {
+    height: 30px;
+    width: 25px;
+    align-self: center;
+    font-size: 40px;
+    line-height: 20px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+.h-pointer:disabled {
+    opacity: 0;
+}
+
+// стилизация меню слайдера
+.h-carousel .rec-dot {
+    background-color: #BCBCBC !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 50%) !important;
+    width: 38px !important;
+    height: 8px !important;
+    margin: 0 9px !important;
+
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.h-carousel .rec-dot_active {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .h-car-el {
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 1390px) {
+
+    .h-car-el {
+        height: 400px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 24px;
+    }
+
+    .h-car-el p {
+        font-size: 17px;
+    }
+
+    .h-car-el a {
+        font-size: 19px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .h-car-el {
+        height: 360px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 23px;
+    }
+
+    .h-car-el p {
+        font-size: 16px;
+    }
+
+    .h-car-el a {
+        font-size: 18px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 1149px) {
+
+    .h-car-el {
+        height: 440px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .h-car-el {
+        height: 400px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 22px;
+    }
+
+    .h-car-el p {
+        font-size: 15px;
+    }
+
+    .h-car-el a {
+        font-size: 17px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .h-car-el {
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .h-car-el {
+        height: 300px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 21px;
+    }
+
+    .h-car-el p {
+        font-size: 14px;
+    }
+
+    .h-car-el a {
+        font-size: 16px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 738px) {
+
+    .h-car-el {
+        height: 420px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 21px;
+    }
+
+    .h-car-el p {
+        font-size: 14px;
+    }
+
+    .h-car-el a {
+        font-size: 16px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .h-car-el {
+        padding: 20px;
+        height: 400px;
+    }
+    
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .h-car-el p {
+        margin-top: 10px;
+    }
+
+    .h-car-el a {
+        margin-top: 10px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 480px) { 
+
+    .h-carousel-header h1 {
+        font-size: 35px;
+    }
+
+    .h-carousel-wrapper {
+        margin: 20px 5%;
+    }
+
+    .h-car-el {
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 440px) { 
+
+    .h-car-el {
+        height: 320px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 19px;
+    }
+    //------------------------------------------
+
+    .h-carousel .rec-dot {
+        width: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+    .h-carousel-header h1 {
+        font-size: 30px;
+    }
+
+    .h-car-el {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+
+    .h-car-el {
+        height: 240px;
+    }
+
+    // стилизация частей слайда---------------
+    .h-car-el h1 {
+        font-size: 18px;
+    }
+
+    .h-car-el p {
+        font-size: 13px;
+    }
+
+    .h-car-el a {
+        font-size: 15px;
+    }
+    //------------------------------------------
+
+}
