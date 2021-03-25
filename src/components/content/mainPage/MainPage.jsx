@@ -6,6 +6,7 @@ import Contacts from '@mainPage/contacts/Contacts.jsx';
 import Services from '@mainPage/services/Services.jsx';
 import Treiners from '@mainPage/treiners/Treiners.jsx';
 import Halls from '@mainPage/halls/Halls.jsx';
+import News from '@mainPage/news/News.jsx';
 //styles
 import "./mainPage.scss";
 
@@ -16,32 +17,15 @@ function MainPage() {
 		<section className="mainPage">
 
 			<Main />
-			{/* <News /> */}
+			<News />
 			<Promotions />
 			<Services />
 			<Treiners />
 			<Halls />
 			<Contacts />
 
-			{/* <img src={img} alt="" srcset=""/> */}
-			
-			{/* <div>PRОPS:
-				{
-					props.status.map(item => {
-						return <p>{item}</p>
-					})
-				}
-			</div> */}
-
 		</section>
 	)
 }
-
-// const mapContent = state => {
-//     return {
-//         status: state.status
-//     }
-// }
-// export default connect(mapContent)(Content)
 
 export default  MainPage;

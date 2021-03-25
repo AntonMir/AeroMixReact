@@ -1,0 +1,83 @@
+.n-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 10% 0 9%;
+    font-weight: 600;
+}
+
+.n-carousel-header h1 {
+    align-self: center;
+    font-size: 42px;
+}
+
+.n-carousel-wrapper {
+    margin: 30px 5%;
+}
+
+// стилизация стрелок
+.n-pointer {
+    height: 30px;
+    width: 25px;
+    align-self: center;
+    font-size: 40px;
+    line-height: 20px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+.n-pointer:disabled {
+    opacity: 0;
+}
+
+// стилизация меню слайдера
+.n-carousel .rec-dot {
+    background-color: #BCBCBC !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 50%) !important;
+    width: 38px !important;
+    height: 8px !important;
+    margin: 0 9px !important;
+
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.n-carousel .rec-dot_active {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 480px) { 
+
+    .n-carousel-header h1 {
+        font-size: 35px;
+    }
+
+    .n-carousel-wrapper {
+        margin: 20px 5%;
+    }
+
+}
+
+@media screen and (max-width: 440px) { 
+
+    .n-carousel .rec-dot {
+        width: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+    .n-carousel-wrapper {
+        margin: 30px 1%;
+    }
+
+    .n-carousel-header h1 {
+        font-size: 30px;
+    }
+
+}
