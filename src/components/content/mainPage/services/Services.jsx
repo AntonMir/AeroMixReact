@@ -20,13 +20,13 @@ function Services() {
             <div className="services-navbar">
                 <button 
                     onClick={() => setServicesSection('children')} 
-                    className={servicesSection === 'children' ? "chosen" : ""}>
+                    className={servicesSection === 'children' ? "chosen" : "unchosen"}>
                     Дети
                 </button>
 
                 <button 
                     onClick={() => setServicesSection('adults')} 
-                    className={servicesSection === 'adults' ? "chosen" : ""}>
+                    className={servicesSection === 'adults' ? "chosen" : "unchosen"}>
                     Взрослые
                 </button>
             </div>

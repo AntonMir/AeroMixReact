@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: Ubuntu, sans-serif;
   min-width: 320px;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color:rgb(117, 108, 95); */

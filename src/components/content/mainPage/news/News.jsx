@@ -5,6 +5,9 @@ import Carousel, { consts } from 'react-elastic-carousel'
 import Item from '@news/newsEl/NewsEl.jsx'
 // data
 import newsList from '@data/news.js';
+// img
+import newsRedWaveBig from '@img/mainPage/news/redWaveBig.svg'
+import newsRedWaveSmall from '@img/mainPage/news/redWaveSmall.svg'
 // styles
 import './news.scss';
 
@@ -12,7 +15,6 @@ import './news.scss';
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 800, itemsToShow: 2 },
-    // { width: 1200, itemsToShow: 3 },
 ];
 
 
@@ -20,7 +22,7 @@ export default function News() {
 
     // настройка формы стрелок (брать элементы юникода)
     function myArrow({ type, onClick, isEdge }) {
-        const pointer = type === consts.PREV ? '❮' : '❯'
+        const pointer = type === consts.PREV ? 'ᐸ' : 'ᐳ'
         return (
           <button onClick={onClick} disabled={isEdge} className="n-pointer">
             {pointer}
@@ -28,9 +30,8 @@ export default function News() {
         )
     }
 
-
     return (
-        <>
+        <div className="news">
             <div className="n-carousel-header">
                 <h1>Новости</h1>
             </div>
@@ -49,6 +50,16 @@ export default function News() {
                                     
                 </Carousel>
             </div>
-        </>
+
+            <img 
+                className="news-red-wave" 
+                alt=""
+                src={window.outerWidth > 580 
+                    ? newsRedWaveBig 
+                    : newsRedWaveSmall} 
+                // src={newsRedWaveBig} 
+            />
+
+        </div>
     );
 }

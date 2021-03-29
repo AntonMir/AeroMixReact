@@ -91,8 +91,8 @@
 
 // стилизация меню слайдера
 .h-carousel .rec-dot {
-    background-color: #BCBCBC !important;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 50%) !important;
+    background-color: #c0c0c0 !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25) !important;
     width: 38px !important;
     height: 8px !important;
     margin: 0 9px !important;
@@ -201,7 +201,7 @@
 @media screen and (max-width: 800px) {
 
     .h-car-el {
-        height: 300px;
+        height: 330px;
     }
 
     // стилизация частей слайда---------------
@@ -220,10 +220,18 @@
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .h-pointer {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 738px) {
 
     .h-car-el {
-        height: 420px;
+        height: 330px;
     }
 
     // стилизация частей слайда---------------
@@ -239,6 +247,14 @@
         font-size: 16px;
     }
     //------------------------------------------
+
+}
+
+@media screen and (max-width: 688px) {
+
+    .h-car-el {
+        height: 430px;
+    }
 
 }
 
@@ -246,7 +262,7 @@
 
     .h-car-el {
         padding: 20px;
-        height: 400px;
+        height: 410px;
     }
     
     // стилизация частей слайда---------------
@@ -284,10 +300,6 @@
 
 @media screen and (max-width: 440px) { 
 
-    .h-car-el {
-        height: 320px;
-    }
-
     // стилизация частей слайда---------------
     .h-car-el h1 {
         font-size: 19px;
@@ -295,7 +307,8 @@
     //------------------------------------------
 
     .h-carousel .rec-dot {
-        width: 15px !important;
+        width: 30px !important;
+        margin: 0 7px !important;
     }
 
 }
@@ -307,7 +320,7 @@
     }
 
     .h-car-el {
-        height: 300px;
+        height: 340px;
     }
 
 }
@@ -315,7 +328,7 @@
 @media screen and (max-width: 350px) { 
 
     .h-car-el {
-        height: 240px;
+        height: 300px;
     }
 
     // стилизация частей слайда---------------

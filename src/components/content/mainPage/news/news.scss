@@ -1,7 +1,11 @@
+.news {
+    position: relative;
+}
+
 .n-carousel-header {
     display: flex;
     justify-content: space-between;
-    margin: 100px 10% 0 9%;
+    margin: 120px 10% 0 9%;
     font-weight: 600;
 }
 
@@ -19,12 +23,13 @@
     height: 30px;
     width: 25px;
     align-self: center;
-    font-size: 40px;
+    font-size: 15px;
     line-height: 20px;
     padding: 0;
     border: none;
     background-color: inherit;
     outline: none;
+    color: #494848;
 }
 
 .n-pointer:disabled {
@@ -33,8 +38,8 @@
 
 // стилизация меню слайдера
 .n-carousel .rec-dot {
-    background-color: #BCBCBC !important;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 50%) !important;
+    background-color: #c0c0c0 !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25) !important;
     width: 38px !important;
     height: 8px !important;
     margin: 0 9px !important;
@@ -50,7 +55,107 @@
     background-color: #fff !important;
 }
 
+.news-red-wave {
+    position: absolute;
+    top: -10%;
+    width: 99.1vw;
+    max-width: 1920px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1820px) { 
+
+    .news-red-wave {
+        top: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1620px) { 
+
+    .news-red-wave {
+        top: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1420px) { 
+
+    .news-red-wave {
+        top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) { 
+
+    .news-red-wave {
+        top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) { 
+
+    .news-red-wave {
+        top: 30%;
+    }
+
+}
+
+@media screen and (max-width: 950px) { 
+
+    .news-red-wave {
+        top: 35%;
+    }
+
+}
+
+@media screen and (max-width: 840px) { 
+
+    .news-red-wave {
+        top: 45%;
+    }
+
+}
+
+@media screen and (max-width: 768px) { 
+
+    .n-pointer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) { 
+
+    .news-red-wave {
+        top: 50%;
+    }
+
+}
+
+@media screen and (max-width: 630px) { 
+
+    .news-red-wave {
+        top: 55%;
+    }
+
+}
+
+@media screen and (max-width: 580px) { 
+
+    .news-red-wave {
+        top: 70%;
+    }
+
+}
+
 @media screen and (max-width: 480px) { 
+
+    .news-red-wave {
+        top: 75%;
+    }
 
     .n-carousel-header h1 {
         font-size: 35px;
@@ -65,12 +170,17 @@
 @media screen and (max-width: 440px) { 
 
     .n-carousel .rec-dot {
-        width: 15px !important;
+        width: 30px !important;
+        margin: 0 7px !important;
     }
 
 }
 
 @media screen and (max-width: 400px) { 
+
+    .news-red-wave {
+        top: 80%;
+    }
 
     .n-carousel-wrapper {
         margin: 30px 1%;
@@ -78,6 +188,14 @@
 
     .n-carousel-header h1 {
         font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+
+    .news-red-wave {
+        top: 85%;
     }
 
 }
