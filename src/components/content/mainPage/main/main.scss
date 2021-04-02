@@ -305,6 +305,22 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+
+    .n-carousel-header h1 {
+        font-size: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) { 
+
+    .main-blue-wave {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 668px) {
 
     .main {

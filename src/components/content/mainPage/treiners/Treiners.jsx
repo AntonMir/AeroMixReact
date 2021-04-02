@@ -10,6 +10,8 @@ import vasilcovaViktoria from '@img/mainPage/treiners/vasilcovaViktoria.jpg'
 import bondarenkoLidija from '@img/mainPage/treiners/bondarenkoLidija.jpg'
 import bojkovaKristina from '@img/mainPage/treiners/bojkovaKristina.jpg'
 import udinIgor from '@img/mainPage/treiners/udinIgor.jpg'
+// wave img
+import treinersGreenWave from '@img/mainPage/treiners/greenWave.svg'
 // styles
 import './treiners.scss';
 
@@ -34,7 +36,8 @@ export default function Treiners() {
     }
 
     return (
-        <>
+        <div className="treiners">
+            
             <div className="t-carousel-header">
                 <h1>Тренеры</h1>
             </div>
@@ -98,6 +101,8 @@ export default function Treiners() {
                                                        
                 </Carousel>
             </div>
-        </>
+
+            <img className="treiners-green-wave" alt="" src={treinersGreenWave} />
+        </div>
     );
 }

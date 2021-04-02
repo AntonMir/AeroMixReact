@@ -6,8 +6,7 @@ import Item from '@news/newsEl/NewsEl.jsx'
 // data
 import newsList from '@data/news.js';
 // img
-import newsRedWaveBig from '@img/mainPage/news/redWaveBig.svg'
-import newsRedWaveSmall from '@img/mainPage/news/redWaveSmall.svg'
+import newsRedWave from '@img/mainPage/news/redWave.svg'
 // styles
 import './news.scss';
 
@@ -51,14 +50,7 @@ export default function News() {
                 </Carousel>
             </div>
 
-            <img 
-                className="news-red-wave" 
-                alt=""
-                src={window.outerWidth > 580 
-                    ? newsRedWaveBig 
-                    : newsRedWaveSmall} 
-                // src={newsRedWaveBig} 
-            />
+            <img className="news-red-wave" alt="" src={newsRedWave} />
 
         </div>
     );

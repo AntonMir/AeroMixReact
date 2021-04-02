@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import Header from '@components/header/Header.jsx'
 import Footer from '@components/footer/Footer.jsx'
 import MainPage from '@components/content/mainPage/MainPage.jsx'
+import AboutClub from '../content/aboutClub/AboutClub'
+
 // import Content from './content/Content.jsx'
 
 // styles
@@ -28,7 +30,7 @@ export default function App() {
                 <section className="content">
                     {/* <p>Content</p> */}
                     <Route exact path='/' component={MainPage}/>
-                    <Route exact path='/test' component={MainPage}/>
+                    <Route exact path='/aboutclub' component={AboutClub}/>
                 </section>
                 <Footer />
             </Provider>

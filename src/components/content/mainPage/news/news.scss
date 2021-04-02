@@ -57,64 +57,16 @@
 
 .news-red-wave {
     position: absolute;
-    top: -10%;
+    top: -11.5%;
     width: 99.1vw;
     max-width: 1920px;
     z-index: -1;
 }
 
-@media screen and (max-width: 1820px) { 
+@media screen and (max-width: 1920px) { 
 
     .news-red-wave {
-        top: 10%;
-    }
-
-}
-
-@media screen and (max-width: 1620px) { 
-
-    .news-red-wave {
-        top: 5%;
-    }
-
-}
-
-@media screen and (max-width: 1420px) { 
-
-    .news-red-wave {
-        top: 20%;
-    }
-
-}
-
-@media screen and (max-width: 1200px) { 
-
-    .news-red-wave {
-        top: 25%;
-    }
-
-}
-
-@media screen and (max-width: 1100px) { 
-
-    .news-red-wave {
-        top: 30%;
-    }
-
-}
-
-@media screen and (max-width: 950px) { 
-
-    .news-red-wave {
-        top: 35%;
-    }
-
-}
-
-@media screen and (max-width: 840px) { 
-
-    .news-red-wave {
-        top: 45%;
+        top: calc(105% - 28vw); 
     }
 
 }
@@ -125,37 +77,13 @@
         display: none;
     }
 
-}
-
-@media screen and (max-width: 700px) { 
-
     .news-red-wave {
-        top: 50%;
-    }
-
-}
-
-@media screen and (max-width: 630px) { 
-
-    .news-red-wave {
-        top: 55%;
-    }
-
-}
-
-@media screen and (max-width: 580px) { 
-
-    .news-red-wave {
-        top: 70%;
+        display: none;
     }
 
 }
 
 @media screen and (max-width: 480px) { 
-
-    .news-red-wave {
-        top: 75%;
-    }
 
     .n-carousel-header h1 {
         font-size: 35px;
@@ -178,24 +106,12 @@
 
 @media screen and (max-width: 400px) { 
 
-    .news-red-wave {
-        top: 80%;
-    }
-
     .n-carousel-wrapper {
         margin: 30px 1%;
     }
 
     .n-carousel-header h1 {
         font-size: 30px;
-    }
-
-}
-
-@media screen and (max-width: 350px) { 
-
-    .news-red-wave {
-        top: 85%;
     }
 
 }

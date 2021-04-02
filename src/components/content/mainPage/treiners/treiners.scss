@@ -1,3 +1,7 @@
+.treiners {
+    position: relative;
+}
+
 .t-carousel-header {
     display: flex;
     justify-content: space-between;
@@ -109,6 +113,22 @@
     background-color: #fff !important;
 }
 
+.treiners-green-wave {
+    position: absolute;
+    top: 32%;
+    width: 99.1vw;
+    max-width: 1920px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .treiners-green-wave {
+        top: calc(100% - 28vw);
+    }
+
+}
+
 @media screen and (max-width: 1500px) {
 
     .t-car-el {
@@ -169,6 +189,14 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+
+    .t-carousel-header h1 {
+        font-size: 35px;
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
 
     .t-car-el {
@@ -224,6 +252,10 @@
 @media screen and (max-width: 768px) {
 
     .t-pointer {
+        display: none;
+    }
+
+    .treiners-green-wave {
         display: none;
     }
 

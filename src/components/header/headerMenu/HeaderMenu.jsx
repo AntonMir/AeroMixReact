@@ -17,6 +17,7 @@ class HeaderMenu extends Component {
 		}
 		this.showHeaderMenu = this.showHeaderMenu.bind(this);
 		this.showAboutClubMenu = this.showAboutClubMenu.bind(this);		
+		this.closeAll = this.closeAll.bind(this);		
 	}
 
 	showHeaderMenu() {
@@ -28,11 +29,16 @@ class HeaderMenu extends Component {
 		this.setState({ aboutClubMenu: !this.state.aboutClubMenu });
 	}
 
+	closeAll() {
+		this.setState({ headerMenu: false });
+		this.setState({ aboutClubMenu: false });
+	}
+
 	render() {
 		return (
             <>
 				<ul className={`${!this.state.headerMenu ? "header-menu" : "header-menu visible"}`}>
-					<li><Link className="header-menu-el" to="/" onClick={this.showAboutClubMenu}>
+					<li><Link className="header-menu-el" onClick={this.showAboutClubMenu}>
 						О клубе 
 						<img 
 							src={arrowTop} 
@@ -45,10 +51,10 @@ class HeaderMenu extends Component {
 							className={`${this.state.aboutClubMenu ? "hidden" : "visible"} header-menu-arrow`}
 						/>
 					</Link></li> 
-					<li><Link className="header-menu-el" to="/">Услуги</Link></li>
-					<li><Link className="header-menu-el" to="/">Цены</Link></li>
-					<li><Link className="header-menu-el" to="/">Расписание</Link></li>
-					<li><Link className="header-menu-el" to="/">Контакты</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Услуги</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Цены</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Расписание</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Контакты</Link></li>
 				</ul>
 
 				<img 
@@ -72,13 +78,13 @@ class HeaderMenu extends Component {
 										: "about-club-menu visible") 
 									: "about-club-menu"}`}
 				>
-					<li><Link className="about-club-menu-el" to="/">О клубе</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Новости</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Акции</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Тренеры</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Залы и оборудование</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Комната отдыха</Link></li>
-					<li><Link className="about-club-menu-el" to="/">Сборная</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/aboutclub">О клубе</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Новости</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Акции</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Тренеры</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Залы и оборудование</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Комната отдыха</Link></li>
+					<li><Link className="about-club-menu-el" onClick={this.closeAll} to="/">Сборная</Link></li>
 				</ul>
 
 				<div className="burger-menu-btn" onClick={this.showHeaderMenu}>

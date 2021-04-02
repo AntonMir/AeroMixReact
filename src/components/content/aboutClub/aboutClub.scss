@@ -1,0 +1,182 @@
+.about-club {
+    max-width: 1920px;
+    margin: 30px auto;
+
+}
+
+.website-position-nav {
+    display: flex;
+    margin: 0 9%;
+
+    & p {
+        margin: 0 10px;
+    }
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.about-club-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(610px, 1fr));
+    justify-items: center;
+    grid-gap: 70px;
+    margin: 30px 9% 0;
+}
+
+.about-club-content img {
+    width: 100%;
+    height: auto;
+}
+
+.about-club-children-img {
+    display: none;
+}
+
+.about-club-info {
+    display: flex;
+    flex-direction: column;
+    & h1 {
+        font-size: 40px;
+        margin: 0 0 40px;
+    }
+
+    & p {
+        font-size: 23px;
+        line-height: 35px;
+        margin: 0 0 40px;
+    }
+}
+
+.about-club-act-list {
+    & p {
+        font-size: 23px;
+        line-height: 35px;
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 1573px) {
+
+    .about-club-content {
+        grid-row-gap: 40px;
+    }
+
+    .about-club-content img {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .about-club-info {
+        align-items: center;
+    }
+
+    .about-club-children-img {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .about-club-img-training {
+        order: 2;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .about-club-content {
+        grid-row-gap: 30px;
+    }
+
+    .about-club-content img {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .about-club-content {
+        grid-row-gap: 20px;
+    }
+
+    .about-club-content img {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .about-club-content {
+        grid-row-gap: 0px;
+    }
+
+    .about-club-content img {
+        width: 100%;
+    }
+
+    .about-club-info {
+        & h1 {
+            font-size: 35px;
+        }
+    
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            margin: 0 0 40px;
+        }
+    }
+    
+    .about-club-act-list {
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+
+    .about-club-content {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .about-club-info {
+        & h1 {
+            font-size: 29px;
+        }
+    
+        & p {
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0 0 30px;
+        }
+    }
+    
+    .about-club-act-list {
+        & p {
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0 0 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .about-club-content {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+}

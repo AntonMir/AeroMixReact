@@ -11,7 +11,7 @@ function FooterNav() {
         <div className="foonter-nav">
             <ul className="footer-nav-first">
                 <li>
-                    <Link className="footer-nav-item" to="/">О клубе</Link>
+                    <Link className="footer-nav-item" to="/aboutclub">О клубе</Link>
                 </li>
                 <li>
                     <Link className="footer-nav-item" to="/">Тренеры</Link>
