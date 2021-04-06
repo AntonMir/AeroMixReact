@@ -45,6 +45,12 @@
     width: 100%;
     height: auto;
     pointer-events: none;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .h-car-el h1 {
@@ -82,6 +88,7 @@
     padding: 0;
     border: none;
     background-color: inherit;
+    color: #888888;
     outline: none;
 }
 

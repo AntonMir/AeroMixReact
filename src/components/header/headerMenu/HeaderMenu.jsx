@@ -38,7 +38,7 @@ class HeaderMenu extends Component {
 		return (
             <>
 				<ul className={`${!this.state.headerMenu ? "header-menu" : "header-menu visible"}`}>
-					<li><Link className="header-menu-el" onClick={this.showAboutClubMenu}>
+					<li><Link to="" className="header-menu-el" onClick={this.showAboutClubMenu}>
 						О клубе 
 						<img 
 							src={arrowTop} 

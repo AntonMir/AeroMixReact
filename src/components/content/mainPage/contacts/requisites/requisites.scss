@@ -21,7 +21,7 @@
 
 // Default settings for <details>, dont change!
 // Chrome, Opera, Safari 
-details summary::-webkit-details-marker {
+details summary::marker {
     display: none;
 }
 details:focus {

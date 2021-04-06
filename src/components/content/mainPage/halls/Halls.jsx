@@ -48,28 +48,28 @@ export default function Halls() {
                         <img className="h-logo" src={hallOne} alt=""/>
                         <h1>Зал № 1</h1>
                         <p>Для занятий хореографией, йогой, акробатикой.</p>
-                        <a href="/">подробнее</a>
+                        <a href="/hallone">подробнее</a>
                     </Item>
 
                     <Item className="h-car-el">
                         <img className="h-logo" src={hallTwo} alt=""/>
                         <h1>Зал № 2</h1>
                         <p>Предназначен, в большей степени, для силовых тренировок.</p>
-                        <a href="/">подробнее</a>
+                        <a href="/halltwo">подробнее</a>
                     </Item>
 
                     <Item className="h-car-el">
                         <img className="h-logo" src={hallThere} alt=""/>
                         <h1>Зал № 3</h1>
                         <p>Большой зал в котором проходит постановка и отработка аэробных и показательных программ.</p>
-                        <a href="/">подробнее</a>
+                        <a href="/hallthree">подробнее</a>
                     </Item>
 
                     <Item className="h-car-el">
                         <img className="h-logo" src={restroom} alt=""/>
                         <h1>Комната отдыха</h1>
                         <p>Есть все, что нужно для комфортного отдыха.</p>
-                        <a href="/">подробнее</a>
+                        <a href="/restroom">подробнее</a>
                     </Item>
 
                 </Carousel>

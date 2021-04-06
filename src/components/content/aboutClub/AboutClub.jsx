@@ -14,10 +14,10 @@ function AboutClub() {
     return (
         <section className="about-club">
 
-            <div className="website-position-nav">
-                <Link>Главная</Link>
+            <div className="about-club-website-position-nav">
+                <Link to="/">Главная</Link>
                 <p> &gt; </p>
-                <Link>О клубе</Link>
+                <span>О клубе</span>
             </div>
 
             <div className="about-club-content">

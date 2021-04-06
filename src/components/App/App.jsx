@@ -8,7 +8,12 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import Header from '@components/header/Header.jsx'
 import Footer from '@components/footer/Footer.jsx'
 import MainPage from '@components/content/mainPage/MainPage.jsx'
-import AboutClub from '../content/aboutClub/AboutClub'
+import AboutClub from '@components/content/aboutClub/AboutClub.jsx'
+import HallOne from '@components/content/halls/hall1/HallOne.jsx'
+// import HallTwo from '@components/content/halls/hall2/HallTwo.jsx'
+// import HallThree from '@components/content/halls/hall3/HallThree.jsx'
+// import Restroom from '@components/content/halls/restroom/Restroom.jsx'
+
 
 // import Content from './content/Content.jsx'
 
@@ -28,9 +33,12 @@ export default function App() {
             <Provider store={store}>
                 <Header />
                 <section className="content">
-                    {/* <p>Content</p> */}
                     <Route exact path='/' component={MainPage}/>
                     <Route exact path='/aboutclub' component={AboutClub}/>
+                    <Route exact path='/hallone' component={HallOne}/>
+                    {/* <Route exact path='/halltwo' component={HallTwo}/> */}
+                    {/* <Route exact path='/hallthree' component={HallThree}/> */}
+                    {/* <Route exact path='/restroom' component={Restroom}/> */}
                 </section>
                 <Footer />
             </Provider>

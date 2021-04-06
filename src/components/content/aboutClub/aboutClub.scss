@@ -4,8 +4,9 @@
 
 }
 
-.website-position-nav {
+.about-club-website-position-nav {
     display: flex;
+    align-items: center;
     margin: 0 9%;
 
     & p {
@@ -14,9 +15,14 @@
     & a {
         text-decoration: none;
         color: #000;
+        font-size: 18px;
+        white-space: nowrap;
     }
     & a:hover {
         text-decoration: underline;
+    }
+    & span {
+        font-size: 18px;
     }
 }
 

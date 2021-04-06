@@ -21,7 +21,7 @@ export default function News() {
 
     // настройка формы стрелок (брать элементы юникода)
     function myArrow({ type, onClick, isEdge }) {
-        const pointer = type === consts.PREV ? 'ᐸ' : 'ᐳ'
+        const pointer = type === consts.PREV ? '❮' : '❯'
         return (
           <button onClick={onClick} disabled={isEdge} className="n-pointer">
             {pointer}

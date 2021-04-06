@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 230px;
+    width: 200px;
 }
 
 .contacts-socials h2 {
@@ -22,12 +22,12 @@
     width: 100%;
 
     & a img {
-        height: 30px;
+        height: 25px;
         margin-top: 2px;
     }
 
     & a:nth-child(2) img {
-        height: 21px;
+        height: 20px;
         margin-top: 5px;
     }
     
@@ -41,12 +41,12 @@
 
     .contacts-socials-items {
         & a img {
-            height: 30px;
+            height: 21px;
             margin-top: 2px;
         }
     
         & a:nth-child(2) img {
-            height: 25px;
+            height: 16px;
             margin-top: 4px;
         }
         
