@@ -1,0 +1,221 @@
+.hall-two {
+    max-width: 1920px;
+    margin: 30px auto;
+}
+
+.hall-two-website-position-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 9%;
+
+    & p {
+        margin: 0 10px;
+    }
+    & a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & span {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+}
+
+.hall-two-main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+    grid-column-gap: 10px;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #FCFAFA;
+}
+
+.hall-two-content-wrapper {
+    margin: 0 0 0 5%;
+}
+
+.hall-two-info {
+    margin: 0 9%;
+    & h1 {
+        font-size: 35px;
+        margin-top: 45px;
+        margin-bottom: 50px;
+    }
+    & p {
+        font-size: 21px;
+        font-weight: 100;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.hall-two-main-img img {
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    .hall-two-main-content {
+        grid-template-columns: repeat(auto-fill, minmax(536px, 1fr));
+    }
+
+    .hall-two-main-img img {
+        margin-top: -40px;
+    }
+
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .hall-two-website-position-nav {
+        & a {
+            font-size: 16px;
+        }
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .hall-two-info {
+        margin: 0 9%;
+        & h1 {
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        & p {
+            font-size: 19px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hall-two-info {
+        margin: 0 9%;
+        & h1 {
+            font-size: 30px;
+        }
+        & p {
+            font-size: 17px;
+            line-height: 22px;
+            margin-bottom: 16px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1081px) {
+
+    .hall-two-content-wrapper {
+        margin: -200px 5% 0;
+    }
+    
+    .hall-two-website-position-nav {
+        margin: 30px 3% 0;
+        & a {
+            font-size: 18px;
+        }
+        & span {
+            font-size: 18px;
+        }
+
+    }
+
+    .hall-two-info {
+        margin: 0 3%;
+        & h1 {
+            font-size: 32px;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .hall-two-main-img {
+        height: 100%;
+        margin-top: -200px;
+        order: -1;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .hall-two-content-wrapper {
+        margin-top: -100px;
+    }
+
+    .hall-two-main-img {
+        margin-top: -100px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .hall-two-main-content {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
+
+    .hall-two-content-wrapper {
+        margin-top: -70px;
+    }
+
+    .hall-two-website-position-nav {
+        & p {
+            margin: 0 6px;
+        }
+        & a {
+            font-size: 15px;
+        }
+        & span {
+            font-size: 15px;
+        }
+    }
+
+    .hall-two-info {
+        & h1 {
+            font-size: 30px;
+        }
+        & p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    .hall-two-main-img {
+        margin-top: -70px;
+    }
+   
+}
+
+@media screen and (max-width: 550px) {
+
+    .hall-two-website-position-nav {
+        & a {
+            font-size: 13px;
+        }
+        & span {
+            font-size: 13px;
+        }
+    }
+   
+}

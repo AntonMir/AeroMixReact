@@ -3,7 +3,6 @@ import React from 'react';
 import Carousel, { consts } from 'react-elastic-carousel'
 import Item from "@data/items.js";
 // img
-import hallOne from '@img/mainPage/halls/hallOne.jpg'
 import hallTwo from '@img/mainPage/halls/hallTwo.jpg'
 import hallThere from '@img/mainPage/halls/hallThere.jpg'
 import restroom from '@img/mainPage/halls/restroom.jpg'
@@ -43,13 +42,6 @@ export default function OtherHalls() {
                     renderArrow={myArrow}
                     breakPoints={breakPoints}
                 >
-
-                    <Item className="h1-car-el">
-                        <img className="h1-logo" src={hallOne} alt=""/>
-                        <h1>Зал № 1</h1>
-                        <p>Для занятий хореографией, йогой, акробатикой.</p>
-                        <a href="/hallone">подробнее</a>
-                    </Item>
 
                     <Item className="h1-car-el">
                         <img className="h1-logo" src={hallTwo} alt=""/>
