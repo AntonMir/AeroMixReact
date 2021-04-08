@@ -11,10 +11,26 @@
 }
 
 .header-menu-el  {
+    position: relative;
     text-decoration: none;
     color: #000;
-    padding: 0 8px;
-    margin: 0 8px;
+    padding: 0;
+    margin: 0 16px;
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0;
+        margin: 2px 0 0 16px;
+        border-bottom: 1.7px solid #000000;
+
+        transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+    }
 }
 
 .header-menu-arrow {
@@ -57,9 +73,32 @@
 }
 
 .about-club-menu-el {
+    position: relative;
     text-decoration: none;
     color: #000;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 2px;
+        border-bottom: 1.7px solid #000000;
+
+        transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+    }
+    
 }
+
+.about-club-menu-el:hover {
+    &::after {
+        width: 100%;
+    }
+}
+
 
 /* ------------ Mobile Menu ------------ */
 .burger-menu-btn {
@@ -186,6 +225,12 @@
         -ms-transform: translateY(550px);
         -o-transform: translateY(550px);
     }
+
+    .header-menu-el:hover {
+        &::after {
+            width: 100%;
+        }
+    }
     
 }
 
@@ -213,8 +258,10 @@
     }
 
     .header-menu-el {
-        padding: 5px;
-        margin: 5px;
+        margin: 10px;
+        &::after {
+            margin: 2px 0 0 10px;
+        }
     }
 
     .about-club-menu {

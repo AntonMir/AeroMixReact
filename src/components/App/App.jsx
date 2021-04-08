@@ -13,6 +13,7 @@ import HallOne from '@components/content/halls/hall1/HallOne.jsx'
 import HallTwo from '@components/content/halls/hall2/HallTwo.jsx'
 import HallThree from '@components/content/halls/hall3/HallThree.jsx'
 import Restroom from '@components/content/halls/restroom/Restroom.jsx'
+import TimeTable from '@components/content/timetable/TimeTable.jsx'
 
 
 // import Content from './content/Content.jsx'
@@ -39,6 +40,7 @@ export default function App() {
                     <Route exact path='/halltwo' component={HallTwo}/>
                     <Route exact path='/hallthree' component={HallThree}/>
                     <Route exact path='/restroom' component={Restroom}/>
+                    <Route exact path='/timetable' component={TimeTable}/>
                 </section>
                 <Footer />
             </Provider>

@@ -1,0 +1,83 @@
+.time-table-chosen-days {
+    display: none;
+    margin: 0 0 30px 9%;
+    & button {
+        color: #000;
+        margin: 0 20px 0 0;
+        padding: 6px 22px;
+        border-radius: 100px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        outline-width: 0;
+    }
+}
+
+.day-chosen {
+    border: 3px solid #FFC328;
+}
+
+.day-unchosen {
+    border: 3px solid #ffffff;
+}
+
+.time-table-adults {
+    margin: 0 9%;
+    font-size: 150%;
+    border: 1px solid #666666;
+    box-shadow: 4px 4px 10px 3px #ABABAB;
+    background-color: #666666;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+   
+
+    & th {
+        padding: 10px;
+        border: 1px solid #666666;
+        background-color: #fff;
+    }
+
+    & td {
+        padding: 10px;
+        width: 20%;
+        border: 1px solid #666666;
+        background-color: #fff;
+        & p {
+            white-space: nowrap;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1235px) {
+
+    .time-table-chosen-days {
+        display: block;
+    }
+  
+    .time-table-hidden {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+
+    .time-table-adults {
+        margin: 0 1%;
+    }
+    
+}
+
+@media screen and (max-width: 672px) {
+
+   
+
+}

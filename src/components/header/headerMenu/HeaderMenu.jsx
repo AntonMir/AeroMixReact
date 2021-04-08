@@ -38,7 +38,7 @@ class HeaderMenu extends Component {
 		return (
             <>
 				<ul className={`${!this.state.headerMenu ? "header-menu" : "header-menu visible"}`}>
-					<li><Link to="" className="header-menu-el" onClick={this.showAboutClubMenu}>
+					<li><span className="header-menu-el" onClick={this.showAboutClubMenu}>
 						О клубе 
 						<img 
 							src={arrowTop} 
@@ -50,10 +50,10 @@ class HeaderMenu extends Component {
 							alt="arrow" 
 							className={`${this.state.aboutClubMenu ? "hidden" : "visible"} header-menu-arrow`}
 						/>
-					</Link></li> 
+					</span></li> 
 					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Услуги</Link></li>
 					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Цены</Link></li>
-					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Расписание</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/timetable">Расписание</Link></li>
 					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Контакты</Link></li>
 				</ul>
 

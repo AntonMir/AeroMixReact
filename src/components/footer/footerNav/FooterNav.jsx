@@ -31,7 +31,7 @@ function FooterNav() {
                     <Link className="footer-nav-item" to="/">Цены</Link>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/">Расписание</Link>
+                    <Link className="footer-nav-item" to="/timetable">Расписание</Link>
                 </li>
                 <li>
                     <Link className="footer-nav-item" to="/">Контакты</Link>

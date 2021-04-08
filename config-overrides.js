@@ -15,6 +15,7 @@ module.exports = function override(config) {
     '@footer': './src/components/footer',
     '@header': './src/components/header',
     '@data': './src/data',   
-    '@news': './src/components/content/mainPage/news' 
+    '@news': './src/components/content/mainPage/news',
+    '@timetable': './src/components/content/timetable',
   })(config)
 }
