@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 // components
 import TimeTableAdults from '@timetable/timeTableAdults/TimeTableAdults.jsx'
-// import TimeTableChildren from '@timetable/timeTableChildren/TimeTableChildren.jsx'
+import TimeTableChildren from '@timetable/timeTableChildren/TimeTableChildren.jsx'
 
 // style
 import "./timeTable.scss"
@@ -10,10 +10,6 @@ import "./timeTable.scss"
 export default function TimeTable() {
 
     const [timeTableSection, setTimeTableSection] = useState('children');
-
-    useEffect(() => {
-        console.log('---', 'timeTableSection', timeTableSection);
-    }, [timeTableSection]);
    
     return (
         <section className="time-table">
@@ -34,8 +30,7 @@ export default function TimeTable() {
                 </button>
             </div>
 
-            {/* {timeTableSection === 'children' ? <TimeTableChildren /> : <TimeTableAdults />} */}
-            <TimeTableAdults />
+            {timeTableSection === 'children' ? <TimeTableChildren /> : <TimeTableAdults />}
 
         </section>
     )

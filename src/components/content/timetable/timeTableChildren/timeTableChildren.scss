@@ -1,0 +1,137 @@
+.time-table-children-chosen-days {
+    display: none;
+    margin: 0 0 30px 9%;
+    & button {
+        color: #000;
+        margin: 0 10px 0 0;
+        padding: 6px 22px;
+        border-radius: 100px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        outline-width: 0;
+    }
+}
+
+.children-day-chosen {
+    border: 3px solid #FFC328;
+}
+
+.children-day-unchosen {
+    border: 3px solid #ffffff;
+}
+
+.time-table-children {
+    margin: 0 9%;
+    font-size: 24px;
+    border: 1px solid #666666;
+    box-shadow: 4px 4px 10px 3px #ABABAB;
+    background-color: #666666;
+    padding: 2px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    & th {
+        padding: 10px;
+        border: 1px solid #666666;
+        background-color: #fff;
+    }
+
+    & td {
+        padding: 10px;
+        width: 20%;
+        border: 1px solid #666666;
+        background-color: #fff;
+        & p {
+            white-space: nowrap;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1235px) {
+
+    .time-table-children-chosen-days {
+        display: block;
+    }
+  
+    .time-table-children-hidden {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1044px) {
+
+    .time-table-children-chosen-days button {
+        font-size: 17px;
+    }
+
+    .time-table-children {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+
+    .time-table-children-chosen-days {
+        margin: 0 0 30px 3%;
+    }
+
+    .time-table-children {
+        margin: 0 1%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .time-table-children-chosen-days button {
+        font-size: 17px;
+    }
+
+    .time-table-children {
+        font-size: 15px;
+    
+        & th {
+            padding: 7px;
+        }
+    
+        & td {
+            padding: 7px;
+        }
+    }
+   
+
+}
+
+@media screen and (max-width: 435px) {
+
+    .time-table-children {
+        font-size: 13px;
+    
+        & th {
+            padding: 3px;
+        }
+    
+        & td {
+            padding: 3px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .time-table-children {
+        font-size: 11px;
+    }
+
+}
