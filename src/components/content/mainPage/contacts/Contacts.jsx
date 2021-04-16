@@ -10,7 +10,7 @@ import "./contacts.scss";
 function Contacts() {
 
     return (
-		<section className="contacts">
+		<section className="contacts" id={"contacts"}>
 
 			<ContactsContent />
 			<Requisites />

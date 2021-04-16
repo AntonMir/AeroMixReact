@@ -1,0 +1,154 @@
+.price-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px auto 10px;
+    max-width: 1920px;
+}
+
+.price-table-website-position-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 9% 20px;
+
+    & p {
+        margin: 0 10px;
+    }
+    & a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & span {
+        font-size: 18px;
+    }
+}
+
+.price-table-title {
+    margin: 0 0 40px 9%;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.price-table-navbar {
+    margin: 0 0 30px 9%;
+}
+
+.price-table-navbar button {
+    color: #000;
+    margin: 0 20px 0 0;
+    padding: 6px 22px;
+    border-radius: 100px;
+    border: 3px solid #FFC328;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    outline-width: 0;
+}
+
+.chosen {
+    background-color: #FFC328;
+}
+
+.unchosen {
+    background-color: #fff;
+}
+
+.price-table-add-info {
+    margin: 40px 9% 20px;
+
+    & p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1044px) {
+
+    .price-table-title {
+        font-size: 35px;
+    }
+
+    .price-table-navbar button {
+        font-size: 17px;
+    }
+
+    .price-table-add-info {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+
+    .price-table-website-position-nav {
+        margin: 0 5% 20px;
+
+        & p {
+            margin: 0 10px;
+        }
+        & a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .price-table-title {
+        margin-left: 5%;
+    }
+
+    .price-table-navbar {
+        margin-left: 5%;
+    }
+
+    .price-table-add-info {
+        margin: 40px 5% 20px;
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .price-table-navbar button {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .price-table-navbar button {
+        font-size: 10px;
+    }
+
+    .price-table-title {
+        font-size: 35px;
+        margin-bottom: 30px;
+
+    }
+
+    .price-table-navbar button {
+        font-size: 16px;
+    }
+
+    .price-table-navbar {
+        margin-bottom: 35px;
+    }
+
+    .price-table-add-info {
+        font-size: 11px;
+    }
+
+}

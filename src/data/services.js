@@ -44,7 +44,7 @@ const servicesList = {
             title: "Спортивная аэробика",
             text: "Cложный и эмоциональный вид спорта, в котором спортсмены выполняют под музыку комплекс упражнений с высокой интенсивностью и сложно координированными элементами.",
             background: aerobika,
-            href: "/",
+            href: "/services/children/aerobika",
             mark: "aerobika",
         },
         {
@@ -52,7 +52,7 @@ const servicesList = {
             title: "Развивающая гимнастика",
             text: "Развивающая гимнастика несет исключительно оздоровительную функцию, направлена на укрепление здоровья детей, доступна для детей любого телосложения и физического подготовки, и дарит радость и удовольствие от занятий спортом.",
             background: gimnastika,
-            href: "/",
+            href: "/services/children/gimnastika",
             mark: "gimnastika",
         },
         {
@@ -60,7 +60,7 @@ const servicesList = {
             title: "Общефизическая подготовка",
             text: "ОФП включает несложные, но эффективные, упражнения на развитие координации, баланса, силы, гибкости и ловкости.",
             background: ofp,
-            href: "/",
+            href: "/services/children/ofp",
             mark: "ofp",
         },
         {
@@ -68,7 +68,7 @@ const servicesList = {
             title: "Джаз-фанк (JUZZ FUNK)",
             text: "Cовременный танцевальный стиль, включающий элементы джазовой хореографии, хип-хопа, стрип-пластики, эстрадной хореографии и вакинга.",
             background: jazfunk,
-            href: "/",
+            href: "/services/children/jazfunk",
             mark: "jazfunk",
         },
         {
@@ -76,7 +76,7 @@ const servicesList = {
             title: "Дэнсхолл",
             text: "Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.",
             background: dancehallChildren,
-            href: "/",
+            href: "/services/children/dancehallChildren",
             mark: "dancehallChildren",
         },
     ],
@@ -88,7 +88,7 @@ const servicesList = {
             title: "Стретчинг",
             text: "Комплекс упражнений на растяжку мышц тела, развитие гибкости и эластичности связок и суставов.",
             background: stretching,
-            href: "/",
+            href: "/services/adults/stretching",
             mark: "stretching",
         },
         {
@@ -96,7 +96,7 @@ const servicesList = {
             title: "Силовая тренировка",
             text: "Комплексное занятие, направленное на развитие различных групп мышц.",
             background: silovaja,
-            href: "/",
+            href: "/services/adults/silovaja",
             mark: "silovaja",
         },
         {
@@ -104,7 +104,7 @@ const servicesList = {
             title: "Пилатес",
             text: "Система физических упражнений в медленном темпе, которые задействуют глубоко лежащие мышцы и требуют значительных усилий.",
             background: pilates,
-            href: "/",
+            href: "/services/adults/pilates",
             mark: "pilates",
         },
         {
@@ -112,7 +112,7 @@ const servicesList = {
             title: "Йога Айенгара",
             text: "Наш малоподвижный образ жизни не способствует поддержанию хорошей физической формы, делая тело зажатым и слабым. Регулярные занятия йогой Айенгара обеспечивают практикующим улучшение здоровья и внешности.",
             background: joga,
-            href: "/",
+            href: "/services/adults/joga",
             mark: "joga",
         },
         {
@@ -120,7 +120,7 @@ const servicesList = {
             title: "Настольный теннис",
             text: "Олимпийский вид спорта, спортивная игра с мячом, в которой используют специальные ракетки и игровой стол, разграниченный сеткой пополам.",
             background: tennis,
-            href: "/",
+            href: "/services/adults/tennis",
             mark: "tennis",
         },
         {
@@ -128,7 +128,7 @@ const servicesList = {
             title: "Бачата",
             text: "Один из самых простых по хореографии латиноамериканский танец. Главная особенность стиля — чувственный романтизм, пластика, гармония и импровизация!",
             background: bachata,
-            href: "/",
+            href: "/services/adults/bachata",
             mark: "bachata",
         },
         {
@@ -136,7 +136,7 @@ const servicesList = {
             title: "Зумба",
             text: "Зумба - это фитнес-вечеринка, где зажигательные латиноамериканские ритмы сочетаются с простой хореографией, что позволяет обеспечить эффективную тренировку всего тела.",
             background: zumba,
-            href: "/",
+            href: "/services/adults/zumba",
             mark: "zumba",
         },
         {
@@ -144,7 +144,7 @@ const servicesList = {
             title: "Дэнсхолл",
             text: "Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.",
             background: dancehallAdults,
-            href: "/",
+            href: "/services/adults/dancehallAdults",
             mark: "dancehallAdults",
         },
         {
@@ -152,7 +152,7 @@ const servicesList = {
             title: "Тай бо (tae bo)",
             text: "Разновидность аэробики, в основе которой лежат боевые элементы тайского бокса, тхэквондо, бокса, каратэ в совокупности с базовыми шагами аэробики, собранными в связки.",
             background: taeBo,
-            href: "/",
+            href: "/services/adults/taeBo",
             mark: "taeBo",
         },
     ]

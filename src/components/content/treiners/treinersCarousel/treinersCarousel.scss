@@ -1,0 +1,377 @@
+.all-treiners {
+    position: relative;
+    margin-top: 90px;
+}
+
+.all-t-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 12%;
+    font-weight: 600;
+}
+
+.all-t-carousel-header h1 {
+    align-self: center;
+    font-size: 30px;
+}
+
+.all-t-carousel-wrapper {
+    margin: 30px 5%;
+}
+
+// стилизация каждого слайда
+.all-t-car-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 350px;
+    height: 600px;
+    color: #000;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+// стили при нажатии на слайд
+.all-t-car-el:focus {
+    outline: none;
+}
+
+// стилизация частей слайда---------------
+.all-t-logo {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.all-t-car-el h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+
+.all-t-car-el p {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+}
+
+.all-t-car-el a {
+    align-self: flex-start;
+    justify-self: flex-end;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin: 15px 0 0 0;
+}
+
+.all-t-car-el a:hover {
+    text-decoration: underline;
+}
+//------------------------------------------
+
+// стилизация стрелок
+.all-t-pointer {
+    height: 30px;
+    width: 25px;
+    align-self: center;
+    font-size: 40px;
+    line-height: 20px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    color: #888888;
+    outline: none;
+}
+
+.all-t-pointer:disabled {
+    opacity: 0;
+}
+
+// стилизация меню слайдера
+.all-t-carousel .rec-dot {
+    background-color: #c0c0c0 !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25) !important;
+    width: 38px !important;
+    height: 8px !important;
+    margin: 0 9px !important;
+
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.all-t-carousel .rec-dot_active {
+    background-color: #fff !important;
+}
+
+.all-treiners-green-wave {
+    position: absolute;
+    top: 32%;
+    width: 99.1vw;
+    max-width: 1920px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .all-treiners-green-wave {
+        top: calc(100% - 28vw);
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    .all-t-car-el {
+        height: 550px;
+    }
+
+}
+
+@media screen and (max-width: 1390px) {
+
+    .all-t-car-el {
+        height: 500px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 24px;
+    }
+
+    .all-t-car-el p {
+        font-size: 17px;
+    }
+
+    .all-t-car-el a {
+        font-size: 19px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .all-t-car-el {
+        height: 460px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 23px;
+    }
+
+    .all-t-car-el p {
+        font-size: 16px;
+    }
+
+    .all-t-car-el a {
+        font-size: 18px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 1149px) {
+
+    .all-t-car-el {
+        height: 540px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .all-t-car-el {
+        height: 500px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 22px;
+    }
+
+    .all-t-car-el p {
+        font-size: 15px;
+    }
+
+    .all-t-car-el a {
+        font-size: 17px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .all-t-car-el {
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .all-t-car-el {
+        height: 400px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 21px;
+    }
+
+    .all-t-car-el p {
+        font-size: 14px;
+    }
+
+    .all-t-car-el a {
+        font-size: 16px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .all-t-pointer {
+        display: none;
+    }
+
+    .all-treiners-green-wave {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 738px) {
+
+    .all-t-car-el {
+        height: 520px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 21px;
+    }
+
+    .all-t-car-el p {
+        font-size: 14px;
+    }
+
+    .all-t-car-el a {
+        font-size: 16px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .all-t-car-el {
+        padding: 20px;
+        height: 500px;
+    }
+    
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .all-t-car-el p {
+        margin-top: 10px;
+    }
+
+    .all-t-car-el a {
+        margin-top: 10px;
+    }
+    //------------------------------------------
+
+}
+
+@media screen and (max-width: 480px) { 
+
+    .all-t-carousel-header h1 {
+        font-size: 30px;
+    }
+
+    .all-t-carousel-wrapper {
+        margin: 20px 5%;
+    }
+
+    .all-t-car-el {
+        height: 480px;
+    }
+
+}
+
+@media screen and (max-width: 440px) { 
+
+    .all-t-car-el {
+        height: 420px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 19px;
+    }
+    //------------------------------------------
+
+    .all-t-carousel .rec-dot {
+        width: 30px !important;
+        margin: 0 6px !important;
+
+    }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+    .all-t-carousel-header h1 {
+        font-size: 25px;
+    }
+
+    .all-t-car-el {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+
+    .all-t-car-el {
+        height: 355px;
+    }
+
+    // стилизация частей слайда---------------
+    .all-t-car-el h1 {
+        font-size: 18px;
+    }
+
+    .all-t-car-el p {
+        font-size: 13px;
+    }
+
+    .all-t-car-el a {
+        font-size: 15px;
+    }
+    //------------------------------------------
+
+    .all-t-carousel .rec-dot {
+        width: 28px !important;
+        margin: 0 5px !important;
+
+    }
+
+}

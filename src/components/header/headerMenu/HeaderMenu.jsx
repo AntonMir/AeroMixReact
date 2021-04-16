@@ -52,9 +52,9 @@ class HeaderMenu extends Component {
 						/>
 					</span></li> 
 					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Услуги</Link></li>
-					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Цены</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/pricetable">Цены</Link></li>
 					<li><Link className="header-menu-el" onClick={this.closeAll} to="/timetable">Расписание</Link></li>
-					<li><Link className="header-menu-el" onClick={this.closeAll} to="/">Контакты</Link></li>
+					<li><Link className="header-menu-el" onClick={this.closeAll} to="/#contacts">Контакты</Link></li>
 				</ul>
 
 				<img 

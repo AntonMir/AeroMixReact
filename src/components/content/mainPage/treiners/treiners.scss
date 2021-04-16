@@ -358,7 +358,7 @@
 @media screen and (max-width: 350px) { 
 
     .t-car-el {
-        height: 340px;
+        height: 355px;
     }
 
     // стилизация частей слайда---------------
@@ -374,5 +374,11 @@
         font-size: 15px;
     }
     //------------------------------------------
+
+    .t-carousel .rec-dot {
+        width: 28px !important;
+        margin: 0 5px !important;
+
+    }
 
 }

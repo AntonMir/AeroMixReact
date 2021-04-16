@@ -1,0 +1,276 @@
+.price-table-adults-chosen-lessons {
+    display: none;
+    margin: 0 0 30px 9%;
+
+    & button {
+        color: #000;
+        margin: 0 10px 0 0;
+        padding: 6px 22px;
+        border-radius: 100px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        outline-width: 0;
+    }
+    
+}
+
+.adults-lesson-chosen {
+    border: 3px solid #FFC328;
+}
+
+.adults-lesson-unchosen {
+    border: 3px solid #ffffff;
+}
+
+.price-table-adults {
+    margin: 0 9%;
+    font-size: 24px;
+    box-shadow: 4px 4px 10px 3px #ABABAB;
+
+    & tr:first-child > th {
+        border-top: 1px solid #666;
+    }
+
+    & tr > td:last-child,
+    & tr > th:last-child {
+        border-right: 1px solid #666;
+    }
+
+    & tr:first-child > th:first-child {        
+        border-radius: 10px 0 0 0;
+        -ms-border-radius: 10px 0 0 0;
+        -o-border-radius: 10px 0 0 0;
+        -webkit-border-radius: 10px 0 0 0;
+        -moz-border-radius: 10px 0 0 0;
+    }
+
+    & tr:first-child > th:last-child {
+        border-radius: 0 10px 0 0;
+        -ms-border-radius: 0 10px 0 0 0;
+        -o-border-radius: 0 10px 0 0 0;
+        -webkit-border-radius: 0 10px 0 0 0;
+        -moz-border-radius: 0 10px 0 0 0;
+    }
+
+    & tr:last-child > td:first-child {
+        border-radius: 0 0 0 10px;
+        -ms-border-radius: 0 0 0 10px;
+        -o-border-radius: 0 0 0 10px;
+        -webkit-border-radius: 0 0 0 10px;
+        -moz-border-radius: 0 0 0 10px;
+    }
+
+    & tr:last-child > td:last-child {
+        border-radius: 0 0 10px 0;
+        -ms-border-radius: 0 0 10px 0;
+        -o-border-radius: 0 0 10px 0;
+        -webkit-border-radius: 0 0 10px 0;
+        -moz-border-radius: 0 0 10px 0;
+    }
+
+    & th {
+        padding: 25px 10px;
+        font-size: 25px;
+        border-bottom: 1px solid #666666;
+        border-left: 1px solid #666666;
+    }
+
+    & td {
+        padding: 10px;
+        width: 10%;
+        border-bottom: 1px solid #666666;
+        border-left: 1px solid #666666;
+    }
+
+    border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+.price-table-adults-second {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1110px) {
+
+    .price-table-adults {
+    
+        & th {
+            padding: 18px 7px;
+            font-size: 17px;
+        }
+    
+        & td {
+            padding: 10px 7px;
+            font-size: 16px;
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+
+    .price-table-adults {
+        margin: 0 2%;
+    }
+
+    .price-table-adults-second {
+        margin-top: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .price-table-adults-chosen-lessons {
+        margin: 0 0 20px 3%;
+
+        & button {
+            font-size: 15px;
+        }
+
+    }
+
+    .price-table-adults-chosen-lessons-second {
+        margin: 40px 0 20px 3%; 
+    }
+
+    .price-table-adults {
+            
+        & tr:first-child > th:nth-of-type(n + 2) {
+            border-radius: 0 10px 0 0;
+            -webkit-border-radius: 0 10px 0 0;
+            -moz-border-radius: 0 10px 0 0;
+            -ms-border-radius: 0 10px 0 0;
+            -o-border-radius: 0 10px 0 0;
+        }
+    
+        & tr:last-child > td:nth-of-type(n + 2) {
+            border-radius: 0 0 10px 0;
+            -webkit-border-radius: 0 0 10px 0 0;
+            -moz-border-radius: 0 0 10px 0 0;
+            -ms-border-radius: 0 0 10px 0 0;
+            -o-border-radius: 0 0 10px 0 0;
+        }
+    
+        & tr > td:nth-of-type(n + 2),
+        & tr > th:nth-of-type(n + 2) {
+            border-right: 1px solid #666;
+        }
+    
+    }
+
+    .price-table-adults-second {
+        margin-top: 0;
+    }
+
+    .price-table-adults-chosen-lessons {
+        display: block;
+    }
+
+    .price-table-adults-hidden {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .price-table-adults-chosen-lessons {
+
+        & button {
+            font-size: 14px;
+        }
+
+    }
+
+    .price-table-adults {
+    
+        & th {
+            padding: 16px 7px;
+            font-size: 15px;
+        }
+    
+        & td {
+            padding: 10px 7px;
+            font-size: 14px;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 490px) {
+    
+    .price-table-adults-chosen-lessons {
+
+        & button {
+            font-size: 12px;
+            margin: 0 7px 0 0;
+            padding: 6px 16px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .price-table-adults {
+    
+        & th {
+            padding: 16px 4px;
+            font-size: 14px;
+        }
+    
+        & td {
+            padding: 10px 4px;
+            font-size: 13px;
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .price-table-adults-chosen-lessons {
+
+        & button {
+            font-size: 11px;
+            margin: 0 5px 0 0;
+            padding: 6px 9px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .price-table-adults-chosen-lessons {
+
+        & button {
+            font-size: 10px;
+        }
+
+    }
+
+    .price-table-adults {
+
+        & th {
+            font-size: 13px;
+        }
+    
+        & td {
+            font-size: 12px;
+        }
+
+    }
+
+}
