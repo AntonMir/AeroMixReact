@@ -1,9 +1,9 @@
-.serv-page-silovaja {
+.serv-page-adults-silovaja {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.serv-page-silovaja-website-position-nav {
+.serv-page-adults-silovaja-website-position-nav {
     display: flex;
     align-items: center;
     margin: 0 12%;
@@ -26,24 +26,21 @@
     }
 }
 
-.serv-page-silovaja-content {
+.serv-page-adults-silovaja-content {
     display: flex;
-    justify-content: center;
-    margin: 30px 9%;
-    padding: 50px 3%;
-
-    border: #000 3px dashed;
+    justify-content: space-between;
+    margin: 20px 9% 30px;
+    padding: 20px 3% 50px;
 }
 
-.serv-page-silovaja-info {
+.serv-page-adults-silovaja-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 60%;
-    margin-right: 3%;
 
     & h1 {
-        font-size: 30px;
+        font-size: 35px;
         margin-top: 20px;
         margin-bottom: 50px;
     }
@@ -53,7 +50,7 @@
         line-height: 25px;
         margin-bottom: 20px;
         
-        & h3 {
+        & span {
             font-size: 18px;
             font-weight: bold; 
             margin: 0;           
@@ -67,9 +64,9 @@
         text-decoration: none;
         font-size: 20px;
         font-weight: bold;
-        background-color: #fff;
-        border: 3px #FFC328 solid;
-        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.1) 47.92%, rgba(0, 0, 0, 0.08) 100%), #F9CB3A;;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+        white-space: nowrap;
 
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -80,27 +77,53 @@
     
 }
 
-.serv-page-silovaja-img {
-    width: 100%;
-    height: 100%;
+.serv-page-adults-silovaja-img {
+    display: flex;
+    align-self: center;
+    width: 30%;
     overflow: hidden;
+    
     & img {
-        height: auto;
-        width: 100%;
+        width: 170%;
+        margin: 0 0 0 -35%;
+
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -moz-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+        -o-transform: skewX(8deg);
     }
+    transform: skewX(-8deg);
+    -webkit-transform: skewX(-8deg);
+    -moz-transform: skewX(-8deg);
+    -ms-transform: skewX(-8deg);
+    -o-transform: skewX(-8deg);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
 
-    .serv-page-silovaja {
-        margin-top: 30px;
+    .serv-page-adults-silovaja-img {
+        width: 39%;
     }
     
 }
 
+@media screen and (max-width: 1500px) {
+
+    .serv-page-adults-silovaja-website-position-nav {
+        margin-top: 20px;
+    }
+        
+}
+
 @media screen and (max-width: 1440px) {
 
-    .serv-page-silovaja-website-position-nav {
+    .serv-page-adults-silovaja-website-position-nav {
         & a {
             font-size: 16px;
         }
@@ -109,10 +132,10 @@
         }
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         max-width: 50%;
         & h1 {
-            font-size: 29px;
+            font-size: 33px;
             margin-bottom: 30px;
         }
         & p {
@@ -126,19 +149,27 @@
     }
 }
 
+@media screen and (max-width: 1350px) {
+
+    .serv-page-adults-silovaja-img {
+        width: 45%;
+    }
+    
+}
+
 @media screen and (max-width: 1200px) {
 
-    .serv-page-silovaja-website-position-nav {
-        margin: 0 9%;
+    .serv-page-adults-silovaja-website-position-nav {
+        margin: 20px 9% 0;
     }
 
-    .serv-page-silovaja-content {
+    .serv-page-adults-silovaja-content {
         margin: 30px 6%;
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         & h1 {
-            font-size: 27px;
+            font-size: 32px;
             margin-bottom: 30px;
         }
         & p {
@@ -155,17 +186,17 @@
 
 @media screen and (max-width: 1000px) {
 
-    .serv-page-silovaja-website-position-nav {
-        margin: 0 6%;
+    .serv-page-adults-silovaja-website-position-nav {
+        margin: 20px 6% 0;
     }
 
-    .serv-page-silovaja-content {
+    .serv-page-adults-silovaja-content {
         margin: 30px 3%;
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         & h1 {
-            font-size: 23px;
+            font-size: 29px;
             margin-bottom: 30px;
         }
         & p {
@@ -183,13 +214,13 @@
 
 @media screen and (max-width: 900px) {
 
-    .serv-page-silovaja-content {
+    .serv-page-adults-silovaja-content {
         padding: 20px 3%;
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         & h1 {
-            font-size: 20px;
+            font-size: 25px;
             margin-bottom: 20px;
         }
         & p {
@@ -207,34 +238,25 @@
 
 @media screen and (max-width: 750px) {
 
-    .serv-page-silovaja-info {
-        align-items: center;
-        text-align: center;
-    }
-
-    .serv-page-silovaja-img {
-        width: 40%;
-        & img {
-            height: auto;
-            width: 170%;
-            margin: 0 0 0 -50%;
+    .serv-page-adults-silovaja-website-position-nav {
+        margin: 20px 12% 0;
+        & p {
+            margin: 0 6px;
+        }
+        & a {
+            font-size: 12px;
+        }
+        & span {
+            font-size: 12px;
         }
     }
-   
-}
 
-@media screen and (max-width: 688px) {
-
-    .serv-page-silovaja-website-position-nav {
-        margin: 0 12%;
-    }
-
-    .serv-page-silovaja-content {
+    .serv-page-adults-silovaja-content {
         flex-direction: column;
         margin: 30px 5%;
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         align-self: center;
         margin: 20px 0 0 0;
         max-width: 90%;
@@ -253,51 +275,80 @@
         }
     }
 
-    .serv-page-silovaja-img {
+    .serv-page-adults-silovaja-img {
         order: -1;
         width: 90%;
-        align-self: center;
+        margin-right: 0;
+        
         & img {
             width: 100%;
-            margin: 3% 0 0;
+            margin: 0;
+
+            transform: skewX(0deg);
+            -webkit-transform: skewX(0deg);
+            -moz-transform: skewX(0deg);
+            -ms-transform: skewX(0deg);
+            -o-transform: skewX(0deg);
         }
+
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
     }
-   
+
 }
 
 @media screen and (max-width: 450px) {
 
-    .serv-page-silovaja-website-position-nav {
-        margin: 0 11%;
+    .serv-page-adults-silovaja-website-position-nav {
+        margin: 20px 11% 0;
         & p {
-            margin: 0 5px;
+            margin: 0 4px;
         }
         & a {
-            font-size: 10px;
+            font-size: 9px;
         }
         & span {
-            font-size: 10px;
+            font-size: 9px;
         }
     }
 
-    .serv-page-silovaja-content {
+    .serv-page-adults-silovaja-content {
         margin: 30px 4%;
     }
 
-    .serv-page-silovaja-info {
+    .serv-page-adults-silovaja-info {
         & h1 {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 25px;
         }
         & p {
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 15px;
+            & span {
+                font-size: 15px;
+            }
         }
         & a {
             margin: 20px auto;
             font-size: 15px;
         }
+        
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .serv-page-adults-silovaja-info {
+        & a {
+            margin: 20px auto;
+            padding: 15px 25px;
+            font-size: 14px;
+        }  
     }
 
 }

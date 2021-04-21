@@ -30,7 +30,7 @@ export default function News() {
     }
 
     return (
-        <div className="news">
+        <section className="news" id="news">
             <div className="n-carousel-header">
                 <h1>Новости</h1>
             </div>
@@ -52,6 +52,6 @@ export default function News() {
 
             <img className="news-red-wave" alt="" src={newsRedWave} />
 
-        </div>
+        </section>
     );
 }

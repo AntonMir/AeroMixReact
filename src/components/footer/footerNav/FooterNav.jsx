@@ -1,6 +1,6 @@
 import React from 'react';
-// link
-import { Link } from 'react-router-dom';
+// HashLink
+import { HashLink } from 'react-router-hash-link';
 // style
 import "./footerNav.scss";
 
@@ -11,41 +11,41 @@ function FooterNav() {
         <div className="foonter-nav">
             <ul className="footer-nav-first">
                 <li>
-                    <Link className="footer-nav-item" to="/aboutclub">О клубе</Link>
+                    <HashLink className="footer-nav-item" to="/aboutclub#top">О клубе</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/">Тренеры</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#treiners">Тренеры</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/">Залы и оборудование</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#halls">Залы и оборудование</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/">Комната отдыха</Link>
+                    <HashLink className="footer-nav-item" to="/restroom#top">Комната отдыха</HashLink>
                 </li>
             </ul>
             <ul className="footer-nav-second">
                 <li>
-                    <Link className="footer-nav-item" to="/">Услуги</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#services">Услуги</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/pricetable">Цены</Link>
+                    <HashLink className="footer-nav-item" to="/pricetable#top">Цены</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/timetable">Расписание</Link>
+                    <HashLink className="footer-nav-item" to="/timetable#top">Расписание</HashLink>
                 </li>
                 <li>
-                    <Link className="footer-nav-item" to="/">Контакты</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#contacts">Контакты</HashLink>
                 </li>
             </ul>
             <ul className="footer-nav-third">
                 <li>
-                    <Link className="footer-nav-item" to="/">Новости</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#news">Новости</HashLink>
                 </li>
+                {/* <li>
+                    <HashLink className="footer-nav-item" to="/">Сборная</HashLink>
+                </li> */}
                 <li>
-                    <Link className="footer-nav-item" to="/">Сборная</Link>
-                </li>
-                <li>
-                    <Link className="footer-nav-item" to="/">Акции</Link>
+                    <HashLink className="footer-nav-item" smooth to="/#promo">Акции</HashLink>
                 </li>
             </ul>
         </div>

@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
-    height: 140px; 
+    height: max-content;
     font-size: 15px;
     margin: 20px 10px;
-}   
 
-.footer-nav-third {
-    height: 100px;
-}
+    & li {
+        padding: 0 0 24px 0;
+    }
+}   
 
 .foonter-nav {
     flex-grow: 2;

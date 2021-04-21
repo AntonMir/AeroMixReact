@@ -11,7 +11,7 @@ import "./promotions.scss";
 function Promotions() {
 
     return (
-		<section className="promotions">
+		<section className="promotions" id="promo">
             
             <h1 className="promotions-header">Акции</h1>
 

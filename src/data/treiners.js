@@ -21,7 +21,7 @@ const treiners = [
         name: 'Оксана Вячеславовна Засыпкина',
         text: `Тренер по детской спортивной аэробике и по оздоровительной аэробике 
                 для взрослых и детей.`,
-        href: '/treiners/zasipkinaOksana'
+        href: '/treiners/zasipkinaOksana#top'
     }, 
     {
         id: 2,
@@ -30,7 +30,7 @@ const treiners = [
         name: 'Жанна Вячеславовна Засыпкина',
         text: `Тренер по детской спортивной аэробике и по оздоровительной аэробике 
                 для взрослых и детей.`,
-        href: '/treiners/zasipkinaJanna'
+        href: '/treiners/zasipkinaJanna#top'
     }, 
     {
         id: 3,
@@ -38,7 +38,7 @@ const treiners = [
         alt: 'levinaAlexandra',
         name: 'Александра Левина',
         text: `Преподаватель джаз-фанка и хип-хопа.`,
-        href: '/treiners/levinaAlexandra'
+        href: '/treiners/levinaAlexandra#top'
     }, 
     {
         id: 4,
@@ -47,7 +47,7 @@ const treiners = [
         name: 'Виктория Михайловна Васильцова',
         text: `Тренер-постановщик программ по спортивной аэробике, кандидат 
                 в мастера спорта по спортивной аэробике.`,
-        href: '/treiners/vasilcovaViktoria'
+        href: '/treiners/vasilcovaViktoria#top'
     }, 
     {
         id: 5,
@@ -56,7 +56,7 @@ const treiners = [
         name: 'Лидия Бондаренко',
         text: `Тренер по бачате. Является 11-ти кратной чемпионкой Украины по 
                 спортивным бальным танцам.`,
-        href: '/treiners/bondarenkoLidija'
+        href: '/treiners/bondarenkoLidija#top'
     }, 
     {
         id: 6,
@@ -64,7 +64,7 @@ const treiners = [
         alt: 'bojkovaKristina',
         name: 'Кристина Бажкова',
         text: `Преподаватель танцевальных фитнес тренировок Zumba fitness.`,
-        href: '/treiners/bojkovaKristina'
+        href: '/treiners/bojkovaKristina#top'
     }, 
     {
         id: 7,
@@ -73,7 +73,7 @@ const treiners = [
         name: 'Игорь Юдин',
         text: `Тренер по йоге. Занимается йогой с 2009 года, с 2012 г. 
                 практикует и преподает йогу Айенгара.`,
-        href: '/treiners/udinIgor'
+        href: '/treiners/udinIgor#top'
     }, 
     
    

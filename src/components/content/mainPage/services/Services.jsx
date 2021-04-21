@@ -11,9 +11,9 @@ function Services() {
     const [servicesSection, setServicesSection] = useState('children');
 
     let chosenSection = servicesSection === 'children' ? servicesList.children : servicesList.adults;
-   
+
     return (
-        <section className="services">
+        <section className="services" id="services">
 
             <h1 className="services-title">Услуги</h1>
 

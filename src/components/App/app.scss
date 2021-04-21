@@ -1,5 +1,23 @@
-.content {
-    // max-width: 1920px;
+.app {
+    position: relative;
+    max-width: 1920px;
     margin: 0 auto;
-    // border: 3px dashed rgb(255, 0, 0);
+}
+
+.arrow-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    & img {
+        width: 60px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    
+    .arrow-to-top {
+        display: none;
+    }
+
 }

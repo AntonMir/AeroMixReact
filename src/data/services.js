@@ -68,7 +68,7 @@ const servicesList = {
             title: "Джаз-фанк (JUZZ FUNK)",
             text: "Cовременный танцевальный стиль, включающий элементы джазовой хореографии, хип-хопа, стрип-пластики, эстрадной хореографии и вакинга.",
             background: jazfunk,
-            href: "/services/children/jazfunk",
+            href: "/services/children/juzzfunk",
             mark: "jazfunk",
         },
         {
@@ -76,7 +76,7 @@ const servicesList = {
             title: "Дэнсхолл",
             text: "Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.",
             background: dancehallChildren,
-            href: "/services/children/dancehallChildren",
+            href: "/services/all/dancehall",
             mark: "dancehallChildren",
         },
     ],
@@ -120,7 +120,7 @@ const servicesList = {
             title: "Настольный теннис",
             text: "Олимпийский вид спорта, спортивная игра с мячом, в которой используют специальные ракетки и игровой стол, разграниченный сеткой пополам.",
             background: tennis,
-            href: "/services/adults/tennis",
+            href: "/services/adults/tableTennis",
             mark: "tennis",
         },
         {
@@ -144,7 +144,7 @@ const servicesList = {
             title: "Дэнсхолл",
             text: "Динамичный танец, который показывает свободу и раскрепощённость любого, кто его исполняет.",
             background: dancehallAdults,
-            href: "/services/adults/dancehallAdults",
+            href: "/services/all/dancehall",
             mark: "dancehallAdults",
         },
         {
@@ -152,7 +152,7 @@ const servicesList = {
             title: "Тай бо (tae bo)",
             text: "Разновидность аэробики, в основе которой лежат боевые элементы тайского бокса, тхэквондо, бокса, каратэ в совокупности с базовыми шагами аэробики, собранными в связки.",
             background: taeBo,
-            href: "/services/adults/taeBo",
+            href: "/services/adults/taebo",
             mark: "taeBo",
         },
     ]

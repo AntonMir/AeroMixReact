@@ -65,6 +65,14 @@
 
 }
 
+@media screen and (max-width: 688px) {
+
+    .header {
+        position: sticky;
+    }
+
+}
+
 @media screen and (max-width: 479px) {
 
     .header {

@@ -30,7 +30,7 @@ export default function Treiners() {
     }
 
     return (
-        <div className="treiners">
+        <section className="treiners" id="treiners">
             
             <div className="t-carousel-header">
                 <h1>Тренеры</h1>
@@ -59,6 +59,6 @@ export default function Treiners() {
             </div>
 
             <img className="treiners-green-wave" alt="" src={treinersGreenWave} />
-        </div>
+        </section>
     );
 }

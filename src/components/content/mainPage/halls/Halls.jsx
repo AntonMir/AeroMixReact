@@ -31,7 +31,8 @@ export default function Halls() {
     }
 
     return (
-        <>
+        <section className="h-carousel-main-page" id="halls">
+
             <div className="h-carousel-header">
                 <h1>Залы и оборудование</h1>
             </div>
@@ -73,7 +74,9 @@ export default function Halls() {
                     </Item>
 
                 </Carousel>
+
             </div>
-        </>
+
+        </section>
     );
 }

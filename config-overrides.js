@@ -14,6 +14,7 @@ module.exports = function override(config) {
     '@contactsContent': './src/components/content/mainPage/contacts/contactsContent',
     '@contactsBody': './src/components/content/mainPage/contacts/contactsContent/contactsBody',
     '@treiners': './src/components/content/treiners',
+    '@services': './src/components/content/services',
     '@footer': './src/components/footer',
     '@header': './src/components/header',
     '@data': './src/data',
