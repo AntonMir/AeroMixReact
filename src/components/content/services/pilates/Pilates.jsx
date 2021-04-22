@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import pilates from '@img/services/adults/pilates.jpg'
 // styles
@@ -12,11 +13,9 @@ export default function Pilates() {
         <section className="serv-page-adults-pilates">
 
             <div className="serv-page-adults-pilates-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Пилатес</span>
             </div>
@@ -48,7 +47,7 @@ export default function Pilates() {
                         способствующие тонусу мышц.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-pilates-info */}

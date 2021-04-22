@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import stretching from '@img/services/adults/stretching.jpg'
 // styles
@@ -12,11 +13,9 @@ export default function Stretching() {
         <section className="serv-page-adults-stretching">
 
             <div className="serv-page-adults-stretching-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Стретчинг</span>
             </div>
@@ -45,7 +44,7 @@ export default function Stretching() {
                         физической подготовки. 
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-stretching-info */}

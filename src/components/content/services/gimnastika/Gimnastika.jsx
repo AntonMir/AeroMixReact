@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import gimnastika1 from '@img/services/children/gimnastika1.jpg'
 import gimnastika2 from '@img/services/children/gimnastika2.jpg'
@@ -13,11 +14,9 @@ export default function Gimnastika() {
         <section className="serv-page-children-gimnastika">
 
             <div className="serv-page-children-gimnastika-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Дети</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Детская гимнастика</span>
             </div>
@@ -55,7 +54,7 @@ export default function Gimnastika() {
                         отмечают ее положительное влияние на здоровье детей.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-children-gimnastika-info */}

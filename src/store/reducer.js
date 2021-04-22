@@ -1,15 +1,15 @@
-import { TODO_SOMETHING } from './actions'
+import { CLOSE_HEADER_NAV } from '@store/actions.js'
 
 export const reducer = (state, action) => {
 
 	switch (action.type) {
-
-		case TODO_SOMETHING:
-			return {
+		
+		case CLOSE_HEADER_NAV:
+			return { 
 				...state,
-				sidebar: action.status
+				closeHeaderNav: action.status
 			}
-
+			
 		default: return state
 	}
 }

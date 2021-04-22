@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import ofp1 from '@img/services/children/ofp1.jpg'
 import ofp2 from '@img/services/children/ofp2.jpg'
@@ -13,11 +14,9 @@ export default function Ofp() {
         <section className="serv-page-children-ofp">
 
             <div className="serv-page-children-ofp-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Дети</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>ОФП</span>
             </div>
@@ -51,7 +50,7 @@ export default function Ofp() {
                         радость и удовольствие от занятий спортом.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-children-ofp-info */}

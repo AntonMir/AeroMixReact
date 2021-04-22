@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import joga1 from '@img/services/adults/joga1.jpg'
 import joga2 from '@img/services/adults/joga2.jpg'
@@ -13,11 +14,9 @@ export default function Joga() {
         <section className="serv-page-adults-joga">
 
             <div className="serv-page-adults-joga-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Йога</span>
             </div>
@@ -49,7 +48,7 @@ export default function Joga() {
                         острым и напоминает стрелу, направленную точно в цель.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-joga-info */}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import vasilcovaViktoria from '@img/treiners/vasilcovaViktoria.jpg'
 // styles
@@ -12,9 +13,9 @@ export default function VasilcovaViktoria() {
         <section className="vasilcovaViktoria">
 
             <div className="vasilcovaViktoria-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Тренеры</Link>
+                <HashLink to="/#treiners">Тренеры</HashLink>
                 <p> &gt; </p>
                 <span>Виктория Васильцова</span>
             </div>
@@ -42,7 +43,7 @@ export default function VasilcovaViktoria() {
                         (факультет «Спортивная тренировка»).
                     </p>
                     
-                        <Link to="/timetable">Узнать расписание</Link>
+                        <HashLink to="/timetable#top">Узнать расписание</HashLink>
                 </div>
                 {/* ./vasilcovaViktoria-info */}
                 <span className="vasilcovaViktoria-img">

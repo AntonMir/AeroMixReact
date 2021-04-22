@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import bondarenkoLidija from '@img/treiners/bondarenkoLidija.jpg'
 // styles
@@ -12,9 +13,9 @@ export default function BondarenkoLidija() {
         <section className="bondarenkoLidija">
 
             <div className="bondarenkoLidija-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Тренеры</Link>
+                <HashLink to="/#treiners">Тренеры</HashLink>
                 <p> &gt; </p>
                 <span>Лидия Бондаренко</span>
             </div>
@@ -37,7 +38,7 @@ export default function BondarenkoLidija() {
                         Многократный призер Чемпионатов Европы и различных международных соревнований.
                     </p>
                     
-                        <Link to="/timetable">Узнать расписание</Link>
+                        <HashLink to="/timetable#top">Узнать расписание</HashLink>
                 </div>
                 {/* ./bondarenkoLidija-info */}
                 <span className="bondarenkoLidija-img">

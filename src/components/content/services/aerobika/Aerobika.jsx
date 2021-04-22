@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import aerobika1 from '@img/services/children/aerobika1.jpg'
 import aerobika2 from '@img/services/children/aerobika2.jpg'
@@ -13,11 +14,9 @@ export default function Aerobika() {
         <section className="serv-page-children-aerobika">
 
             <div className="serv-page-children-aerobika-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Дети</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Спортивная аэробика</span>
             </div>
@@ -55,7 +54,7 @@ export default function Aerobika() {
                         под музыку. 
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-children-aerobika-info */}

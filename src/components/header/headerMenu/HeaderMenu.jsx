@@ -5,12 +5,18 @@ import { HashLink } from 'react-router-hash-link';
 import arrowBot from '@img/header/arrowBot.svg';
 import arrowTop from '@img/header/arrowTop.svg';
 import aboutClubArrow from '@img/header/aboutClubArrow.png';
+// redux
+import { store } from '@store/store.js'
+import { connect } from 'react-redux'
 // styles
 import "./headerMenu.scss";
+
+
 
 class HeaderMenu extends Component {
 	constructor(props) {
 		super(props)
+		this.store = store
 		this.state= {
 			headerMenu: false, 
 			aboutClubMenu: false,
@@ -22,7 +28,7 @@ class HeaderMenu extends Component {
 
 	showHeaderMenu() {
 		if(window.outerWidth <= 1500) this.setState({ headerMenu: !this.state.headerMenu });
-		if(this.state.aboutClubMenu === true) this.setState({ aboutClubMenu: false });;
+		if(this.state.aboutClubMenu === true) this.setState({ aboutClubMenu: false });
 	}
 
 	showAboutClubMenu() {
@@ -35,6 +41,14 @@ class HeaderMenu extends Component {
 	}
 
 	render() {
+
+		store.subscribe(() => {
+			if (store.getState().closeHeaderNav === true) {
+				this.setState({ headerMenu: false });
+				this.setState({ aboutClubMenu: false });
+			}
+		})
+
 		return (
             <>
 				<ul className={`${!this.state.headerMenu ? "header-menu" : "header-menu visible"}`}>
@@ -175,4 +189,10 @@ class HeaderMenu extends Component {
 	}
 }
 
-export default HeaderMenu;
+function reactReduxStoreConnectWrapper(state) {
+	return {
+		registration: state.registration
+	}
+}
+
+export default connect(reactReduxStoreConnectWrapper)(HeaderMenu);

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import bachata from '@img/services/adults/bachata.svg'
 // styles
@@ -12,11 +13,9 @@ export default function Bachata() {
         <section className="serv-page-adults-bachata">
 
             <div className="serv-page-adults-bachata-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Бачата</span>
             </div>
@@ -51,7 +50,7 @@ export default function Bachata() {
                         Мелодия трогает душу, помогает танцорам двигаться чувственно и нежно.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-bachata-info */}

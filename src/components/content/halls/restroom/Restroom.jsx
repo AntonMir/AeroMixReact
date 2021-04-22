@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// HashLink
+import { HashLink } from 'react-router-hash-link';
 // img
 import mainImg from '@img/halls/restroom/main.jpg'
 //components
@@ -19,9 +20,9 @@ function Restroom() {
                 <div className="restroom-content-wrapper">
 
                     <div className="restroom-website-position-nav">
-                        <Link to="/">Главная</Link>
+                        <HashLink to="/">Главная</HashLink>
                         <p> &gt; </p>
-                        <Link to="/#halls">Залы и оборудование</Link>
+                        <HashLink to="/#halls">Залы и оборудование</HashLink>
                         <p> &gt; </p>
                         <span>Комната отдыха</span>
                     </div>

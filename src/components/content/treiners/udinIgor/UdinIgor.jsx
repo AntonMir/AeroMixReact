@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import udinIgor from '@img/treiners/udinIgor.jpg'
 // styles
@@ -12,9 +13,9 @@ export default function UdinIgor() {
         <section className="udinIgor">
 
             <div className="udinIgor-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Тренеры</Link>
+                <HashLink to="/#treiners">Тренеры</HashLink>
                 <p> &gt; </p>
                 <span>Игорь Юдин</span>
             </div>
@@ -46,7 +47,7 @@ export default function UdinIgor() {
                         возможности своего тела.
                     </p>
                     
-                        <Link to="/timetable">Узнать расписание</Link>
+                        <HashLink to="/timetable#top">Узнать расписание</HashLink>
                 </div>
                 {/* ./udinIgor-info */}
                 <span className="udinIgor-img">

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import tableTennis1 from '@img/services/adults/tableTennis1.jpg'
 import tableTennis2 from '@img/services/adults/tableTennis2.jpg'
@@ -14,11 +15,9 @@ export default function TableTennis() {
         <section className="serv-page-adults-tableTennis">
 
             <div className="serv-page-adults-tableTennis-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Настольный теннис</span>
             </div>
@@ -113,7 +112,7 @@ export default function TableTennis() {
                         полноценная игра с роботом!
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-tableTennis-robot-info */}

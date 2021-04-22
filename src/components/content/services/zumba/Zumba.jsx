@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import zumba from '@img/services/adults/zumba.svg'
 // styles
@@ -12,11 +13,9 @@ export default function Zumba() {
         <section className="serv-page-adults-zumba">
 
             <div className="serv-page-adults-zumba-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Зумба</span>
             </div>
@@ -54,7 +53,7 @@ export default function Zumba() {
                         </span>
                     </p>
                                         
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-zumba-info */}

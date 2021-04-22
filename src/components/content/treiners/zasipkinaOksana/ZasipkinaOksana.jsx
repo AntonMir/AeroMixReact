@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import zasipkinaOksana from '@img/treiners/zasipkinaOksana.jpg'
 // styles
@@ -12,9 +13,9 @@ export default function ZasipkinaOksana() {
         <section className="zasipkinaOksana">
 
             <div className="zasipkinaOksana-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Тренеры</Link>
+                <HashLink to="/#treiners">Тренеры</HashLink>
                 <p> &gt; </p>
                 <span>Оксана Вячеславовна Засыпкина</span>
             </div>
@@ -45,7 +46,7 @@ export default function ZasipkinaOksana() {
                         письмо за результативную работу от Главы Городского округа Химки Московской области. 
                     </p>
                     
-                        <Link to="/timetable">Узнать расписание</Link>
+                        <HashLink to="/timetable#top">Узнать расписание</HashLink>
                 </div>
                 {/* ./zasipkinaOksana-info */}
                 <span className="zasipkinaOksana-img">

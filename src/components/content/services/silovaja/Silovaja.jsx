@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import silovaja from '@img/services/adults/silovaja.jpg'
 // styles
@@ -12,11 +13,9 @@ export default function Silovaja() {
         <section className="serv-page-adults-silovaja">
 
             <div className="serv-page-adults-silovaja-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Силовая тренировка</span>
             </div>
@@ -44,7 +43,7 @@ export default function Silovaja() {
                         - организм становится более стойким к негативным воздействиям
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-silovaja-info */}

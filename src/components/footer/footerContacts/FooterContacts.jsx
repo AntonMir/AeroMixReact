@@ -1,6 +1,4 @@
 import React from 'react';
-// link
-import { Link } from 'react-router-dom';
 // img
 import phone from '@img/footer/footerPhone.svg';
 import addres from '@img/footer/footerAddres.svg';
@@ -32,10 +30,10 @@ function FooterContacts() {
             <div className="footer-socials">
                 <p>Мы в соц. сетях</p>
                 <div className="footer-socials-items">
-                    <Link to="/"><img src={insta} alt="insta"/></Link>
-                    <Link to="/"><img src={vk} alt="vk"/></Link>
-                    <Link to="/"><img src={facebook} alt="facebook"/></Link>
-                    <Link to="/"><img src={odnoklasniki} alt="odnoklasniki"/></Link>
+                    <a href="https://www.instagram.com/aeromix_khimki/?igshid=ps1jn2xrnkno"><img src={insta} alt="insta"/></a>
+                    <a href="https://vk.com/id570697624"><img src={vk} alt="vk"/></a>
+                    <a href="https://www.facebook.com/aeromix.aeromix"><img src={facebook} alt="facebook"/></a>
+                    <a href="https://ok.ru/profile/573787347062"><img src={odnoklasniki} alt="odnoklasniki"/></a>
                 </div>
             </div>
 

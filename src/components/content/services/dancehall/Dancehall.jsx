@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import dancehall from '@img/services/adults/dancehall.jpg'
 // styles
@@ -12,13 +13,9 @@ export default function Dancehall() {
         <section className="serv-page-adults-dancehall">
 
             <div className="serv-page-adults-dancehall-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Дети</Link>
-                <p>/</p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Дэнсхолл</span>
             </div>
@@ -47,7 +44,7 @@ export default function Dancehall() {
                         <span> это взвешенные и четко налаженные связки.</span>
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-adults-dancehall-info */}

@@ -45,17 +45,21 @@ import './app.scss'
 // redux
 import { Provider } from 'react-redux'
 import { store } from '@store/store.js'
+import { closeHeader } from '@store/actions.js'
 
 
+function closeHeaderNav() {
+    store.dispatch(closeHeader(true))
+}
 
 export default function App() {
-    
-	return (
+
+    return (
         <Router>
             <Provider store={store}>
                 <section className="app">
                     <Header />
-                    <section className="content">
+                    <section className="content" onClick={closeHeaderNav}>
                         <Switch>
                             <Route exact path='/' component={MainPage}/>
                             <Route exact path='/aboutclub' component={AboutClub}/>
@@ -81,8 +85,8 @@ export default function App() {
                             <Route exact path='/services/adults/tableTennis' component={TableTennis}/>
                             <Redirect to="/"/>
                         </Switch>
+                        <Footer />
                     </section>
-                    <Footer />
                     <HashLink smooth className="arrow-to-top" to="#top">
                         <img src={arrowToTop} alt="Стрелка вверх"/>
                     </HashLink>
@@ -92,3 +96,5 @@ export default function App() {
         </Router>
 	)
 }
+
+    

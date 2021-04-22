@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import taeBo from '@img/services/adults/taeBo.svg'
 // styles
@@ -12,11 +13,9 @@ export default function TaeBo() {
         <section className="serv-page-adults-taeBo">
 
             <div className="serv-page-adults-taeBo-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Взрослые</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Тай бо (tae bo)</span>
             </div>
@@ -48,8 +47,8 @@ export default function TaeBo() {
                         и эффективна, при занятиях происходит эмоциональная разгрузка.
                     </p>
                                         
-                    <Link to="#contacts">Записаться на тренировку</Link>
-
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
+                    
                 </div>
                 {/* ./serv-page-adults-taeBo-info */}
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import juzzFunk from '@img/services/children/juzzFunk.jpg'
 // styles
@@ -12,11 +13,9 @@ export default function JuzzFunk() {
         <section className="serv-page-children-juzzFunk">
 
             <div className="serv-page-children-juzzFunk-website-position-nav">
-                <Link to="/">Главная</Link>
+                <HashLink to="/">Главная</HashLink>
                 <p> &gt; </p>
-                <Link to="#treiners">Услуги</Link>
-                <p> &gt; </p>
-                <Link to="#treiners">Дети</Link>
+                <HashLink to="/#services">Услуги</HashLink>
                 <p> &gt; </p>
                 <span>Джаз-фанк</span>
             </div>
@@ -52,7 +51,7 @@ export default function JuzzFunk() {
                         движения должны быть четкими, отточенными.
                     </p>
                     
-                    <Link to="#contacts">Записаться на тренировку</Link>
+                    <HashLink to="/#contacts">Записаться на тренировку</HashLink>
 
                 </div>
                 {/* ./serv-page-children-juzzFunk-info */}

@@ -1,9 +1,10 @@
-export const TODO_SOMETHING = "TODO_SOMETHING"
+// кладем в переменную тип нашего action
+export const CLOSE_HEADER_NAV = "CLOSE_HEADER_NAV"
 
-
-export function todoSomething(status) {
+// Функция, которая содержит в себе тип и статус нашего Sidebar
+export function closeHeader(status) {
 	return {
-		type: TODO_SOMETHING,
+		type: CLOSE_HEADER_NAV,
 		status: status
 	}
 }
