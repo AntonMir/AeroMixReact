@@ -18,7 +18,9 @@ function FooterContacts() {
             <span>
                 <div className="footer-addres">
                     <img src={addres} alt='addres'/>
-                    г. Химки, ул. Академика Грушина, 8
+                        141401, Московская обл., <br/>
+                        г. Химки, ул. Академика Грушина, д.8 
+
                 </div>
 
                 <div className="footer-phone">

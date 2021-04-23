@@ -40,3 +40,16 @@
     }
 
 }
+
+@media screen and (max-width: 400px) {
+
+    .footer-nav-first, .footer-nav-second, .footer-nav-third {
+        font-size: 14px;
+        margin: 10px 10px;
+    
+        & li {
+            padding: 0 0 15px 0;
+        }
+    } 
+
+}

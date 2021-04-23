@@ -12,7 +12,7 @@
 
 .footer-logo {
     height: 120px;
-    width: 393px;
+    width: 460px;
     margin: 10px 0 0 0;
 }
 
@@ -55,12 +55,13 @@
 @media screen and (max-width: 750px) {
 
     .footer {
-        height: 550px;
+        height: 560px;
     }
 
     .footer-logo {
         height: 95px;
-        width: 310px;
+        width: 350px;
+        margin-left: -50px;
     }
 
     .footer-content {

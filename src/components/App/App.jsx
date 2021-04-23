@@ -87,7 +87,12 @@ export default function App() {
                         </Switch>
                         <Footer />
                     </section>
-                    <HashLink smooth className="arrow-to-top" to="#top">
+
+                    <HashLink 
+                        smooth 
+                        className="arrow-to-top"
+                        to="#top"
+                    >
                         <img src={arrowToTop} alt="Стрелка вверх"/>
                     </HashLink>
 

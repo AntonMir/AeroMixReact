@@ -1,6 +1,6 @@
 import React from 'react';
-// <a> = <Link>
-import { Link } from 'react-router-dom';
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import logo from '@img/header/logo.png';
 // styles
@@ -10,9 +10,9 @@ import "./headerLogo.scss";
 function HeaderLogo(props) {
 	
     return (
-        <Link className="header-logo"to="/">
+        <HashLink smooth className="header-logo "to="/#top">
             <img src={logo}  alt='logo'/>
-        </Link>
+        </HashLink>
     )
 	
 }

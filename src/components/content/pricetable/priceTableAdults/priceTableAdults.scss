@@ -33,11 +33,6 @@
         border-top: 1px solid #666;
     }
 
-    & tr > td:last-child,
-    & tr > th:last-child {
-        border-right: 1px solid #666;
-    }
-
     & tr:first-child > th:first-child {        
         border-radius: 10px 0 0 0;
         -ms-border-radius: 10px 0 0 0;
@@ -96,7 +91,7 @@
     margin-top: 40px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1325px) {
 
     .price-table-adults {
     
@@ -114,7 +109,7 @@
     
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 905px) {
 
     .price-table-adults {
         & th {
@@ -130,7 +125,7 @@
 
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 860px) {
 
     .price-table-adults {
         margin: 0 2%;
@@ -142,7 +137,7 @@
     
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
 
     .price-table-adults-chosen-lessons {
         margin: 0 0 20px 3%;

@@ -1,4 +1,6 @@
 import React from 'react';
+// Link
+import { HashLink } from 'react-router-hash-link';
 // img
 import footerLogo from '@img/footer/footerLogo.png';
 // components
@@ -12,9 +14,9 @@ function Footer() {
 	
 	return (
 	    <section className="footer">
-
-			<img className="footer-logo" src={footerLogo} alt=""/>
-
+			<HashLink smooth to="/#top">
+				<img className="footer-logo" src={footerLogo} alt="footerLogo"/>
+			</HashLink>
 			<div className="footer-content">
 				<FooterNav />
 				<FooterContacts />

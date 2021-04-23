@@ -6,7 +6,7 @@ import "./requisites.scss";
 function Requisites() {
 
     return (
-        <details className="requisites">
+        <details open className="requisites">
             <summary>Реквизиты</summary>
             <p>ООО «СК АЭРОМИКС»</p>
             <p>ИНН: 5047235906</p>
