@@ -1,4 +1,6 @@
 import React from 'react';
+// Link
+import { HashLink } from 'react-router-hash-link';
 // carousel elements
 import Carousel, { consts } from 'react-elastic-carousel'
 import Item from "@data/items.js";
@@ -50,7 +52,7 @@ export default function Treiners() {
                                 <img className="t-logo" src={treiner.img} alt={treiner.alt}/>
                                 <h1>{treiner.name}</h1>
                                 <p>{treiner.text}</p>
-                                <a href={treiner.href}>подробнее</a>
+                                <HashLink to={treiner.href}>подробнее</HashLink>
                             </Item>
                         )
                     })}

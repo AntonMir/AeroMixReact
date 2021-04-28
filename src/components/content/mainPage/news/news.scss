@@ -6,7 +6,7 @@
 .n-carousel-header {
     display: flex;
     justify-content: space-between;
-    margin: 120px 10% 0 9%;
+    margin: 30px 10% 0 9%;
     font-weight: 600;
 }
 
@@ -72,7 +72,28 @@
 
 }
 
+@media screen and (max-width: 1044px) { 
+
+    .n-carousel-wrapper {
+        margin: 2% 12% 0;
+    } 
+
+}
+
+
+@media screen and (max-width: 784px) {
+
+    .n-carousel-wrapper {
+        margin: 2% 10% 0;
+    }
+
+}
+
 @media screen and (max-width: 768px) { 
+
+    .n-carousel-wrapper {
+        margin: 2% 4% 0;
+    }
 
     .n-pointer {
         display: none;
@@ -80,6 +101,14 @@
 
     .news-red-wave {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 688px) { 
+
+    .news {
+        padding-top: 50px;
     }
 
 }

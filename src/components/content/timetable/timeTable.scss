@@ -148,3 +148,18 @@
     }
 
 }
+
+@media screen and (max-width: 450px) {
+
+    .time-table-website-position-nav {
+        & p {
+            margin: 0 4px;
+        }
+        & a {
+            font-size: 13px;
+        }
+        & span {
+            font-size: 13px;
+        }
+    }
+}

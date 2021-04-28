@@ -1,6 +1,6 @@
 .serv-page-children-aerobika {
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 30px auto 10px;
 }
 
 .serv-page-children-aerobika-website-position-nav {
@@ -29,7 +29,7 @@
 .serv-page-children-aerobika-content {
     display: flex;
     justify-content: space-between;
-    margin: 20px 9% 30px;
+    margin: 10px 9% 30px;
     padding: 20px 3% 50px;
 }
 
@@ -162,7 +162,7 @@
     }
 
     .serv-page-children-aerobika-content {
-        margin: 30px 6%;
+        margin: 10px 6%;
     }
 
     .serv-page-children-aerobika-info {
@@ -189,7 +189,7 @@
     }
 
     .serv-page-children-aerobika-content {
-        margin: 30px 3%;
+        margin: 10px 3%;
     }
 
     .serv-page-children-aerobika-info {
@@ -211,10 +211,6 @@
 }
 
 @media screen and (max-width: 900px) {
-
-    .serv-page-children-aerobika-content {
-        padding: 20px 3%;
-    }
 
     .serv-page-children-aerobika-info {
         & h1 {
@@ -242,10 +238,10 @@
             margin: 0 6px;
         }
         & a {
-            font-size: 12px;
+            font-size: 16px;
         }
         & span {
-            font-size: 12px;
+            font-size: 16px;
         }
     }
 
@@ -314,10 +310,10 @@
             margin: 0 4px;
         }
         & a {
-            font-size: 9px;
+            font-size: 13px;
         }
         & span {
-            font-size: 9px;
+            font-size: 13px;
         }
     }
 

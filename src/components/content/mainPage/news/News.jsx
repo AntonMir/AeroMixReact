@@ -13,7 +13,7 @@ import './news.scss';
 // кол-во слайдов в зависимости от ширины вьюпорта
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 800, itemsToShow: 2 },
+    { width: 873.5, itemsToShow: 2 },
 ];
 
 

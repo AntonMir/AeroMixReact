@@ -46,7 +46,7 @@ const servicesList = {
                     выполняют под музыку комплекс упражнений с высокой 
                     интенсивностью и сложно координированными элементами.`,
             background: aerobika,
-            href: `/services/children/aerobika`,
+            href: `/services/children/aerobika#top`,
             mark: `aerobika`,
         },
         {
@@ -57,7 +57,7 @@ const servicesList = {
                     для детей любого телосложения и физической подготовки, 
                     дарит радость и удовольствие от занятий спортом.`,
             background: gimnastika,
-            href: `/services/children/gimnastika`,
+            href: `/services/children/gimnastika#top`,
             mark: `gimnastika`,
         },
         {
@@ -67,7 +67,7 @@ const servicesList = {
                     развитие координации, баланса, силы, гибкости и 
                     ловкости.`,
             background: ofp,
-            href: `/services/children/ofp`,
+            href: `/services/children/ofp#top`,
             mark: `ofp`,
         },
         {
@@ -77,7 +77,7 @@ const servicesList = {
                     хореографии, хип-хопа, стрип-пластики, эстрадной хореографии 
                     и вакинга.`,
             background: jazfunk,
-            href: `/services/children/juzzfunk`,
+            href: `/services/children/juzzfunk#top`,
             mark: `jazfunk`,
         },
         {
@@ -86,7 +86,7 @@ const servicesList = {
             text: `Динамичный танец, который показывает свободу и 
                     раскрепощённость любого, кто его исполняет.`,
             background: dancehallChildren,
-            href: `/services/all/dancehall`,
+            href: `/services/all/dancehall#top`,
             mark: `dancehallChildren`,
         },
     ],
@@ -99,7 +99,7 @@ const servicesList = {
             text: `Комплекс упражнений на растяжку мышц тела, развитие 
                     гибкости и эластичности связок и суставов.`,
             background: stretching,
-            href: `/services/adults/stretching`,
+            href: `/services/adults/stretching#top`,
             mark: `stretching`,
         },
         {
@@ -108,7 +108,7 @@ const servicesList = {
             text: `Комплексное занятие, направленное на развитие 
                     различных групп мышц.`,
             background: silovaja,
-            href: `/services/adults/silovaja`,
+            href: `/services/adults/silovaja#top`,
             mark: `silovaja`,
         },
         {
@@ -118,7 +118,7 @@ const servicesList = {
                     которые задействуют глубоко лежащие мышцы и требуют 
                     значительных усилий.`,
             background: pilates,
-            href: `/services/adults/pilates`,
+            href: `/services/adults/pilates#top`,
             mark: `pilates`,
         },
         {
@@ -129,7 +129,7 @@ const servicesList = {
                     Регулярные занятия йогой Айенгара обеспечивают 
                     практикующим улучшение здоровья и внешности.`,
             background: joga,
-            href: `/services/adults/joga`,
+            href: `/services/adults/joga#top`,
             mark: `joga`,
         },
         {
@@ -139,7 +139,7 @@ const servicesList = {
                     используют специальные ракетки и игровой стол, 
                     разграниченный сеткой пополам.`,
             background: tennis,
-            href: `/services/adults/tableTennis`,
+            href: `/services/adults/tableTennis#top`,
             mark: `tennis`,
         },
         {
@@ -149,7 +149,7 @@ const servicesList = {
                     Главная особенность стиля — чувственный романтизм, пластика, 
                     гармония и импровизация!`,
             background: bachata,
-            href: `/services/adults/bachata`,
+            href: `/services/adults/bachata#top`,
             mark: `bachata`,
         },
         {
@@ -159,7 +159,7 @@ const servicesList = {
                     латиноамериканские ритмы сочетаются с простой хореографией, 
                     что позволяет обеспечить эффективную тренировку всего тела.`,
             background: zumba,
-            href: `/services/adults/zumba`,
+            href: `/services/adults/zumba#top`,
             mark: `zumba`,
         },
         {
@@ -168,7 +168,7 @@ const servicesList = {
             text: `Динамичный танец, который показывает свободу и 
                     раскрепощённость любого, кто его исполняет.`,
             background: dancehallAdults,
-            href: `/services/all/dancehall`,
+            href: `/services/all/dancehall#top`,
             mark: `dancehallAdults`,
         },
         {
@@ -178,7 +178,7 @@ const servicesList = {
                     элементы тайского бокса, тхэквондо, бокса, каратэ в 
                     совокупности с базовыми шагами аэробики, собранными в связки.`,
             background: taeBo,
-            href: `/services/adults/taebo`,
+            href: `/services/adults/taebo#top`,
             mark: `taeBo`,
         },
     ]

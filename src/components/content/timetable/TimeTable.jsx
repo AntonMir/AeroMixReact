@@ -17,10 +17,10 @@ export default function TimeTable() {
             <div className="time-table-website-position-nav">
                 <Link to="/">Главная</Link>
                 <p> &gt; </p>
-                <span>Рассписание</span>
+                <span>Расписание</span>
             </div>
 
-            <h1 className="time-table-title">Рассписание</h1>
+            <h1 className="time-table-title">Расписание</h1>
 
             <div className="time-table-navbar">
                 <button 

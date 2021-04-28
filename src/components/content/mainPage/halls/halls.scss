@@ -1,10 +1,12 @@
 .h-carousel-main-page {
-    padding-top: 0px;
+    margin-top: 60px;
+    padding-top: 50px;
 }
+
 .h-carousel-header {
     display: flex;
     justify-content: space-between;
-    margin: 90px 10% 0 9%;
+    margin: 0 10% 0 9%;
     font-weight: 600;
 }
 
@@ -269,6 +271,10 @@
 }
 
 @media screen and (max-width: 688px) {
+
+    .h-carousel-main-page {
+        padding-top: 80px;
+    }
 
     .h-car-el {
         height: 430px;

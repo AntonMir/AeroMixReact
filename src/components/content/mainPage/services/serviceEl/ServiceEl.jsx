@@ -1,4 +1,6 @@
 import React from 'react'
+// Link
+import { HashLink } from 'react-router-hash-link';
 //styles
 import "./serviceEl.scss"
 
@@ -14,7 +16,7 @@ function ServiceEl(props) {
                 <div className="service-content">
                     <h2>{title}</h2>
                     <p>{text}</p>
-                    <a href={href}>подробнее</a>
+                    <HashLink to={href}>подробнее</HashLink>
                 </div>
             </div>
         </>

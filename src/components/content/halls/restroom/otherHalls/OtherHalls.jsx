@@ -1,4 +1,6 @@
 import React from 'react';
+// Link
+import { HashLink } from 'react-router-hash-link';
 // h-carousel elements
 import Carousel, { consts } from 'react-elastic-carousel'
 import Item from "@data/items.js";
@@ -44,24 +46,24 @@ export default function OtherHalls() {
                 >
 
                     <Item className="hr-car-el">
-                        <img className="hr-logo" src={hallOne} alt=""/>
+                        <img className="hr-logo" src={hallOne} alt="hr-logo"/>
                         <h1>Зал № 1</h1>
                         <p>Для занятий хореографией, йогой, акробатикой.</p>
-                        <a href="/hallone">подробнее</a>
+                        <HashLink to="/hallone#top">подробнее</HashLink>
                     </Item>
 
                     <Item className="hr-car-el">
-                        <img className="hr-logo" src={hallTwo} alt=""/>
+                        <img className="hr-logo" src={hallTwo} alt="hr-logo"/>
                         <h1>Зал № 2</h1>
                         <p>Предназначен, в большей степени, для силовых тренировок.</p>
-                        <a href="/halltwo">подробнее</a>
+                        <HashLink to="/halltwo#top">подробнее</HashLink>
                     </Item>
 
                     <Item className="hr-car-el">
-                        <img className="hr-logo" src={hallThere} alt=""/>
+                        <img className="hr-logo" src={hallThere} alt="hr-logo"/>
                         <h1>Зал № 3</h1>
                         <p>Большой зал в котором проходит постановка и отработка аэробных и показательных программ.</p>
-                        <a href="/hallthree">подробнее</a>
+                        <HashLink to="/hallthree#top">подробнее</HashLink>
                     </Item>
 
                 </Carousel>

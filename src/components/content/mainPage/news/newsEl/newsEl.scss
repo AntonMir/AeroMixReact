@@ -130,28 +130,7 @@
 
 }
 
-@media screen and (max-width: 1027px) {
-
-    .n-car-el {
-        height: 220px;
-    }
-
-    .n-car-el-content h1 {
-        font-size: 18px;
-    }
-
-    .n-car-el-content p {
-        font-size: 14px;
-    }
-
-    .n-logo {
-        margin-top: 45px;
-        height: 60%;
-    }
-
-}
-
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 1044px) {
 
     .n-car-el {
         height: 220px;
@@ -171,8 +150,32 @@
     }
 
     .n-logo {
-        margin-top: 25px;
-        height: 100%;
+        margin-top: 30px;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 962px) {
+
+    .n-car-el {
+        height: 220px;
+    }
+
+}
+
+@media screen and (max-width: 889px) {
+
+    .n-car-el {
+        height: 240px;
+    }
+
+}
+
+@media screen and (max-width: 873px) {
+
+    .n-car-el {
+        height: 260px;
     }
 
 }
@@ -185,7 +188,7 @@
 
 }
 
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 768px) {
 
     .n-car-el {
         height: 200px;
@@ -218,15 +221,23 @@
 
 }
 
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 526px) {
 
     .n-car-el {
-        height: 240px;
+        height: 220px;
     } 
 
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
+
+    .n-car-el {
+        height: 230px;
+    } 
+
+}
+
+@media screen and (max-width: 450px) {
 
     .n-car-el-content h1 {
         font-size: 18px;
@@ -240,7 +251,7 @@
 @media screen and (max-width: 341px) {
 
     .n-car-el {
-        height: 290px;
+        height: 245px;
     }  
 
 }
