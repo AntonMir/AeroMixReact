@@ -128,22 +128,34 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
 
     .promotion-item {
-        height: 150px;
+        height: 180px;
+        margin: 15px 0;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .promotion-item {
         margin: 10px 0;
     }
 
     .promotion-info {
-        top: 15%;
+        top: 20%;
         padding: 15px ;
-        font-size: 14px;
     }
 
-    .promotion-info h1 {
-        margin: 0 0 2% 0;
-        font-size: 18px;
+    .promotion-info {
+        & p {
+            font-size: 14px;
+        }
+        & h1 {
+            margin: 0 0 2% 0;
+            font-size: 18px;
+        }
     }
 
 }

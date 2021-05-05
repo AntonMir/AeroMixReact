@@ -222,3 +222,16 @@
     }
    
 }
+
+@media screen and (max-width: 370px) {
+
+    .restroom-website-position-nav {
+        & a {
+            font-size: 10px;
+        }
+        & span {
+            font-size: 10px;
+        }
+    }
+   
+}

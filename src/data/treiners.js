@@ -7,7 +7,7 @@
 // img
 import zasipkinaOksana from '@img/mainPage/treiners/zasipkinaOksana.jpg'
 import zasipkinaJanna from '@img/mainPage/treiners/zasipkinaJanna.jpg'
-import levinaAlexandra from '@img/mainPage/treiners/levinaAlexandra.jpg'
+// import levinaAlexandra from '@img/mainPage/treiners/levinaAlexandra.jpg' // Просили убрать
 import vasilcovaViktoria from '@img/mainPage/treiners/vasilcovaViktoria.jpg'
 import bondarenkoLidija from '@img/mainPage/treiners/bondarenkoLidija.jpg'
 import bojkovaKristina from '@img/mainPage/treiners/bojkovaKristina.jpg'
@@ -32,14 +32,14 @@ const treiners = [
                 для взрослых и детей.`,
         href: '/treiners/zasipkinaJanna#top'
     }, 
-    {
-        id: 3,
-        img: levinaAlexandra,
-        alt: 'levinaAlexandra',
-        name: 'Александра Левина',
-        text: `Преподаватель джаз-фанка и хип-хопа.`,
-        href: '/treiners/levinaAlexandra#top'
-    }, 
+    // {
+    //     id: 3,
+    //     img: levinaAlexandra,
+    //     alt: 'levinaAlexandra',
+    //     name: 'Александра Левина',
+    //     text: `Преподаватель джаз-фанка и хип-хопа.`,
+    //     href: '/treiners/levinaAlexandra#top'
+    // }, 
     {
         id: 4,
         img: vasilcovaViktoria,

@@ -16,7 +16,7 @@ function ServiceEl(props) {
                 <div className="service-content">
                     <h2>{title}</h2>
                     <p>{text}</p>
-                    <HashLink to={href}>подробнее</HashLink>
+                    <HashLink to={href}>подробнее...</HashLink>
                 </div>
             </div>
         </>

@@ -88,40 +88,34 @@ export default function PriceTableAdults() {
                             <h4>Силовая тренировка</h4>
                         </td>
                         <td 
-                            rowspan="5" 
+                            rowspan="8" 
                             className={topTablePosition === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>650 руб</p>
                         </td>
                         <td 
-                            rowspan="5" 
+                            rowspan="8" 
                             className={topTablePosition === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>1600 руб</p>
                         </td>
                         <td 
-                            rowspan="5" 
+                            rowspan="8" 
                             className={topTablePosition === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>3000 руб</p>
                         </td>
                         <td 
-                            rowspan="5" 
+                            rowspan="8" 
                             className={topTablePosition === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>4000 руб</p>
                         </td>
                         <td 
-                            rowspan="5" 
+                            rowspan="8" 
                             className={topTablePosition === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>5000 руб</p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Стретчинг</h4>
                         </td>
                     </tr>
 
@@ -133,13 +127,37 @@ export default function PriceTableAdults() {
 
                     <tr>
                         <td align="start">
+                            <h4>Стретчинг</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="start">
+                            <h4>Зумба</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="start">
                             <h4>Бачата</h4>
                         </td>
                     </tr>
 
                     <tr>
                         <td align="start">
+                            <h4>Дэнсхолл</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="start">
                             <h4>Тай бо</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="start">
+                            <h4>Lady Dance</h4>
                         </td>
                     </tr>
 

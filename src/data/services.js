@@ -21,7 +21,7 @@
 import aerobika from '@img/mainPage/services/children/aerobika.jpg'
 import gimnastika from '@img/mainPage/services/children/gimnastika.jpg'
 import ofp from '@img/mainPage/services/children/OFP.jpg'
-import jazfunk from '@img/mainPage/services/children/jazfunk.jpg'
+// import jazfunk from '@img/mainPage/services/children/jazfunk.jpg' // убрали из услуг
 import dancehallChildren from '@img/mainPage/services/children/dancehall.jpg'
 
 // adults
@@ -70,16 +70,16 @@ const servicesList = {
             href: `/services/children/ofp#top`,
             mark: `ofp`,
         },
-        {
-            id: 4,
-            title: `Джаз-фанк (JUZZ FUNK)`,
-            text: `Cовременный танцевальный стиль, включающий элементы джазовой 
-                    хореографии, хип-хопа, стрип-пластики, эстрадной хореографии 
-                    и вакинга.`,
-            background: jazfunk,
-            href: `/services/children/juzzfunk#top`,
-            mark: `jazfunk`,
-        },
+        // {
+        //     id: 4,
+        //     title: `Джаз-фанк (JUZZ FUNK)`,
+        //     text: `Cовременный танцевальный стиль, включающий элементы джазовой 
+        //             хореографии, хип-хопа, стрип-пластики, эстрадной хореографии 
+        //             и вакинга.`,
+        //     background: jazfunk,
+        //     href: `/services/children/juzzfunk#top`,
+        //     mark: `jazfunk`,
+        // },
         {
             id: 5,
             title: `Дэнсхолл`,

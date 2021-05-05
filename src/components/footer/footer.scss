@@ -55,7 +55,7 @@
 @media screen and (max-width: 750px) {
 
     .footer {
-        height: 560px;
+        height: 600px;
     }
 
     .footer-logo {
@@ -70,5 +70,20 @@
         width: 90%;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    .footer {
+        height: 540px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    .footer {
+        height: 560px;
+    }
 
 }
