@@ -1,5 +1,5 @@
 // react
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 // Link
 import { HashLink } from 'react-router-hash-link';
 // route
@@ -54,6 +54,16 @@ function closeHeaderNav() {
 
 export default function App() {
 
+    const [scrollPos, setScrollPos] = useState(0);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            setScrollPos(window.pageYOffset)
+        }
+    }, []);
+ 
+        console.log('---', 'scrollPos', scrollPos);
+
     return (
         <Router>
             <Provider store={store}>
@@ -88,14 +98,15 @@ export default function App() {
                         <Footer />
                     </section>
 
+                   
                     <HashLink 
                         smooth 
-                        className="arrow-to-top"
+                        className={scrollPos > 300 ? "arrow-to-top" : "arrow-to-top-hidden"}
                         to="#top"
                     >
                         <img src={arrowToTop} alt="Стрелка вверх"/>
                     </HashLink>
-
+                            
                 </section>
             </Provider>
         </Router>
