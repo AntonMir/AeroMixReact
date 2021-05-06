@@ -62,8 +62,6 @@ export default function App() {
         }
     }, []);
  
-        console.log('---', 'scrollPos', scrollPos);
-
     return (
         <Router>
             <Provider store={store}>
