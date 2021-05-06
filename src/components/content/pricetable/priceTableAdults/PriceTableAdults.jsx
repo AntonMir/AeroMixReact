@@ -1,51 +1,62 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 // style
 import "./priceTableAdults.scss"
 
 export default function PriceTableAdults() {
 
-    // states верхней таблицы
-    const [topTablePosition, setTopTablePosition] = useState('onceTreining');
+    const [priceTableAdults, setPriceTableAdults] = useState(localStorage.getItem('priceTableAdults'));
+
+    if(!priceTableAdults) {
+        setPriceTableAdults('onceTreining')
+    }
+
+    useEffect(() => {
+        setPriceTableAdults(localStorage.getItem('priceTableAdults'))
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('priceTableAdults', priceTableAdults);
+    }, [priceTableAdults]);
    
     return (
         <>
             <div className="price-table-adults-chosen-lessons">
                 <button 
-                    onClick={() => setTopTablePosition('onceTreining')} 
-                    className={topTablePosition === 'onceTreining' 
+                    onClick={() => setPriceTableAdults('onceTreining')} 
+                    className={priceTableAdults === 'onceTreining' 
                                 ? "adults-lesson-chosen" 
                                 : "adults-lesson-unchosen"}>
                     Разовое занятие
                 </button>
 
                 <button 
-                    onClick={() => setTopTablePosition('onceAWeek')} 
-                    className={topTablePosition === 'onceAWeek' 
+                    onClick={() => setPriceTableAdults('onceAWeek')} 
+                    className={priceTableAdults === 'onceAWeek' 
                                 ? "adults-lesson-chosen" 
                                 : "adults-lesson-unchosen"}>
                     1 раз в неделю
                 </button>
 
                 <button 
-                    onClick={() => setTopTablePosition('twoTimesAWeek')} 
-                    className={topTablePosition === 'twoTimesAWeek' 
+                    onClick={() => setPriceTableAdults('twoTimesAWeek')} 
+                    className={priceTableAdults === 'twoTimesAWeek' 
                                 ? "adults-lesson-chosen" 
                                 : "adults-lesson-unchosen"}>
                     2 раза в неделю
                 </button>
 
                 <button 
-                    onClick={() => setTopTablePosition('threeTimesAWeek')} 
-                    className={topTablePosition === 'threeTimesAWeek' 
+                    onClick={() => setPriceTableAdults('threeTimesAWeek')} 
+                    className={priceTableAdults === 'threeTimesAWeek' 
                                 ? "adults-lesson-chosen" 
                                 : "adults-lesson-unchosen"}>
                     3 раза в неделю
                 </button>
 
                 <button 
-                    onClick={() => setTopTablePosition('unlimited')} 
-                    className={topTablePosition === 'unlimited' 
+                    onClick={() => setPriceTableAdults('unlimited')} 
+                    className={priceTableAdults === 'unlimited' 
                                 ? "adults-lesson-chosen" 
                                 : "adults-lesson-unchosen"}>
                     «Безлимит»
@@ -57,27 +68,27 @@ export default function PriceTableAdults() {
                     <tr>
                         <th align="start">Оздоровительная аэробика</th>
                         <th 
-                            className={topTablePosition === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             Разовое занятие
                         </th>
                         <th 
-                            className={topTablePosition === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             Абонемент на 4 занятия (1 раз в неделю)
                         </th>
                         <th 
-                            className={topTablePosition === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             Абонемент на 8 занятий (2 раза в неделю)
                         </th>
                         <th 
-                            className={topTablePosition === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             Абонемент на 12 занятий (3 раза в неделю)
                         </th>
                         <th 
-                            className={topTablePosition === 'unlimited' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             Абонемент «Безлимит» (неограниченное количество занятий в месяц)
                         </th>
@@ -88,32 +99,32 @@ export default function PriceTableAdults() {
                             <h4>Силовая тренировка</h4>
                         </td>
                         <td 
-                            rowspan="8" 
-                            className={topTablePosition === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
+                            rowSpan="8" 
+                            className={priceTableAdults === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>650 руб</p>
                         </td>
                         <td 
-                            rowspan="8" 
-                            className={topTablePosition === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
+                            rowSpan="8" 
+                            className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>1600 руб</p>
                         </td>
                         <td 
-                            rowspan="8" 
-                            className={topTablePosition === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            rowSpan="8" 
+                            className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>3000 руб</p>
                         </td>
                         <td 
-                            rowspan="8" 
-                            className={topTablePosition === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            rowSpan="8" 
+                            className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>4000 руб</p>
                         </td>
                         <td 
-                            rowspan="8" 
-                            className={topTablePosition === 'unlimited' ? '' : 'price-table-adults-hidden'} 
+                            rowSpan="8" 
+                            className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>5000 руб</p>
                         </td>
@@ -166,21 +177,21 @@ export default function PriceTableAdults() {
                             <h4>Персональная тренировка</h4>
                         </td>
                         <td 
-                            className={topTablePosition === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>2000 руб</p>
                         </td>
                         <td 
-                            className={topTablePosition === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                         <td 
-                            className={topTablePosition === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                         <td 
-                            className={topTablePosition === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                         <td 
-                            className={topTablePosition === 'unlimited' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                     </tr>               
                 
@@ -189,25 +200,25 @@ export default function PriceTableAdults() {
                             <h4>Йога</h4>
                         </td>
                         <td 
-                            className={topTablePosition === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>650 руб</p>
                         </td>
                         <td 
-                            className={topTablePosition === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>2000 руб</p>
                         </td>
                         <td 
-                            className={topTablePosition === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>3600 руб</p>
                         </td>
                         <td 
-                            className={topTablePosition === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                         <td 
-                            className={topTablePosition === 'unlimited' ? '' : 'price-table-adults-hidden'} 
+                            className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
                     </tr>
 

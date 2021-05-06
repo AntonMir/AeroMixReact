@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 // components
 import PriceTableAdults from '@pricetable/priceTableAdults/PriceTableAdults.jsx'
@@ -9,8 +9,20 @@ import "./priceTable.scss"
 
 export default function PriceTable() {
 
-    const [priceTableSection, setpriceTableSection] = useState('children');
-   
+    const [priceTable, setPriceTable] = useState(localStorage.getItem('priceTable'));
+
+    if(!priceTable) {
+        setPriceTable('children')
+    }
+
+    useEffect(() => {
+        localStorage.setItem('priceTable', priceTable);
+    }, [priceTable]);
+
+    useEffect(() => {
+        setPriceTable(localStorage.getItem('priceTable'))
+    }, []);
+
     return (
         <section className="price-table">
 
@@ -24,19 +36,19 @@ export default function PriceTable() {
 
             <div className="price-table-navbar">
                 <button 
-                    onClick={() => setpriceTableSection('children')} 
-                    className={priceTableSection === 'children' ? "chosen" : "unchosen"}>
+                    onClick={() => setPriceTable('children')} 
+                    className={priceTable === 'children' ? "chosen" : "unchosen"}>
                     Дети
                 </button>
 
                 <button 
-                    onClick={() => setpriceTableSection('adults')} 
-                    className={priceTableSection === 'adults' ? "chosen" : "unchosen"}>
+                    onClick={() => setPriceTable('adults')} 
+                    className={priceTable === 'adults' ? "chosen" : "unchosen"}>
                     Взрослые
                 </button>
             </div>
 
-            {priceTableSection === 'children' ? <PriceTableChildren /> : <PriceTableAdults />}
+            {priceTable === 'children' ? <PriceTableChildren /> : <PriceTableAdults />}
 
             <aside className="price-table-add-info">
                 <p>*"Безлимит" (любое количество тренировок в любые дни в течении месяца)</p>

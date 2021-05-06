@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 // components
 import TimeTableAdults from '@timetable/timeTableAdults/TimeTableAdults.jsx'
@@ -9,7 +9,20 @@ import "./timeTable.scss"
 
 export default function TimeTable() {
 
-    const [timeTableSection, setTimeTableSection] = useState('children');
+    const [timeTable, setTimeTable] = useState(localStorage.getItem('timeTable'));
+
+    if(!timeTable) {
+        setTimeTable('children')
+    }
+
+    useEffect(() => {
+        localStorage.setItem('timeTable', timeTable);
+    }, [timeTable]);
+
+    useEffect(() => {
+        setTimeTable(localStorage.getItem('timeTable'))
+    }, []);
+
    
     return (
         <section className="time-table">
@@ -24,19 +37,19 @@ export default function TimeTable() {
 
             <div className="time-table-navbar">
                 <button 
-                    onClick={() => setTimeTableSection('children')} 
-                    className={timeTableSection === 'children' ? "chosen" : "unchosen"}>
+                    onClick={() => setTimeTable('children')} 
+                    className={timeTable === 'children' ? "chosen" : "unchosen"}>
                     Дети
                 </button>
 
                 <button 
-                    onClick={() => setTimeTableSection('adults')} 
-                    className={timeTableSection === 'adults' ? "chosen" : "unchosen"}>
+                    onClick={() => setTimeTable('adults')} 
+                    className={timeTable === 'adults' ? "chosen" : "unchosen"}>
                     Взрослые
                 </button>
             </div>
 
-            {timeTableSection === 'children' ? <TimeTableChildren /> : <TimeTableAdults />}
+            {timeTable === 'children' ? <TimeTableChildren /> : <TimeTableAdults />}
 
             <aside className="time-table-add-info">
                 *Информация, указанная в данном разделе, может быть изменена. 

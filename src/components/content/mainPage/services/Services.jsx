@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 // data
 import servicesList from '@data/services.js'
 // components
@@ -8,9 +8,21 @@ import "./services.scss"
 
 function Services() {
 
-    const [servicesSection, setServicesSection] = useState('children');
+    const [servicesSection, setServicesSection] = useState(localStorage.getItem('servicesSection'));
+
+    if(!servicesSection) {
+        setServicesSection('children')
+    }
 
     let chosenSection = servicesSection === 'children' ? servicesList.children : servicesList.adults;
+
+    useEffect(() => {
+        localStorage.setItem('servicesSection', servicesSection);
+    }, [servicesSection]);
+
+    useEffect(() => {
+        setServicesSection(localStorage.getItem('servicesSection'))
+    }, []);
 
     return (
         <section className="services" id="services">
