@@ -96,79 +96,41 @@ export default function PriceTableAdults() {
 
                     <tr>
                         <td align="start">
-                            <h4>Силовая тренировка</h4>
+                            <h4>
+                                Силовая тренировка<br/>
+                                Пилатес<br/>
+                                Стретчинг<br/>
+                                Зумба<br/>
+                                Бачата<br/>
+                                Дэнсхолл<br/>
+                                Тай бо<br/>
+                                Lady Dance
+                            </h4>
                         </td>
                         <td 
-                            rowSpan="8" 
                             className={priceTableAdults === 'onceTreining' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>650 руб</p>
                         </td>
                         <td 
-                            rowSpan="8" 
                             className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>1600 руб</p>
                         </td>
                         <td 
-                            rowSpan="8" 
                             className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>3000 руб</p>
                         </td>
                         <td 
-                            rowSpan="8" 
                             className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>4000 руб</p>
                         </td>
                         <td 
-                            rowSpan="8" 
                             className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">
                             <p>5000 руб</p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Пилатес</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Стретчинг</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Зумба</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Бачата</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Дэнсхолл</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Тай бо</h4>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="start">
-                            <h4>Lady Dance</h4>
                         </td>
                     </tr>
 
@@ -183,16 +145,24 @@ export default function PriceTableAdults() {
                         </td>
                         <td 
                             className={priceTableAdults === 'onceAWeek' ? '' : 'price-table-adults-hidden'} 
-                            align="center">-</td>
+                            align="center">
+                            -
+                        </td>
                         <td 
                             className={priceTableAdults === 'twoTimesAWeek' ? '' : 'price-table-adults-hidden'} 
-                            align="center">-</td>
+                            align="center">
+                            -
+                        </td>
                         <td 
                             className={priceTableAdults === 'threeTimesAWeek' ? '' : 'price-table-adults-hidden'} 
-                            align="center">-</td>
+                            align="center">
+                            -
+                        </td>
                         <td 
                             className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
-                            align="center">-</td>
+                            align="center">
+                            -
+                        </td>
                     </tr>               
                 
                     <tr>

@@ -8,11 +8,10 @@ import "./services.scss"
 
 function Services() {
 
-    const [servicesSection, setServicesSection] = useState(localStorage.getItem('servicesSection'));
-
-    if(!servicesSection) {
-        setServicesSection('children')
-    }
+    const [servicesSection, setServicesSection] = useState(() => {
+        if(!localStorage.getItem('servicesSection')) return 'children';        
+        return localStorage.getItem('servicesSection');
+    });
 
     let chosenSection = servicesSection === 'children' ? servicesList.children : servicesList.adults;
 

@@ -2,9 +2,9 @@ import React from 'react';
 // Link
 import { HashLink } from 'react-router-hash-link';
 // img
-import trainingHallBall from '@img/mainPage/main/trainingHallBall.jpg';
-import childrensPerformance from '@img/mainPage/main/childrensPerformance.jpg';
-import tableTennis from '@img/mainPage/main/tableTennis.jpg';
+import trainingHallBall from '@img/mainPage/main/trainingHallBall.webp';
+import childrensPerformance from '@img/mainPage/main/childrensPerformance.webp';
+import tableTennis from '@img/mainPage/main/tableTennis.webp';
 import insta from '@img/mainPage/main/insta.svg';
 import vk from '@img/mainPage/main/vk.svg';
 import facebook from '@img/mainPage/main/facebook.svg';
@@ -46,7 +46,7 @@ function Main() {
                 </div>
             </div>
 
-            <svg width={`${window.outerWidth}`} className="main-blue-wave">
+            <svg width={`${window.innerWidth}`} className="main-blue-wave">
                 <path 
                     id="wave"
                     fill="url(#waveColor)" 
@@ -70,7 +70,7 @@ function Main() {
                     attributeType="XML"
                     repeatCount="indefinite"
                     dur="5s"
-                    values={window.outerWidth > 1440 
+                    values={window.innerWidth > 1440 
                         ? `M155.95 391.627 C329.859 287.925 350.718 253.269 
                         525.653 253.269 C699.073 253.269 845.973 329.101 1004.21 
                         358.962 C1152.94 387.027 1311.69 374.482 1511.89 220.202 
@@ -94,7 +94,7 @@ function Main() {
                         129.23 -36.9999 150.001C-86.2623 152.954 -140.64 436.84 
                         -18 434.502C218 430.002 243 262.001 486 254.001C698 
                         247.022 842.436 327.182 992 356.502Z`
-                        : 1440 >= window.outerWidth && window.outerWidth > 1080 
+                        : 1440 >= window.innerWidth && window.innerWidth > 1080 
                             ? `M109.085 292.152C240.212 214.791 255.94 188.938 
                             387.84 188.938C518.598 188.938 629.36 245.508 748.674 
                             267.784C860.813 288.72 980.507 279.362 1131.46 164.269

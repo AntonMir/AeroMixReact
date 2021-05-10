@@ -2,7 +2,7 @@ import React from 'react';
 // HashLink
 import { HashLink } from 'react-router-hash-link';
 // img
-import mainImg from '@img/halls/hall1/main2.jpg'
+import mainImg from '@img/halls/hall1/main2.webp'
 //components
 import OtherHalls from './otherHalls/OtherHalls.jsx';
 import Gallery from './gallery/Gallery.jsx';
