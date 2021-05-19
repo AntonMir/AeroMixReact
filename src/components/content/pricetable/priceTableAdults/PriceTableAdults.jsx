@@ -104,7 +104,8 @@ export default function PriceTableAdults() {
                                 Бачата<br/>
                                 Дэнсхолл<br/>
                                 Тай бо<br/>
-                                Lady Dance
+                                Lady Dance<br/>
+                                Йога
                             </h4>
                         </td>
                         <td 
@@ -165,7 +166,7 @@ export default function PriceTableAdults() {
                         </td>
                     </tr>               
                 
-                    <tr>
+                    {/* <tr>
                         <td align="start">
                             <h4>Йога</h4>
                         </td>
@@ -190,7 +191,7 @@ export default function PriceTableAdults() {
                         <td 
                             className={priceTableAdults === 'unlimited' ? '' : 'price-table-adults-hidden'} 
                             align="center">-</td>
-                    </tr>
+                    </tr> */}
 
                 </tbody>
                 

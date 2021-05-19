@@ -154,7 +154,7 @@ export default function TimeTableChildren() {
                             <p>Зал № 2</p>
                         </td>
                         <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">
-                            <p>18.00 – 20.00</p>
+                            <p>16.00 – 18.00</p>
                             <p>Зал № 2</p>
                         </td>
                         <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">
@@ -200,11 +200,11 @@ export default function TimeTableChildren() {
                             <p>16.00 – 17.30</p>
                             <p>Зал № 2</p>
                         </td>
-                        <td className={timeTableChildren === 'end' ? 'time-table-children-hidden' : ''} align="center">
+                        <td className={timeTableChildren === 'end' ? 'time-table-children-hidden' : ''} align="center">-</td>
+                        <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">
                             <p>16.00 – 17.30</p>
                             <p>Зал № 2</p>
                         </td>
-                        <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">-</td>
                         <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">-</td>
                         <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">-</td>
                     </tr>
@@ -234,7 +234,10 @@ export default function TimeTableChildren() {
                             <p>17.00 – 21.00</p>
                             <p>Зал № 3</p>
                         </td>
-                        <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">-</td>
+                        <td className={timeTableChildren === 'start' ? 'time-table-children-hidden' : ''} align="center">
+                            <p>10.00 – 13.00</p>
+                            <p>Зал № 3</p>
+                        </td>
                     </tr>
 
                 </tbody>

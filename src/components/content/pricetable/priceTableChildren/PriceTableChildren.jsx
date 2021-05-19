@@ -25,7 +25,7 @@ export default function PriceTableChildren() {
                             Абонемент на 20 занятий (4 - 5 занятий в неделю)
                         </th>
                         <th className='thecondThree'align="center">
-                            Персональная тренеровка
+                            Персональная тренировка
                         </th>
                         <th className='thecondThree'align="center">
                             Сборная команда
@@ -96,7 +96,7 @@ export default function PriceTableChildren() {
                             Абонемент на 20 занятий (4 - 5 занятий в неделю)
                         </th>
                         <th className='thirdThree'align="center">
-                            Персональная тренеровка
+                            Персональная тренировка
                         </th>
                         <th className='thirdThree'align="center">
                             Сборная команда
