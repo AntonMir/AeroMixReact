@@ -2,8 +2,8 @@ import React from 'react';
 // Link
 import { HashLink } from 'react-router-hash-link';
 // img
-import ofp1 from '@img/services/children/ofp1.jpg'
-import ofp2 from '@img/services/children/ofp2.jpg'
+import ofp1 from '@img/services/children/OFP1.jpg'
+import ofp2 from '@img/services/children/OFP2.jpg'
 // styles
 import "./ofp.scss";
 

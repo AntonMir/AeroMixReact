@@ -6,8 +6,8 @@ import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 
 // components
-import Header from '@components/header/Header.jsx'
-import Footer from '@components/footer/Footer.jsx'
+import Header from '@components/header/header.jsx'
+import Footer from '@components/footer/footer.jsx'
 import MainPage from '@components/content/mainPage/MainPage.jsx'
 import AboutClub from '@components/content/aboutClub/AboutClub.jsx'
 import HallOne from '@components/content/halls/hall1/HallOne.jsx'

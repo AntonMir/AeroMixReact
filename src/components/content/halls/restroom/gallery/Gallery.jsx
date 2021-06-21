@@ -5,7 +5,7 @@ import Item from "@data/items.js";
 // img
 import chess from '@img/halls/restroom/chess.jpg'
 import nightRestroom1 from '@img/halls/restroom/nightRestroom1.jpg'
-import nightRestroom2 from '@img/halls/restroom/nightRestroom2.jpg'
+import nightRestroom2 from '@img/halls/restroom/nightRestroom2.JPG'
 import pajamas from '@img/halls/restroom/pajamas.jpg'
 import restroom1 from '@img/halls/restroom/restroom1.jpg'
 import restroom2 from '@img/halls/restroom/restroom2.jpg'
